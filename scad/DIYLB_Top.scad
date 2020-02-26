@@ -31,13 +31,32 @@
 //#                                                                             #
 //###############################################################################
 include <DIYLB_Config.scad>
+use     <DIYLB_UBearing.scad>
 
-module DIYLB_Top() {
+//$explode = 1;
+//$vpr = [15, 0, 0];
+//$vpt = [200,180,0];
 
-    //Extrusions
-    translate([10,0,100])   rotate([-90,0,0]) extrusion(E2020, 300);
-    translate([350,0,100])  rotate([-90,0,0]) extrusion(E2020, 300);
+//! 1. Attach the four upper ball bearing holder to the upper 20x20 extrusions 
+//     of the frame.
+module DIYLB_Top_assembly() {
+    pose([15,0,0], [200,180,0])
+    assembly("Upper frame") {
+
+        //Extrusions
+        translate([10,0,100])   rotate([-90,0,0]) extrusion(E2020, 300);
+        translate([350,0,100])  rotate([-90,0,0]) extrusion(E2020, 300);
+        
+        //Upper ball bearing holders
+        translate([20,32,0])   mirror([0,0,0])                 explode([20,0,0]) DIYLB_UBearing_assembly();
+        translate([340,32,0])  mirror([1,0,0])                 explode([20,0,0]) DIYLB_UBearing_assembly();
+        translate([340,268,0]) mirror([1,0,0]) mirror([0,1,0]) explode([20,0,0]) DIYLB_UBearing_assembly();
+        translate([20,268,0])  mirror([0,1,0])                 explode([20,0,0]) DIYLB_UBearing_assembly();
+    } 
 }
 
-//Top beam assembly
-DIYLB_Top();
+if ($preview) {
+    
+    //Top beam assembly
+    DIYLB_Top_assembly();
+}

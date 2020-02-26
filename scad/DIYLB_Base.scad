@@ -72,10 +72,10 @@ module DIYLB_LBase_assembly() {
         translate([10,0,10]) rotate([-90,0,0]) extrusion(E2020, 300);
     
         //Idlers
-        translate([10,140,20]) rotate([0,0,270]) tnut(14);
-        translate([10,140,20]) explode(2) pulley($i_type);
-        translate([10,160,20]) rotate([0,0,90])  tnut(14);
-        translate([10,160,20]) explode(2) pulley($i_type);
+        translate([10,140.36,20]) rotate([0,0,270]) tnut(14);
+        translate([10,140.36,20]) explode(2) pulley($i_type);
+        translate([10,159.64,20]) rotate([0,0,90])  tnut(14);
+        translate([10,159.64,20]) explode(2) pulley($i_type);
     
         //Ball bearings
         translate([20,32,0])   mirror([0,0,0]) explode([20,0,0]) DIYLB_LBearing_assembly();

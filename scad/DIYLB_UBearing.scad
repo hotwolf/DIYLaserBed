@@ -34,9 +34,9 @@ include <DIYLB_Config.scad>
 use     <./vitamins/T-nut.scad>
 use     <./vitamins/T8Lock.scad>
 
-$explode = 1;
-$vpr = [95, 0, 160];
-$vpt = [0,0,50];
+//$explode = 1;
+//$vpr = [95, 0, 160];
+//$vpt = [0,0,50];
 
 module DIYLB_UBearing_stl() {
     stl("Upper ball bearing holder");
