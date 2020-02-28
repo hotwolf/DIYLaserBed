@@ -39,7 +39,7 @@ use <./vitamins/T8nut.scad>
 //$vpt = [0,0,50];
 
 module DIYLB_Carriage_stl() {
-    stl("Carriage holder");
+    stl("DIYLB_Carriage");
     
     aoffs = 1 + ($bb_diameter/2);  //Axis offset
 
@@ -123,7 +123,7 @@ module DIYLB_Carriage_stl() {
 //! 3. Put three T-nuts into the mounting holes.
 module DIYLB_Carriage_assembly() {
     pose([95, 0, 160],[0, 0, 50])
-    assembly("Carriage holder") {
+    assembly("DIYLB_Carriage") {
 
         aoffs = 1 + ($bb_diameter/2);  //Axis offset
      

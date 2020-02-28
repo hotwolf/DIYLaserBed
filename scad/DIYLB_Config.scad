@@ -31,7 +31,7 @@
 //#                                                                             #
 //###############################################################################
 include <NopSCADlib/lib.scad>
-include <NopSCADlib/core.scad>
+//include <NopSCADlib/core.scad>
 include <NopSCADlib/vitamins/extrusions.scad>
 include <NopSCADlib/vitamins/screws.scad>
 include <NopSCADlib/vitamins/belts.scad>
@@ -68,10 +68,6 @@ $p_type = ["GT2x20_pulley",      "GT2OB", 20, 12.22, GT2x6,  7.5,  16, 5.5, 8, 1
 $p_hubl = $p_type[7];                                                                                            //Length of the hub
 $p_totl = $p_type[7] + 2*$p_type[10] + $p_type[5];                                                               //Total length of the pulley
 $p_offs = 20+(($p_totl-$p_hubl)/2);
-
-//Wheels
-//======
-$w_type = ["Type A", 4.9, 10.2, 24,   6];
 
 //Cent coin
 //=========

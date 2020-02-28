@@ -30,8 +30,11 @@
 //#      - Initial release                                                      #
 //#                                                                             #
 //###############################################################################
+include <../DIYLB_Config.scad>
 
 module Cent() {
+    description = str("Euro-Cent coin");
+    vitamin(str("cent(): ", description));
     
     //color("gold"){ cylinder(1.67,d=16.25); }    
     color("gold"){ cylinder(1.75,d=16.25); }    

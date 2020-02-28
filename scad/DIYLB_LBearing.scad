@@ -22,7 +22,7 @@
 //#                                                                             #
 //###############################################################################
 //# Description:                                                                #
-//#   A bracket for the lower ball bearing.                             #
+//#   A bracket for the lower ball bearing.                                     #
 //#                                                                             #
 //###############################################################################
 //# Version History:                                                            #
@@ -38,7 +38,7 @@ use <./vitamins/Cent.scad>
 //$explode=1;
 
 module DIYLB_LBearing_stl() {  
-    stl("Lower ball bearing holder");
+    stl("DIYLB_LBearing");
     
     aoffs = 1 + ($bb_diameter/2);  //Axis offset
         
@@ -74,7 +74,7 @@ module DIYLB_LBearing_stl() {
 //! 4. Put the pulley loosely onto the threaded rod and insert them into the ball bearingpulles.  
 module DIYLB_LBearing_assembly() 
     pose([65,0,65], [0,40,30])
-    assembly("Lower ball bearing holder") {
+    assembly("DIYLB_LBearing") {
     
     aoffs = 1 + ($bb_diameter/2);  //Axis offset
     

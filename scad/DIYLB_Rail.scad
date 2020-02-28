@@ -37,6 +37,8 @@ include <DIYLB_Config.scad>
 //$vpt = [0,0,50];
 
 module DIYLB_Rail_stl() {
+    stl("DIYLB_Rail");   
+
     aoffs = 1 + ($bb_diameter/2);  //Axis offset
         
     color(pp1_colour)
@@ -60,7 +62,7 @@ module DIYLB_Rail_stl() {
 
 module DIYLB_Rail_assembly () {
     pose([70, 0, 25],[0, 0, 50])
-    assembly("Linear rail") {
+    assembly("DIYLB_Rail") {
 
         //Column
         translate([-10,10,20]) rotate([0,0,0]) extrusion(E2020, 70);

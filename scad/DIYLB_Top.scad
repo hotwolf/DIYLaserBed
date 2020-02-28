@@ -41,7 +41,7 @@ use     <DIYLB_UBearing.scad>
 //     of the frame.
 module DIYLB_Top_assembly() {
     pose([15,0,0], [200,180,0])
-    assembly("Upper frame") {
+    assembly("DIYLB_Top") {
 
         //Extrusions
         translate([10,0,100])   rotate([-90,0,0]) extrusion(E2020, 300);

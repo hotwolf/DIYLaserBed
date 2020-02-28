@@ -51,7 +51,7 @@ use     <DIYLB_Top.scad>
 //! 2. Tighten the screws of the L-brackets
 module DIYLB_CrankBase_assembly() {
     pose([60, 0, 5], [0,240,0])
-    assembly("Crank Holder") {
+    assembly("DIYLB_CrankBase") {
     
     //Base
     DIYLB_Base_assembly();    
@@ -68,7 +68,7 @@ module DIYLB_CrankBase_assembly() {
 //! 2. Tighten the screws of the L-brackets
 module DIYLB_ColumnsBase_assembly() {
     pose([70, 0, 0], [150,150,0])
-    assembly("Columns") {
+    assembly("DIYLB_ColumnsBase") {
     
     //Base
     DIYLB_CrankBase_assembly();    
@@ -87,7 +87,7 @@ module DIYLB_ColumnsBase_assembly() {
 //! 1. Thread the assembled bed into the rails and rods of the Z-axis.
 module DIYLB_ColumnsBed_assembly() {
     pose([70, 0, 0], [150,150,0])
-    assembly("Bed") {
+    assembly("DIYLB_ColumnsBed") {
 
         //Base and columns
         DIYLB_ColumnsBase_assembly();
@@ -102,7 +102,7 @@ module DIYLB_ColumnsBed_assembly() {
 //! 1. Attach the top extrusions to the rest of the frame.
 module DIYLB_ColumnsTop_assembly() {
     pose([10, 0, 0], [150,150,0])
-    assembly("Timing Belt") {
+    assembly("DIYLB_ColumnsTop") {
 
         //Base
         DIYLB_ColumnsBed_assembly();
@@ -119,7 +119,7 @@ module DIYLB_ColumnsTop_assembly() {
 module DIYLB_Belt_assembly() {
     pose([99,0,75], [200, 100, 28])
 
-    assembly("Timing Belt") {
+    assembly("DIYLB_Belt") {
 
         //Base
         DIYLB_ColumnsTop_assembly();
@@ -153,7 +153,7 @@ module DIYLB_Belt_assembly() {
 //! Finished!
 module main_assembly() {
     pose([30, 0, 0], [150,150,0])
-    assembly("Finished") {
+    assembly("main") {
 
         DIYLB_Belt_assembly();
     }

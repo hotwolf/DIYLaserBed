@@ -41,7 +41,7 @@ use <./vitamins/Crank.scad>
 //$vpt = [-30,0,100];
 
 module DIYLB_CBearing_stl() {
-    stl("Crank holder");
+    stl("DIYLB_CBearing");
 
     aoffs = 1 + ($bb_diameter/2);  //Axis offset
         
@@ -78,7 +78,7 @@ module DIYLB_CBearing_stl() {
 
 module DIYLB_Crank_assembly () {
     pose([80, 0, 65], [-30,0,100])
-    assembly("Crank") {
+    assembly("DIYLB_Crank") {
    
         //Extrusions
         translate([0,20,10]) rotate([0,270,0]) extrusion(E2040, 70);

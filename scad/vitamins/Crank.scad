@@ -35,7 +35,10 @@ include <../DIYLB_Config.scad>
 //$explode=1;
 
 module crank ()  {
-    explode(20) {
+    description = str("Crank for 8mm shaft");
+    vitamin(str("crank(): ", description));
+
+       explode(20) {
 
         color(grey70) {
             difference() {

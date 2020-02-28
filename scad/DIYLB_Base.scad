@@ -44,7 +44,7 @@ use <./vitamins/T-Nut.scad>
 //    screw holes of the original bed.
 module DIYLB_CBase_assembly() {
     pose([45, 0, 0],[150, 150, 0])
-    assembly("Base - Center studs") {
+    assembly("DIYLB_CBase") {
         
         //Extrusions
         translate([20,27,10])  rotate([0,90,0])  extrusion(E2020, 320);
@@ -66,7 +66,7 @@ module DIYLB_CBase_assembly() {
 //! 5. Slide two L-brackets onto the left-hand slot of the 20x20 extrusion.
 module DIYLB_LBase_assembly() {
     pose([55, 0, 0],[100, 200, 0])
-    assembly("Base - Left stud") {
+    assembly("DIYLB_LBase") {
 
         //Extrusions
         translate([10,0,10]) rotate([-90,0,0]) extrusion(E2020, 300);
@@ -104,7 +104,7 @@ module DIYLB_LBase_assembly() {
 //! 3. Slide two L-brackets onto the left-hand slot of the 20x20 extrusion.
 module DIYLB_RBase_assembly() {
     pose([45, 0, -40],[250, 150, 0])
-    assembly("Base - Right stud") {
+    assembly("DIYLB_RBase") {
 
         //Extrusions
         translate([350,0,10])  rotate([-90,0,0]) extrusion(E2020, 300);
@@ -131,7 +131,7 @@ module DIYLB_RBase_assembly() {
 //! 2. Tighten the screws of the L-brackets, connecting 20x20 extrusions
 module DIYLB_Base_assembly() {
     pose([60, 0, 0],[240, 150, 0])
-    assembly("Base - all") {
+    assembly("DIYLB_Base") {
 
         //Left stud
         explode([-25,0,0])

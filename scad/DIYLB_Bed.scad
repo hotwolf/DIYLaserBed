@@ -44,7 +44,7 @@ use     <./vitamins/T-Nut.scad>
 //! 2. Assemble remainding extrusions with L-profiles. 
 module DIYLB_Bed_assembly() {
     pose([15,0,0],[200,180,0])
-    assembly("Bed") {
+    assembly("DIYLB_Bed") {
 
         translate([0,0,$elevation]) {
     
