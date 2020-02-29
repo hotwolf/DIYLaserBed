@@ -67,5 +67,5 @@ if ($preview) {
     //Demo extrusion
     translate([-5,0,-10])
     rotate([0,90,0])
-    extrusion(E2020, 20);
+    extrusion(E2020, 20, center=false);
 }

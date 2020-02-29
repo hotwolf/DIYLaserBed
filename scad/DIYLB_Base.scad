@@ -47,8 +47,8 @@ module DIYLB_CBase_assembly() {
     assembly("DIYLB_CBase") {
         
         //Extrusions
-        translate([20,27,10])  rotate([0,90,0])  extrusion(E2020, 320);
-        translate([20,270,10]) rotate([0,90,0])  extrusion(E2020, 320);
+        translate([20,27,10])  rotate([0,90,0])  extrusion(E2020, 320, center=false);
+        translate([20,270,10]) rotate([0,90,0])  extrusion(E2020, 320, center=false);
 
         //T-Nuts
         translate([160,27,0])   rotate([180,0,0]) explode(10) tnut();
@@ -69,7 +69,7 @@ module DIYLB_LBase_assembly() {
     assembly("DIYLB_LBase") {
 
         //Extrusions
-        translate([10,0,10]) rotate([-90,0,0]) extrusion(E2020, 300);
+        translate([10,0,10]) rotate([-90,0,0]) extrusion(E2020, 300, center=false);
     
         //Idlers
         translate([10,140.36,20]) rotate([0,0,270]) tnut(14);
@@ -107,7 +107,7 @@ module DIYLB_RBase_assembly() {
     assembly("DIYLB_RBase") {
 
         //Extrusions
-        translate([350,0,10])  rotate([-90,0,0]) extrusion(E2020, 300);
+        translate([350,0,10])  rotate([-90,0,0]) extrusion(E2020, 300, center=false);
        
         //Ball bearings
         translate([340,32,0])  mirror([1,0,0])                 explode([20,0,0]) DIYLB_LBearing_assembly();

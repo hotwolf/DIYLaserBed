@@ -49,13 +49,13 @@ module DIYLB_Bed_assembly() {
         translate([0,0,$elevation]) {
     
             //Extrusions
-            translate([20,10,10])  rotate([0,90,0])  explode([0,-30,0]) extrusion(E2020, 320);
-            translate([20,290,10]) rotate([0,90,0])  explode([0,30,0])  extrusion(E2020, 320);
+            translate([20,10,10])  rotate([0,90,0])  explode([0,-30,0]) extrusion(E2020, 320, center=false);
+            translate([20,290,10]) rotate([0,90,0])  explode([0,30,0])  extrusion(E2020, 320, center=false);
             
-            translate([48,20,10])   rotate([-90,0,0]) extrusion(E2020, 260);
-            translate([312,20,10])  rotate([-90,0,0]) extrusion(E2020, 260);
-            translate([120,20,10])  rotate([-90,0,0]) extrusion(E2020, 260);
-            translate([240,20,10])  rotate([-90,0,0]) extrusion(E2020, 260);
+            translate([48,20,10])   rotate([-90,0,0]) extrusion(E2020, 260, center=false);
+            translate([312,20,10])  rotate([-90,0,0]) extrusion(E2020, 260, center=false);
+            translate([120,20,10])  rotate([-90,0,0]) extrusion(E2020, 260, center=false);
+            translate([240,20,10])  rotate([-90,0,0]) extrusion(E2020, 260, center=false);
             
             //L-Brackets
             translate([58,280,10])  rotate([90,180,90]) explode([-30,0,0]) lbracket();   

@@ -81,8 +81,8 @@ module DIYLB_Crank_assembly () {
     assembly("DIYLB_Crank") {
    
         //Extrusions
-        translate([0,20,10]) rotate([0,270,0]) extrusion(E2040, 70);
-        translate([-80,20,0]) rotate([0,0,0])  extrusion(E2040, 60);
+        translate([0,20,10]) rotate([0,270,0]) extrusion(E2040, 70, center=false);
+        translate([-80,20,0]) rotate([0,0,0])  extrusion(E2040, 60, center=false);
         
         //L-Brackets
         //translate([0,0,10])    rotate([90,180,0]) lbracket();
@@ -126,7 +126,7 @@ if ($preview) {
     DIYLB_Crank_assembly();
 
     //Demo extrusions
-    translate([10,-20,10]) rotate([-90,0,0]) extrusion(E2020, 80);
+    translate([10,-20,10]) rotate([-90,0,0]) extrusion(E2020, 80, center=false);
 }
 
 

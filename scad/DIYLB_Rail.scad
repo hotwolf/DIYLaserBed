@@ -65,7 +65,7 @@ module DIYLB_Rail_assembly () {
     assembly("DIYLB_Rail") {
 
         //Column
-        translate([-10,10,20]) rotate([0,0,0]) extrusion(E2020, 70);
+        translate([-10,10,20]) rotate([0,0,0]) extrusion(E2020, 70, center=false);
 
         //Rail
         translate([0,10,55]) rotate([0,90,0]) explode(30) rail(MGN7, 70);
@@ -85,6 +85,6 @@ if ($preview) {
     DIYLB_Rail_assembly();
 
     //Demo extrusions
-    translate([-10,-30,10])  rotate([-90,0,0]) extrusion(E2020, 80);
-    translate([-10,-30,100]) rotate([-90,0,0]) extrusion(E2020, 80);
+    translate([-10,-30,10])  rotate([-90,0,0]) extrusion(E2020, 80, center=false);
+    translate([-10,-30,100]) rotate([-90,0,0]) extrusion(E2020, 80, center=false);
 }

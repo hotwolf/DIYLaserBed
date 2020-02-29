@@ -44,8 +44,8 @@ module DIYLB_Top_assembly() {
     assembly("DIYLB_Top") {
 
         //Extrusions
-        translate([10,0,100])   rotate([-90,0,0]) extrusion(E2020, 300);
-        translate([350,0,100])  rotate([-90,0,0]) extrusion(E2020, 300);
+        translate([10,0,100])   rotate([-90,0,0]) extrusion(E2020, 300, center=false);
+        translate([350,0,100])  rotate([-90,0,0]) extrusion(E2020, 300, center=false);
         
         //Upper ball bearing holders
         translate([20,32,0])   mirror([0,0,0])                 explode([20,0,0]) DIYLB_UBearing_assembly();

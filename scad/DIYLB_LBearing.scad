@@ -104,7 +104,7 @@ if ($preview) {
     DIYLB_LBearing_assembly();
 
     //Demo extrusions
-    translate([-10,0,10]) rotate([-90,0,0]) extrusion(E2020, 70);
+    translate([-10,0,10]) rotate([-90,0,0]) extrusion(E2020, 70, center=false);
 }
 
 

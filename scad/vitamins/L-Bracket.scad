@@ -70,6 +70,6 @@ if ($preview) {
     lbracket();
 
     //Demo extrusions
-    translate([0,0,-10])   rotate([0,90,0]) extrusion(E2020, 15);
-    translate([-10,0,-20]) rotate([0,0,0])  extrusion(E2020, 40);
+    translate([0,0,-10])   rotate([0,90,0]) extrusion(E2020, 15, center=false);
+    translate([-10,0,-20]) rotate([0,0,0])  extrusion(E2020, 40, center=false);
 }

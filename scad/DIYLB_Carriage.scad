@@ -32,7 +32,7 @@
 //###############################################################################
 include <DIYLB_Config.scad>
 use <./vitamins/T-Nut.scad>
-use <./vitamins/T8nut.scad>
+use <./vitamins/T8Nut.scad>
 
 //$explode = 1;
 //$vpr = [95, 0, 160];
@@ -185,7 +185,7 @@ if ($preview) {
     DIYLB_Carriage_assembly();
     
     //Demo extrusions
-    translate([16+aoffs,70,$elevation+10]) rotate([90,0,0]) extrusion(E2020, 90);
+    translate([16+aoffs,70,$elevation+10]) rotate([90,0,0]) extrusion(E2020, 90, center=false);
     
     //Demo rail
     translate([0,10,40]) rotate([0,90,0]) rail(MGN7, 60);

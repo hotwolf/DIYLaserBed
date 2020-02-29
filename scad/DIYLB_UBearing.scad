@@ -31,7 +31,7 @@
 //#                                                                             #
 //###############################################################################
 include <DIYLB_Config.scad>
-use     <./vitamins/T-nut.scad>
+use     <./vitamins/T-Nut.scad>
 use     <./vitamins/T8Lock.scad>
 
 //$explode = 1;
@@ -99,7 +99,7 @@ if ($preview) {
     DIYLB_UBearing_assembly();
     
     //Demo extrusions
-    translate([-10,0,100]) rotate([-90,0,0]) extrusion(E2020, 70);
+    translate([-10,0,100]) rotate([-90,0,0]) extrusion(E2020, 70, center=false);
     
     //Demo rod
     aoffs = 1 + ($bb_diameter/2);  //Axis offset
