@@ -1,0 +1,13 @@
+DIYLB_Carriage_assemblies:
+Vitamins:
+  8 Nut M3 x 2.4mm 
+ 16 Screw M2 cap x 10mm
+  8 Screw M3 pan x 12mm
+ 12 Screw M4 pan x 15mm
+  4 T8-Nut (narrow)
+ 12 T-Nut (20x20)
+ 16 Washer  M2 x 5mm x 0.3mm
+ 12 Washer  M4 x 9mm x 0.8mm
+
+Printed:
+  4 DIYLB_Carriage.stl

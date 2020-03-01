@@ -1,0 +1,11 @@
+DIYLB_UBearing_assemblies:
+Vitamins:
+  4 Ball bearing 608-2RS 8mm x 22mm x 7mm
+  4 Screw M3 grub x  4mm
+  8 Screw M4 pan x 15mm
+  4 Locl ring (8mm)
+  8 T-Nut (20x20)
+  8 Washer  M4 x 9mm x 0.8mm
+
+Printed:
+  4 DIYLB_UBearing.stl

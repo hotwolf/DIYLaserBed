@@ -1,0 +1,7 @@
+{
+    "DIYLB_Rail.stl": 1.46, 
+    "DIYLB_LBearing.stl": 2.077, 
+    "DIYLB_CBearing.stl": 2.128, 
+    "DIYLB_UBearing.stl": 2.002, 
+    "DIYLB_Carriage.stl": 6.882
+}

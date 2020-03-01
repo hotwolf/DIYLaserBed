@@ -1,0 +1,18 @@
+DIYLB_Crank_assembly:
+Vitamins:
+  2 Ball bearing 608-2RS 8mm x 22mm x 7mm
+  1 Crank for 8mm shaft
+  1 Extrusion E2040 x 60mm
+  1 Extrusion E2040 x 70mm
+  2 L-Bracket (20x20)
+  1 Pulley GT2OB 20 teeth
+  1 Smooth rod 8mm x 50mm
+  2 Screw M3 grub x  4mm
+  6 Screw M3 grub x  6mm
+  4 Screw M4 pan x  8mm
+  1 Locl ring (8mm)
+  4 T-Nut (20x20)
+  4 Washer  M4 x 9mm x 0.8mm
+
+Printed:
+  2 DIYLB_CBearing.stl

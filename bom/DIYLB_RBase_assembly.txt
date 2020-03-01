@@ -1,0 +1,8 @@
+DIYLB_RBase_assembly:
+Vitamins:
+  1 Extrusion E2020 x 300mm
+  6 L-Bracket (20x20)
+ 12 Screw M3 grub x  6mm
+
+Assemblies:
+  2 DIYLB_LBearing_assemblies

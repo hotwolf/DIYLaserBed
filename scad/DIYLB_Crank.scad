@@ -76,6 +76,11 @@ module DIYLB_CBearing_stl() {
     }
 }
 
+//! 1. Connect the two 20x40 extrusions with L-brackets.
+//! 2. Assemble the axis as illustrated.
+//! 3. Slide the printed holders over the vertical 20x40 extrusion
+//!    (and loosely insert the timing belt).
+//! 4. Move the two printed holders as far apart as possible and tighten the screws.
 module DIYLB_Crank_assembly () {
     pose([80, 0, 65], [-30,0,100])
     assembly("DIYLB_Crank") {

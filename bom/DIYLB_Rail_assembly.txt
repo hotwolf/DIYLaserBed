@@ -1,0 +1,9 @@
+DIYLB_Rail_assemblies:
+Vitamins:
+  4 Extrusion E2020 x 70mm
+ 20 Nut M2 x 1.6mm 
+  4 Linear rail MGN7 x 70mm
+ 20 Screw M2 cap x  6mm
+
+Printed:
+  4 DIYLB_Rail.stl

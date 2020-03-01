@@ -1,0 +1,5 @@
+DIYLB_CrankBase_assembly:
+
+Assemblies:
+  1 DIYLB_Base_assembly
+  1 DIYLB_Crank_assembly

@@ -60,6 +60,9 @@ module DIYLB_Rail_stl() {
     }    
 }
 
+//! 1. Insert the M2 nuts into the printed holder.
+//! 2. Attach the rail loosely.
+//! 3. Slide the printed holder into the 20x20 extrusion and tighten the screws.
 module DIYLB_Rail_assembly () {
     pose([70, 0, 25],[0, 0, 50])
     assembly("DIYLB_Rail") {

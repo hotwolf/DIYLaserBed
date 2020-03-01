@@ -1,0 +1,5 @@
+DIYLB_ColumnsBed_assembly:
+
+Assemblies:
+  1 DIYLB_Bed_assembly
+  1 DIYLB_ColumnsBase_assembly

@@ -1,0 +1,12 @@
+DIYLB_LBase_assembly:
+Vitamins:
+  1 Extrusion E2020 x 300mm
+  8 L-Bracket (20x20)
+  2 Pulley GT2 idler smooth 12mm
+ 16 Screw M3 grub x  6mm
+  2 Screw M4 pan x 20mm
+  2 T-Nut (20x20)
+  2 Washer  M4 x 9mm x 0.8mm
+
+Assemblies:
+  2 DIYLB_LBearing_assemblies
