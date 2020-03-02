@@ -1,6 +1,6 @@
 DIYLB_Base_assembly:
 
 Assemblies:
-  1 DIYLB_CBase_assembly
-  1 DIYLB_LBase_assembly
-  1 DIYLB_RBase_assembly
+  1 DIYLB_base_center_assembly
+  1 DIYLB_base_left_assembly
+  1 DIYLB_base_right_assembly

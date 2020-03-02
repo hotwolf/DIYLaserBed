@@ -1,0 +1,13 @@
+DIYLB_lower_bearing_assemblies:
+Vitamins:
+  4 Ball bearing 608-2RS 8mm x 22mm x 7mm
+  4 Euro-Cent coin
+  4 Pulley GT2OB 20 teeth
+  8 Screw M3 grub x  6mm
+  8 Screw M4 pan x 14mm
+  4 Threaded rod M8 x 100mm
+  8 T-Nut (20x20)
+  8 Washer  M4 x 9mm x 0.8mm
+
+Printed:
+  4 DIYLB_lower_bearing.stl

@@ -1,5 +1,0 @@
-DIYLB_ColumnsBase_assembly:
-
-Assemblies:
-  1 DIYLB_CrankBase_assembly
-  4 DIYLB_Rail_assemblies

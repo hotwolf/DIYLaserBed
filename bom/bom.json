@@ -1,26 +1,26 @@
 [
     {
         "count": 4, 
-        "name": "DIYLB_UBearing_assembly", 
+        "name": "DIYLB_upper_bearing_assembly", 
         "assemblies": {}, 
         "routed": {}, 
         "printed": {
-            "DIYLB_UBearing.stl": 4
+            "DIYLB_upper_bearing.stl": 4
         }, 
         "vitamins": {
             "ball_bearing(BB608): Ball bearing 608-2RS 8mm x 22mm x 7mm": 4, 
             "washer(M4_washer): Washer  M4 x 9mm x 0.8mm": 8, 
             "tnut(M4_pan_screw, 15): T-Nut (20x20)": 8, 
-            "t8lock(): Locl ring (8mm)": 4, 
+            "t8lock(): Lock ring (8mm)": 4, 
             "screw(M3_grub_screw, 4): Screw M3 grub x  4mm": 4, 
             "screw(M4_pan_screw, 15): Screw M4 pan x 15mm": 8
         }
     }, 
     {
         "count": 1, 
-        "name": "DIYLB_Top_assembly", 
+        "name": "DIYLB_top_assembly", 
         "assemblies": {
-            "DIYLB_UBearing_assembly": 4
+            "DIYLB_upper_bearing_assembly": 4
         }, 
         "routed": {}, 
         "printed": {}, 
@@ -29,29 +29,49 @@
         }
     }, 
     {
-        "count": 4, 
-        "name": "DIYLB_Carriage_assembly", 
+        "count": 2, 
+        "name": "DIYLB_carriage_left_assembly", 
         "assemblies": {}, 
         "routed": {}, 
         "printed": {
-            "DIYLB_Carriage.stl": 4
+            "DIYLB_carriage_left.stl": 2
         }, 
         "vitamins": {
-            "washer(M2_washer): Washer  M2 x 5mm x 0.3mm": 16, 
-            "nut(M3_nut): Nut M3 x 2.4mm ": 8, 
-            "washer(M4_washer): Washer  M4 x 9mm x 0.8mm": 12, 
-            "tnut(M4_pan_screw, 15): T-Nut (20x20)": 12, 
-            "screw(M2_cap_screw, 10): Screw M2 cap x 10mm": 16, 
-            "screw(M3_pan_screw, 12): Screw M3 pan x 12mm": 8, 
-            "t8nut(): T8-Nut (narrow)": 4, 
-            "screw(M4_pan_screw, 15): Screw M4 pan x 15mm": 12
+            "washer(M2_washer): Washer  M2 x 5mm x 0.3mm": 8, 
+            "nut(M3_nut): Nut M3 x 2.4mm ": 4, 
+            "washer(M4_washer): Washer  M4 x 9mm x 0.8mm": 6, 
+            "tnut(M4_pan_screw, 15): T-Nut (20x20)": 6, 
+            "screw(M2_cap_screw, 10): Screw M2 cap x 10mm": 8, 
+            "screw(M3_pan_screw, 12): Screw M3 pan x 12mm": 4, 
+            "t8nut(): T8-Nut (narrow)": 2, 
+            "screw(M4_pan_screw, 15): Screw M4 pan x 15mm": 6
+        }
+    }, 
+    {
+        "count": 2, 
+        "name": "DIYLB_carriage_right_assembly", 
+        "assemblies": {}, 
+        "routed": {}, 
+        "printed": {
+            "DIYLB_carriage_right.stl": 2
+        }, 
+        "vitamins": {
+            "washer(M2_washer): Washer  M2 x 5mm x 0.3mm": 8, 
+            "nut(M3_nut): Nut M3 x 2.4mm ": 4, 
+            "washer(M4_washer): Washer  M4 x 9mm x 0.8mm": 6, 
+            "tnut(M4_pan_screw, 15): T-Nut (20x20)": 6, 
+            "screw(M2_cap_screw, 10): Screw M2 cap x 10mm": 8, 
+            "screw(M3_pan_screw, 12): Screw M3 pan x 12mm": 4, 
+            "t8nut(): T8-Nut (narrow)": 2, 
+            "screw(M4_pan_screw, 15): Screw M4 pan x 15mm": 6
         }
     }, 
     {
         "count": 1, 
-        "name": "DIYLB_Bed_assembly", 
+        "name": "DIYLB_bed_assembly", 
         "assemblies": {
-            "DIYLB_Carriage_assembly": 4
+            "DIYLB_carriage_right_assembly": 2, 
+            "DIYLB_carriage_left_assembly": 2
         }, 
         "routed": {}, 
         "printed": {}, 
@@ -64,11 +84,11 @@
     }, 
     {
         "count": 4, 
-        "name": "DIYLB_Rail_assembly", 
+        "name": "DIYLB_rail_assembly", 
         "assemblies": {}, 
         "routed": {}, 
         "printed": {
-            "DIYLB_Rail.stl": 4
+            "DIYLB_rail.stl": 4
         }, 
         "vitamins": {
             "screw(M2_cap_screw, 6): Screw M2 cap x  6mm": 20, 
@@ -79,17 +99,16 @@
     }, 
     {
         "count": 1, 
-        "name": "DIYLB_Crank_assembly", 
+        "name": "DIYLB_crank_assembly", 
         "assemblies": {}, 
         "routed": {}, 
         "printed": {
-            "DIYLB_CBearing.stl": 2
+            "DIYLB_crank_bearing.stl": 2
         }, 
         "vitamins": {
             "crank(): Crank for 8mm shaft": 1, 
             "ball_bearing(BB608): Ball bearing 608-2RS 8mm x 22mm x 7mm": 2, 
             "washer(M4_washer): Washer  M4 x 9mm x 0.8mm": 4, 
-            "t8lock(): Locl ring (8mm)": 1, 
             "extrusion(E2040, 60): Extrusion E2040 x 60mm": 1, 
             "screw(M3_grub_screw, 4): Screw M3 grub x  4mm": 2, 
             "rod(8, 50): Smooth rod 8mm x 50mm": 1, 
@@ -98,16 +117,17 @@
             "extrusion(E2040, 70): Extrusion E2040 x 70mm": 1, 
             "screw(M4_pan_screw, 8): Screw M4 pan x  8mm": 4, 
             "pulley(GT2x20_pulley): Pulley GT2OB 20 teeth": 1, 
-            "screw(M3_grub_screw, 6): Screw M3 grub x  6mm": 6
+            "screw(M3_grub_screw, 6): Screw M3 grub x  6mm": 6, 
+            "t8lock(): Lock ring (8mm)": 1
         }
     }, 
     {
         "count": 4, 
-        "name": "DIYLB_LBearing_assembly", 
+        "name": "DIYLB_lower_bearing_assembly", 
         "assemblies": {}, 
         "routed": {}, 
         "printed": {
-            "DIYLB_LBearing.stl": 4
+            "DIYLB_lower_bearing.stl": 4
         }, 
         "vitamins": {
             "tnut(M4_pan_screw, 14): T-Nut (20x20)": 8, 
@@ -122,9 +142,9 @@
     }, 
     {
         "count": 1, 
-        "name": "DIYLB_RBase_assembly", 
+        "name": "DIYLB_base_right_assembly", 
         "assemblies": {
-            "DIYLB_LBearing_assembly": 2
+            "DIYLB_lower_bearing_assembly": 2
         }, 
         "routed": {}, 
         "printed": {}, 
@@ -136,7 +156,7 @@
     }, 
     {
         "count": 1, 
-        "name": "DIYLB_CBase_assembly", 
+        "name": "DIYLB_base_center_assembly", 
         "assemblies": {}, 
         "routed": {}, 
         "printed": {}, 
@@ -149,9 +169,9 @@
     }, 
     {
         "count": 1, 
-        "name": "DIYLB_LBase_assembly", 
+        "name": "DIYLB_base_left_assembly", 
         "assemblies": {
-            "DIYLB_LBearing_assembly": 2
+            "DIYLB_lower_bearing_assembly": 2
         }, 
         "routed": {}, 
         "printed": {}, 
@@ -169,9 +189,9 @@
         "count": 1, 
         "name": "DIYLB_Base_assembly", 
         "assemblies": {
-            "DIYLB_CBase_assembly": 1, 
-            "DIYLB_LBase_assembly": 1, 
-            "DIYLB_RBase_assembly": 1
+            "DIYLB_base_center_assembly": 1, 
+            "DIYLB_base_right_assembly": 1, 
+            "DIYLB_base_left_assembly": 1
         }, 
         "routed": {}, 
         "printed": {}, 
@@ -179,10 +199,10 @@
     }, 
     {
         "count": 1, 
-        "name": "DIYLB_CrankBase_assembly", 
+        "name": "DIYLB_crank_to_base_assembly", 
         "assemblies": {
             "DIYLB_Base_assembly": 1, 
-            "DIYLB_Crank_assembly": 1
+            "DIYLB_crank_assembly": 1
         }, 
         "routed": {}, 
         "printed": {}, 
@@ -190,10 +210,10 @@
     }, 
     {
         "count": 1, 
-        "name": "DIYLB_ColumnsBase_assembly", 
+        "name": "DIYLB_columns_to_base_assembly", 
         "assemblies": {
-            "DIYLB_Rail_assembly": 4, 
-            "DIYLB_CrankBase_assembly": 1
+            "DIYLB_crank_to_base_assembly": 1, 
+            "DIYLB_rail_assembly": 4
         }, 
         "routed": {}, 
         "printed": {}, 
@@ -201,10 +221,10 @@
     }, 
     {
         "count": 1, 
-        "name": "DIYLB_ColumnsBed_assembly", 
+        "name": "DIYLB_bed_to_columns_assembly", 
         "assemblies": {
-            "DIYLB_Bed_assembly": 1, 
-            "DIYLB_ColumnsBase_assembly": 1
+            "DIYLB_columns_to_base_assembly": 1, 
+            "DIYLB_bed_assembly": 1
         }, 
         "routed": {}, 
         "printed": {}, 
@@ -212,10 +232,10 @@
     }, 
     {
         "count": 1, 
-        "name": "DIYLB_ColumnsTop_assembly", 
+        "name": "DIYLB_top_to_columns_assembly", 
         "assemblies": {
-            "DIYLB_ColumnsBed_assembly": 1, 
-            "DIYLB_Top_assembly": 1
+            "DIYLB_top_assembly": 1, 
+            "DIYLB_bed_to_columns_assembly": 1
         }, 
         "routed": {}, 
         "printed": {}, 
@@ -223,9 +243,9 @@
     }, 
     {
         "count": 1, 
-        "name": "DIYLB_Belt_assembly", 
+        "name": "DIYLB_belt_assembly", 
         "assemblies": {
-            "DIYLB_ColumnsTop_assembly": 1
+            "DIYLB_top_to_columns_assembly": 1
         }, 
         "routed": {}, 
         "printed": {}, 
@@ -237,7 +257,7 @@
         "count": 1, 
         "name": "main_assembly", 
         "assemblies": {
-            "DIYLB_Belt_assembly": 1
+            "DIYLB_belt_assembly": 1
         }, 
         "routed": {}, 
         "printed": {}, 
