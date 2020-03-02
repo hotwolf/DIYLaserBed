@@ -49,15 +49,15 @@ use     <DIYLB_Top.scad>
 //==============
 //! 1. Attach the crank holder to the base of the frame  
 //! 2. Tighten the screws of the L-brackets
-module DIYLB_CrankBase_assembly() {
+module DIYLB_crank_to_base_assembly() {
     pose([60, 0, 5], [0,240,0])
-    assembly("DIYLB_CrankBase") {
+    assembly("DIYLB_crank_to_base") {
     
     //Base
-    DIYLB_Base_assembly();    
+    DIYLB_base_assembly();    
 
     //Base
-    translate([0,130,0]) explode([-25,0,0]) DIYLB_Crank_assembly();    
+    translate([0,130,0]) explode([-25,0,0]) DIYLB_crank_assembly();    
 
     }
 }
@@ -66,18 +66,18 @@ module DIYLB_CrankBase_assembly() {
 //===============
 //! 1. Attach the for columns to the base of the frame  
 //! 2. Tighten the screws of the L-brackets
-module DIYLB_ColumnsBase_assembly() {
+module DIYLB_columns_to_base_assembly() {
     pose([70, 0, 0], [150,150,0])
-    assembly("DIYLB_ColumnsBase") {
+    assembly("DIYLB_columns_to_base") {
     
     //Base
-    DIYLB_CrankBase_assembly();    
+    DIYLB_crank_to_base_assembly();    
 
     //Columns
-    translate([20,32,0])   mirror([0,0,0])                  explode(20) DIYLB_Rail_assembly();
-    translate([340,32,0])  mirror([1,0,0])                  explode(20) DIYLB_Rail_assembly();
-    translate([340,268,0]) mirror([1,0,0])  mirror([0,1,0]) explode(20) DIYLB_Rail_assembly();
-    translate([20,268,0])  mirror([0,1,0])                  explode(20) DIYLB_Rail_assembly();
+    translate([20,32,0])   mirror([0,0,0])                  explode(20) DIYLB_rail_assembly();
+    translate([340,32,0])  mirror([1,0,0])                  explode(20) DIYLB_rail_assembly();
+    translate([340,268,0]) mirror([1,0,0])  mirror([0,1,0]) explode(20) DIYLB_rail_assembly();
+    translate([20,268,0])  mirror([0,1,0])                  explode(20) DIYLB_rail_assembly();
 
     }
 }
@@ -85,30 +85,30 @@ module DIYLB_ColumnsBase_assembly() {
 //Bed to Columns
 //==============
 //! 1. Thread the assembled bed into the rails and rods of the Z-axis.
-module DIYLB_ColumnsBed_assembly() {
+module DIYLB_bed_to_columns_assembly() {
     pose([70, 0, 0], [150,150,0])
-    assembly("DIYLB_ColumnsBed") {
+    assembly("DIYLB_bed_to_columns") {
 
         //Base and columns
-        DIYLB_ColumnsBase_assembly();
+        DIYLB_columns_to_base_assembly();
         
         //Bed    
-        explode(100) DIYLB_Bed_assembly();
+        explode(100) DIYLB_bed_assembly();
     }
 }
 
 //Top to Columns
 //==============
 //! 1. Attach the top extrusions to the rest of the frame.
-module DIYLB_ColumnsTop_assembly() {
+module DIYLB_top_to_columns_assembly() {
     pose([10, 0, 0], [150,150,0])
-    assembly("DIYLB_ColumnsTop") {
+    assembly("DIYLB_top_to_columns") {
 
         //Base
-        DIYLB_ColumnsBed_assembly();
+        DIYLB_bed_to_columns_assembly();
     
         //Top
-        DIYLB_Top_assembly();
+        DIYLB_top_assembly();
     }
 }
 
@@ -116,23 +116,23 @@ module DIYLB_ColumnsTop_assembly() {
 //===========
 //! 1. Insert the timing belt
 //! 2. Level the bed by turning the thraded rods, before tightening the pulleys 
-module DIYLB_Belt_assembly() {
+module DIYLB_belt_assembly() {
     pose([99,0,75], [200, 100, 28])
 
-    assembly("DIYLB_Belt") {
+    assembly("DIYLB_belt") {
 
         //Base
-        DIYLB_ColumnsTop_assembly();
+        DIYLB_top_to_columns_assembly();
         //DIYLB_Base_assembly();
     
         //Timing belt
         p0=[-58,150];   //Crank
-        p1=[10,140.36];  //Front idler
+        p1=[10,140.36]; //Front idler
         p2=[32,72];     //Front left pulley
         p3=[328,72];    //Front right pulley
         p4=[328,228];   //Rear right pulley
         p5=[32,228];    //Rear left pulley
-        p6=[10,159.64];  //Rear idler
+        p6=[10,159.64]; //Rear idler
     
         belt_path = [[p6.x, p6.y, -pulley_pr(GT2x20_plain_idler)],
                     [p5.x, p5.y,  pulley_pr(GT2x20ob_pulley)],
@@ -155,11 +155,11 @@ module main_assembly() {
     pose([30, 0, 0], [150,150,0])
     assembly("main") {
 
-        DIYLB_Belt_assembly();
+        DIYLB_belt_assembly();
     }
 }
 
 if($preview) {
     
-    main_assembly();
+   main_assembly();
 }

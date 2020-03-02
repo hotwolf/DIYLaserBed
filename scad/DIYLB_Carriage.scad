@@ -38,9 +38,7 @@ use <./vitamins/T8Nut.scad>
 //$vpr = [95, 0, 160];
 //$vpt = [0,0,50];
 
-module DIYLB_Carriage_stl() {
-    stl("DIYLB_Carriage");
-    
+module DIYLB_carriage_shape() {    
     aoffs = 1 + ($bb_diameter/2);  //Axis offset
 
     //Z-nut
@@ -118,75 +116,115 @@ module DIYLB_Carriage_stl() {
     }
 }
 
+module DIYLB_carriage_right_stl() {
+    stl("DIYLB_carriage_right");
+
+    DIYLB_carriage_shape();
+}
+
+module DIYLB_carriage_left_stl() {
+    stl("DIYLB_carriage_left");
+
+    mirror([0,1,0]) DIYLB_carriage_shape();
+}
+
+module DIYLB_carriage_vitamins() {
+    aoffs = 1 + ($bb_diameter/2);  //Axis offset
+ 
+    //Carriage
+    translate([0,10,10]) rotate([0,90,0]) {
+        explode(-10) carriage(MGN7_carriage, MGN7);
+
+        carriage_hole_positions(MGN7_carriage)                 
+            translate([0,0,7]) explode(20) screw_and_washer(M2_cap_screw, 10);
+    }
+     
+    //T-Nuts
+    translate([aoffs+6,55,10])
+    rotate([90,0,-90])
+    tnut(9);
+
+    translate([aoffs+6,25,10])
+    rotate([90,180,-90])
+    tnut(9);
+
+    translate([aoffs+6,-5,10])
+    rotate([90,180,-90])
+    tnut(9);
+
+    //T8-Nut
+    translate([aoffs,40,-0.5])    
+    rotate([0,0,0])
+    t8nut();
+
+    translate([aoffs,48,2])
+    rotate([180,0,0])
+    screw(M3_pan_screw, 12);
+
+    translate([aoffs,48,11])
+    rotate([0,0,0])
+    explode(20) nut(M3_nut);
+
+    translate([aoffs,32,2])
+    rotate([180,0,0])
+    screw(M3_pan_screw, 12);
+
+    translate([aoffs,32,11])
+    rotate([0,0,0])
+    explode(20) nut(M3_nut);
+}
+
 //! 1. Attatch T8-nut to the carriage holder, using M3 screws,
 //! 2. Attatch the rail carriage to the carriage holder using M2 screws.
 //! 3. Put three T-nuts into the mounting holes.
-module DIYLB_Carriage_assembly() {
+module DIYLB_carriage_right_assembly() {
     pose([95, 0, 160],[0, 0, 50])
-    assembly("DIYLB_Carriage") {
+    assembly("DIYLB_carriage_right") {
 
         aoffs = 1 + ($bb_diameter/2);  //Axis offset
-     
+ 
         translate([0,0,$elevation]) {
-        
-            DIYLB_Carriage_stl();
-     
-            //Carriage
-            translate([0,10,10]) rotate([0,90,0]) {
-                explode(-10) carriage(MGN7_carriage, MGN7);
     
-                carriage_hole_positions(MGN7_carriage)                 
-                    translate([0,0,7]) explode(20) screw_and_washer(M2_cap_screw, 10);
-            }
-             
-            //T-Nuts
-            translate([aoffs+6,55,10])
-            rotate([90,0,-90])
-            tnut(9);
-        
-            translate([aoffs+6,25,10])
-            rotate([90,180,-90])
-            tnut(9);
-        
-            translate([aoffs+6,-5,10])
-            rotate([90,180,-90])
-            tnut(9);
-    
-            //T8-Nut
-            translate([aoffs,40,-0.5])    
-            rotate([0,0,0])
-            t8nut();
-    
-            translate([aoffs,48,2])
-            rotate([180,0,0])
-            screw(M3_pan_screw, 12);
-        
-            translate([aoffs,48,11])
-            rotate([0,0,0])
-            explode(20) nut(M3_nut);
-        
-            translate([aoffs,32,2])
-            rotate([180,0,0])
-            screw(M3_pan_screw, 12);
-        
-            translate([aoffs,32,11])
-            rotate([0,0,0])
-            explode(20) nut(M3_nut);
+            DIYLB_carriage_right_stl();
+
+            DIYLB_carriage_vitamins();
         }
     }
 }
+        
+//! 1. Attatch T8-nut to the carriage holder, using M3 screws,
+//! 2. Attatch the rail carriage to the carriage holder using M2 screws.
+//! 3. Put three T-nuts into the mounting holes.
+module DIYLB_carriage_left_assembly() {
+    pose([95, 0, 160],[0, 0, 50])
+    assembly("DIYLB_carriage_left") {
 
+        aoffs = 1 + ($bb_diameter/2);  //Axis offset
+ 
+        translate([0,0,$elevation]) {
+    
+            DIYLB_carriage_left_stl();
+
+            mirror([0,1,0]) DIYLB_carriage_vitamins();
+        }
+    }
+}
+ 
 if ($preview) {
 
     //Axis offset
     aoffs = 1 + ($bb_diameter/2);  //Axis offset
     
-    //Demo Carriage
-    DIYLB_Carriage_assembly();
+    //Demo Carriage (right side)
+    DIYLB_carriage_right_assembly();
+    
+    //Demo Carriage (left side)
+    translate([0,200,0]) DIYLB_carriage_left_assembly();
     
     //Demo extrusions
-    translate([16+aoffs,70,$elevation+10]) rotate([90,0,0]) extrusion(E2020, 90, center=false);
+    translate([16+aoffs,220,$elevation+10]) rotate([90,0,0]) extrusion(E2020, 240, center=false);
     
     //Demo rail
-    translate([0,10,40]) rotate([0,90,0]) rail(MGN7, 60);
+    translate([0,10,40])   rotate([0,90,0]) rail(MGN7, 60);
+    translate([0,190,40]) rotate([0,90,0]) rail(MGN7, 60);
 }

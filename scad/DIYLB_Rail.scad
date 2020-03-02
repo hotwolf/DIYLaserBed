@@ -36,8 +36,8 @@ include <DIYLB_Config.scad>
 //$vpr = [70, 0, 25];
 //$vpt = [0,0,50];
 
-module DIYLB_Rail_stl() {
-    stl("DIYLB_Rail");   
+module DIYLB_rail_stl() {
+    stl("DIYLB_rail");   
 
     aoffs = 1 + ($bb_diameter/2);  //Axis offset
         
@@ -63,9 +63,9 @@ module DIYLB_Rail_stl() {
 //! 1. Insert the M2 nuts into the printed holder.
 //! 2. Attach the rail loosely.
 //! 3. Slide the printed holder into the 20x20 extrusion and tighten the screws.
-module DIYLB_Rail_assembly () {
+module DIYLB_rail_assembly () {
     pose([70, 0, 25],[0, 0, 50])
-    assembly("DIYLB_Rail") {
+    assembly("DIYLB_rail") {
 
         //Column
         translate([-10,10,20]) rotate([0,0,0]) extrusion(E2020, 70, center=false);
@@ -78,14 +78,14 @@ module DIYLB_Rail_assembly () {
         }
 
         //Nut holder
-        explode([20,0,0]) DIYLB_Rail_stl();
+        explode([20,0,0]) DIYLB_rail_stl();
     }
 }
 
 if ($preview) {
 
     //Demo assembly
-    DIYLB_Rail_assembly();
+    DIYLB_rail_assembly();
 
     //Demo extrusions
     translate([-10,-30,10])  rotate([-90,0,0]) extrusion(E2020, 80, center=false);

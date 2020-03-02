@@ -38,7 +38,7 @@ include <../DIYLB_Config.scad>
 $t8lock_width = 6;
 
 module t8lock ()  {//! Draw a lock ring for an 8mm rod
-    description = str("Locl ring (8mm)");
+    description = str("Lock ring (8mm)");
     vitamin(str("t8lock(): ", description));
 
     

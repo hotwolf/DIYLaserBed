@@ -38,8 +38,8 @@ use     <./vitamins/T8Lock.scad>
 //$vpr = [95, 0, 160];
 //$vpt = [0,0,50];
 
-module DIYLB_UBearing_stl() {
-    stl("DIYLB_UBearing");
+module DIYLB_upper_bearing_stl() {
+    stl("DIYLB_upper_bearing");
 
     aoffs = 1 + ($bb_diameter/2);  //Axis offset
         
@@ -72,9 +72,9 @@ module DIYLB_UBearing_stl() {
 //! 1. Squeze the ball bearing into the holder.
 //! 2. Attach two T-nuts with screws and washers.
 //! 3. Put lock ring onto the threaded rod.  
-module DIYLB_UBearing_assembly () {
+module DIYLB_upper_bearing_assembly () {
     pose([95,0,160], [0,0,50])
-    assembly("DIYLB_UBearing") {
+    assembly("DIYLB_upper_bearing") {
     
         aoffs = 1 + ($bb_diameter/2);  //Axis offset
         
@@ -89,14 +89,14 @@ module DIYLB_UBearing_assembly () {
         translate([0,22,100]) rotate([90,0,90])   tnut(($bb_diameter/2)-2);
     
         //Bracket
-        DIYLB_UBearing_stl();
+        DIYLB_upper_bearing_stl();
     }
  }
 
 if ($preview) {
 
     //Demo assembly
-    DIYLB_UBearing_assembly();
+    DIYLB_upper_bearing_assembly();
     
     //Demo extrusions
     translate([-10,0,100]) rotate([-90,0,0]) extrusion(E2020, 70, center=false);

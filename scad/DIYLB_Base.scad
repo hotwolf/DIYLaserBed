@@ -42,9 +42,9 @@ use <./vitamins/T-Nut.scad>
 //! 1. Slide two T-nuts into the bottom slot of the 20x20 extrusions.
 //! 2. Attach the 20x20 extrusions to the case of the laser cutter, using the 
 //    screw holes of the original bed.
-module DIYLB_CBase_assembly() {
+module DIYLB_base_center_assembly() {
     pose([45, 0, 0],[150, 150, 0])
-    assembly("DIYLB_CBase") {
+    assembly("DIYLB_base_center") {
         
         //Extrusions
         translate([20,27,10])  rotate([0,90,0])  extrusion(E2020, 320, center=false);
@@ -64,9 +64,9 @@ module DIYLB_CBase_assembly() {
 //!    of the 20x20 extrusion.
 //! 4. Slide two L-brackets onto the right-hand slot of the 20x20 extrusion.
 //! 5. Slide two L-brackets onto the left-hand slot of the 20x20 extrusion.
-module DIYLB_LBase_assembly() {
+module DIYLB_base_left_assembly() {
     pose([55, 0, 0],[100, 200, 0])
-    assembly("DIYLB_LBase") {
+    assembly("DIYLB_base_left") {
 
         //Extrusions
         translate([10,0,10]) rotate([-90,0,0]) extrusion(E2020, 300, center=false);
@@ -78,17 +78,17 @@ module DIYLB_LBase_assembly() {
         translate([10,159.64,20]) explode(2) pulley($i_type);
     
         //Ball bearings
-        translate([20,32,0])   mirror([0,0,0]) explode([20,0,0]) DIYLB_LBearing_assembly();
-        translate([20,268,0])  mirror([0,1,0]) explode([20,0,0]) DIYLB_LBearing_assembly();
+        translate([20,32,0])   mirror([0,0,0]) explode([20,0,0]) DIYLB_lower_bearing_assembly();
+        translate([20,268,0])  mirror([0,1,0]) explode([20,0,0]) DIYLB_lower_bearing_assembly();
           
         //Horizontal L-Brackets
         translate([0,130,10])    rotate([90,180,0])  explode([10,0,0]) lbracket();
-        translate([0,170,10])   rotate([270,180,0]) explode([10,0,0]) lbracket();
+        translate([0,170,10])   rotate([270,180,0])  explode([10,0,0]) lbracket();
 
-        translate([20,17,10])  rotate([90,0,0])  explode([10,0,0]) lbracket();   
+        translate([20,17,10])  rotate([90,0,0])    explode([10,0,0]) lbracket();   
         //translate([20,260,10]) rotate([90,0,0])  explode([10,0,0]) lbracket();   
         //translate([20,37,10])  rotate([-90,0,0]) explode([10,0,0]) lbracket();   
-        translate([20,280,10]) rotate([-90,0,0]) explode([10,0,0]) lbracket();   
+        translate([20,280,10]) rotate([-90,0,0])   explode([10,0,0]) lbracket();   
     
         //Vertical L-Brackets
         translate([10,32,20])  rotate([0,270,90])  explode([10,0,0]) lbracket();
@@ -102,16 +102,16 @@ module DIYLB_LBase_assembly() {
 //! 2. Slide the two holders for the lower ball bearings onto the lef-thand slot
 //!    of the 20x20 extrusion.
 //! 3. Slide two L-brackets onto the left-hand slot of the 20x20 extrusion.
-module DIYLB_RBase_assembly() {
+module DIYLB_base_right_assembly() {
     pose([45, 0, -40],[250, 150, 0])
-    assembly("DIYLB_RBase") {
+    assembly("DIYLB_base_right") {
 
         //Extrusions
         translate([350,0,10])  rotate([-90,0,0]) extrusion(E2020, 300, center=false);
        
         //Ball bearings
-        translate([340,32,0])  mirror([1,0,0])                 explode([20,0,0]) DIYLB_LBearing_assembly();
-        translate([340,268,0]) mirror([1,0,0]) mirror([0,1,0]) explode([20,0,0]) DIYLB_LBearing_assembly();
+        translate([340,32,0])  mirror([1,0,0])                 explode([20,0,0]) DIYLB_lower_bearing_assembly();
+        translate([340,268,0]) mirror([1,0,0]) mirror([0,1,0]) explode([20,0,0]) DIYLB_lower_bearing_assembly();
          
         //Horizontal L-Brackets
         translate([340,17,10])  rotate([90,180,0])  explode([10,0,0]) lbracket();   
@@ -129,26 +129,26 @@ module DIYLB_RBase_assembly() {
 
 //! 1. Attach the three parts of the base frame
 //! 2. Tighten the screws of the L-brackets, connecting 20x20 extrusions
-module DIYLB_Base_assembly() {
+module DIYLB_base_assembly() {
     pose([60, 0, 0],[240, 150, 0])
     assembly("DIYLB_Base") {
 
         //Left stud
         explode([-25,0,0])
-        DIYLB_LBase_assembly();
+        DIYLB_base_left_assembly();
         
         //Center
-        DIYLB_CBase_assembly();
+        DIYLB_base_center_assembly();
         
         //Right stud
         explode([25,0,0])
-        DIYLB_RBase_assembly();
+        DIYLB_base_right_assembly();
     }   
 }
 
 if ($preview) {
 
     //Base assembly
-    DIYLB_Base_assembly();
+    DIYLB_base_assembly();
 
 }

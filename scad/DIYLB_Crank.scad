@@ -40,8 +40,8 @@ use <./vitamins/Crank.scad>
 //$vpr = [80, 0, 65];
 //$vpt = [-30,0,100];
 
-module DIYLB_CBearing_stl() {
-    stl("DIYLB_CBearing");
+module DIYLB_crank_bearing_stl() {
+    stl("DIYLB_crank_bearing");
 
     aoffs = 1 + ($bb_diameter/2);  //Axis offset
         
@@ -81,9 +81,9 @@ module DIYLB_CBearing_stl() {
 //! 3. Slide the printed holders over the vertical 20x40 extrusion
 //!    (and loosely insert the timing belt).
 //! 4. Move the two printed holders as far apart as possible and tighten the screws.
-module DIYLB_Crank_assembly () {
+module DIYLB_crank_assembly () {
     pose([80, 0, 65], [-30,0,100])
-    assembly("DIYLB_Crank") {
+    assembly("DIYLB_crank") {
    
         //Extrusions
         translate([0,20,10]) rotate([0,270,0]) extrusion(E2040, 70, center=false);
@@ -120,15 +120,15 @@ module DIYLB_Crank_assembly () {
         translate([-80,0,54])  rotate([90,90,0])   explode([-125,0,20]) tnut(2);
     
         //Ball bearing brackets
-        translate([0,20,39]) rotate([180,0,0]) explode(-70) DIYLB_CBearing_stl();
-        translate([0,20,54]) rotate([0,0,0])   explode(125) DIYLB_CBearing_stl();
+        translate([0,20,39]) rotate([180,0,0]) explode(-70) DIYLB_crank_bearing_stl();
+        translate([0,20,54]) rotate([0,0,0])   explode(125) DIYLB_crank_bearing_stl();
     }
 }
 
 if ($preview) {
 
     //Demo assembly
-    DIYLB_Crank_assembly();
+    DIYLB_crank_assembly();
 
     //Demo extrusions
     translate([10,-20,10]) rotate([-90,0,0]) extrusion(E2020, 80, center=false);

@@ -37,8 +37,8 @@ use <./vitamins/Cent.scad>
 
 //$explode=1;
 
-module DIYLB_LBearing_stl() {  
-    stl("DIYLB_LBearing");
+module DIYLB_lower_bearing_stl() {  
+    stl("DIYLB_lower_bearing");
     
     aoffs = 1 + ($bb_diameter/2);  //Axis offset
         
@@ -72,9 +72,9 @@ module DIYLB_LBearing_stl() {
 //! 2. Squeze the ball bearing into the holder.
 //! 3. Attach two T-nuts with screws and washers.
 //! 4. Put the pulley loosely onto the threaded rod and insert them into the ball bearingpulles.  
-module DIYLB_LBearing_assembly() 
+module DIYLB_lower_bearing_assembly() 
     pose([65,0,65], [0,40,30])
-    assembly("DIYLB_LBearing") {
+    assembly("DIYLB_lower_bearing") {
     
     aoffs = 1 + ($bb_diameter/2);  //Axis offset
     
@@ -95,13 +95,13 @@ module DIYLB_LBearing_assembly()
     translate([0,22,10]) rotate([90,0,90])   tnut(($bb_diameter/2)-3);
 
     //Bracket
-    DIYLB_LBearing_stl();    
+    DIYLB_lower_bearing_stl();    
  }
 
 if ($preview) {
 
     //Demo assembly
-    DIYLB_LBearing_assembly();
+    DIYLB_lower_bearing_assembly();
 
     //Demo extrusions
     translate([-10,0,10]) rotate([-90,0,0]) extrusion(E2020, 70, center=false);

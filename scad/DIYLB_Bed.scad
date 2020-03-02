@@ -42,9 +42,9 @@ use     <./vitamins/T-Nut.scad>
 
 //! 1. Attach carriage holders to the outer 20x20 extrusions.
 //! 2. Assemble remainding extrusions with L-profiles. 
-module DIYLB_Bed_assembly() {
+module DIYLB_bed_assembly() {
     pose([15,0,0],[200,180,0])
-    assembly("DIYLB_Bed") {
+    assembly("DIYLB_bed") {
 
         translate([0,0,$elevation]) {
     
@@ -75,15 +75,15 @@ module DIYLB_Bed_assembly() {
             translate([302,20,10]) rotate([270,0,90]) explode([-30,0,0])   lbracket();        
          }
          
-         translate([20,32,0])   mirror([0,0,0])                 explode([-20,0,0]) DIYLB_Carriage_assembly();
-         translate([340,32,0])  mirror([1,0,0])                 explode([-20,0,0]) DIYLB_Carriage_assembly();
-         translate([340,268,0]) mirror([1,0,0]) mirror([0,1,0]) explode([-20,0,0]) DIYLB_Carriage_assembly();
-         translate([20,268,0])  mirror([0,1,0])                 explode([-20,0,0]) DIYLB_Carriage_assembly();
+         translate([20,32,0])   rotate([0,0,0])   explode([-20,0,0]) DIYLB_carriage_right_assembly();
+         translate([340,32,0])  rotate([0,0,180]) explode([-20,0,0]) DIYLB_carriage_left_assembly();
+         translate([340,268,0]) rotate([0,0,180]) explode([-20,0,0]) DIYLB_carriage_right_assembly();
+         translate([20,268,0])  rotate([0,0,0])   explode([-20,0,0]) DIYLB_carriage_left_assembly();
      }     
 }
 
 if ($preview) {
 
     //Table assembly
-    DIYLB_Bed_assembly();
+    DIYLB_bed_assembly();
 }
