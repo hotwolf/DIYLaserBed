@@ -1,7 +1,7 @@
 <a name="TOP"></a>
 # DIYLaserBed
 This is a DIY laser bed for K40 cutters and clones. 
-![inside](docs/DIYLB.gif)
+![inside](doc/DIYLB.gif?raw=true)
 
 ![Main Assembly](assemblies/DIYLB_belt_assembled.png)
 
