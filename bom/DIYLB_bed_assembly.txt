@@ -1,0 +1,10 @@
+DIYLB_bed_assembly:
+Vitamins:
+  4 Extrusion E2020 x 260mm
+  2 Extrusion E2020 x 320mm
+ 12 L-Bracket (20x20)
+ 24 Screw M3 grub x  6mm
+
+Assemblies:
+  2 DIYLB_carriage_left_assemblies
+  2 DIYLB_carriage_right_assemblies

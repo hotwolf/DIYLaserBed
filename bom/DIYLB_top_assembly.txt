@@ -1,0 +1,6 @@
+DIYLB_top_assembly:
+Vitamins:
+  2 Extrusion E2020 x 300mm
+
+Assemblies:
+  4 DIYLB_upper_bearing_assemblies

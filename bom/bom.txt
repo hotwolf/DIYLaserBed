@@ -1,81 +1,87 @@
 Vitamins:
-                D                                 
-                i  D  D                           
-                y  i  i  D                        
-             D  l  y  y  i        D           D   
-             i  b  l  l  y        i           i   
-             y     b  b  l        y           y   
-          D  l  c        b  D  D  l  D        l   
- D     D  i  b  o  c  c     i  i  b  i  D     b   
- i  D  i  y     l  o  o  c  y  y     y  i  D      
- y  i  y  l  c  u  l  l  r  l  l  l  l  y  i  u   
- l  y  l  b  a  m  u  u  a  b  b  b  b  l  y  b   
- b  l  b     r  n  m  m  n        e     b  l  e   
-    b     c  r  s  n  n  k  c  l  a  r     b  a   
- b     b  b  i  b  s  s  b  r  b  r  b  r     r  M
- a  b  e  a  a  a  b  t  a  a  a  i  a  a  t  i  a
- s  e  l  s  g  s  e  o  s  n  s  n  s  i  o  n  i
- e  d  t  e  e  e  d  p  e  k  e  g  e  l  p  g  n
-  |  |  |  |  |  |  |  |  | 2|  | 4|  |  |  | 4|  | 10 Ball bearing 608-2RS 8mm x 22mm x 7mm
-  |  | 1|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  1 Belt GT2 x 6mm x 1140mm
-  |  |  |  |  |  |  |  |  |  |  | 4|  |  |  |  |  |  4 Euro-Cent coin
-  |  |  |  |  |  |  |  |  | 1|  |  |  |  |  |  |  |  1 Crank for 8mm shaft
-  | 4|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  4 Extrusion E2020 x 260mm
-  |  |  |  |  |  |  |  |  |  | 1|  | 1|  | 2|  |  |  4 Extrusion E2020 x 300mm
-  | 2|  | 2|  |  |  |  |  |  |  |  |  |  |  |  |  |  4 Extrusion E2020 x 320mm
-  |  |  |  |  |  |  |  |  |  |  |  |  | 4|  |  |  |  4 Extrusion E2020 x 70mm
-  |  |  |  |  |  |  |  |  | 1|  |  |  |  |  |  |  |  1 Extrusion E2040 x 60mm
-  |  |  |  |  |  |  |  |  | 1|  |  |  |  |  |  |  |  1 Extrusion E2040 x 70mm
-  |12|  |  |  |  |  |  |  | 2| 8|  | 6|  |  |  |  | 28 L-Bracket (20x20)
-  |  |  |  |  |  |  |  |  |  |  |  |  |20|  |  |  | 20 Nut M2 x 1.6mm 
-  |  |  |  | 8|  |  |  |  |  |  |  |  |  |  |  |  |  8 Nut M3 x 2.4mm 
-  |  |  |  |  |  |  |  |  |  | 2|  |  |  |  |  |  |  2 Pulley GT2 idler smooth 12mm
-  |  |  |  |  |  |  |  |  | 1|  | 4|  |  |  |  |  |  5 Pulley GT2OB 20 teeth
-  |  |  |  |  |  |  |  |  |  |  |  |  | 4|  |  |  |  4 Linear rail MGN7 x 70mm
-  |  |  |  |  |  |  |  |  | 1|  |  |  |  |  |  |  |  1 Smooth rod 8mm x 50mm
-  |  |  |  |16|  |  |  |  |  |  |  |  |  |  |  |  | 16 Screw M2 cap x 10mm
-  |  |  |  |  |  |  |  |  |  |  |  |  |20|  |  |  | 20 Screw M2 cap x  6mm
-  |  |  |  |  |  |  |  |  | 2|  |  |  |  |  | 4|  |  6 Screw M3 grub x  4mm
-  |24|  |  |  |  |  |  |  | 6|16| 8|12|  |  |  |  | 66 Screw M3 grub x  6mm
-  |  |  |  | 8|  |  |  |  |  |  |  |  |  |  |  |  |  8 Screw M3 pan x 12mm
-  |  |  | 4|  |  |  |  |  |  |  |  |  |  |  |  |  |  4 Screw M4 pan x 11mm
-  |  |  |  |  |  |  |  |  |  |  | 8|  |  |  |  |  |  8 Screw M4 pan x 14mm
-  |  |  |  |12|  |  |  |  |  |  |  |  |  |  | 8|  | 20 Screw M4 pan x 15mm
-  |  |  |  |  |  |  |  |  |  | 2|  |  |  |  |  |  |  2 Screw M4 pan x 20mm
-  |  |  |  |  |  |  |  |  | 4|  |  |  |  |  |  |  |  4 Screw M4 pan x  8mm
-  |  |  |  |  |  |  |  |  |  |  | 4|  |  |  |  |  |  4 Threaded rod M8 x 100mm
-  |  |  |  |  |  |  |  |  | 1|  |  |  |  |  | 4|  |  5 Locl ring (8mm)
-  |  |  |  | 4|  |  |  |  |  |  |  |  |  |  |  |  |  4 T8-Nut (narrow)
-  |  |  | 4|  |  |  |  |  |  |  |  |  |  |  |  |  |  4 T-Nut (20x20)
-  |  |  |  |  |  |  |  |  |  |  | 8|  |  |  |  |  |  8 T-Nut (20x20)
-  |  |  |  |12|  |  |  |  |  |  |  |  |  |  | 8|  | 20 T-Nut (20x20)
-  |  |  |  |  |  |  |  |  |  | 2|  |  |  |  |  |  |  2 T-Nut (20x20)
-  |  |  |  |  |  |  |  |  | 4|  |  |  |  |  |  |  |  4 T-Nut (20x20)
-  |  |  |  |16|  |  |  |  |  |  |  |  |  |  |  |  | 16 Washer  M2 x 5mm x 0.3mm
-  |  |  | 4|12|  |  |  |  | 4| 2| 8|  |  |  | 8|  | 38 Washer  M4 x 9mm x 0.8mm
+                            D                        
+                D        D  i                 D      
+                i     D  i  y     D  D        i  D   
+                y     i  y  l     i  i        y  i   
+    D           l     y  l  b     y  y        l  y   
+    i     D     b     l  b        l  l        b  l   
+    y  D  i           b     c     b  b           b   
+    l  i  y     b        c  o                 t      
+    b  y  l     e     c  a  l     c  l        o  u   
+       l  b     d     a  r  u     r  o        p  p   
+    b  b              r  r  m  D  a  w           p   
+ D  a     b     t  D  r  i  n  i  n  e  D     t  e   
+ i  s  b  a  D  o  i  i  a  s  y  k  r  i  D  o  r   
+ y  e  a  s  i     y  a  g     l        y  i         
+ l     s  e  y  c  l  g  e  t  b  t  b  l  y  c  b   
+ b  c  e     l  o  b  e     o     o  e  b  l  o  e   
+    e     r  b  l        r     c     a     b  l  a   
+ b  n  l  i     u  b  l  i  b  r  b  r  r     u  r  M
+ a  t  e  g  b  m  e  e  g  a  a  a  i  a  t  m  i  a
+ s  e  f  h  e  n  l  f  h  s  n  s  n  i  o  n  n  i
+ e  r  t  t  d  s  t  t  t  e  k  e  g  l  p  s  g  n
+  |  |  |  |  |  |  |  |  |  | 2|  | 4|  |  |  | 4|  | 10 Ball bearing 608-2RS 8mm x 22mm x 7mm
+  |  |  |  |  |  | 1|  |  |  |  |  |  |  |  |  |  |  |  1 Belt GT2 x 6mm x 1140mm
+  |  |  |  |  |  |  |  |  |  |  |  | 4|  |  |  |  |  |  4 Euro-Cent coin
+  |  |  |  |  |  |  |  |  |  | 1|  |  |  |  |  |  |  |  1 Crank for 8mm shaft
+  |  |  |  | 4|  |  |  |  |  |  |  |  |  |  |  |  |  |  4 Extrusion E2020 x 260mm
+  |  | 1| 1|  |  |  |  |  |  |  |  |  |  | 2|  |  |  |  4 Extrusion E2020 x 300mm
+  | 2|  |  | 2|  |  |  |  |  |  |  |  |  |  |  |  |  |  4 Extrusion E2020 x 320mm
+  |  |  |  |  |  |  |  |  |  |  |  |  | 4|  |  |  |  |  4 Extrusion E2020 x 70mm
+  |  |  |  |  |  |  |  |  |  | 1|  |  |  |  |  |  |  |  1 Extrusion E2040 x 60mm
+  |  |  |  |  |  |  |  |  |  | 1|  |  |  |  |  |  |  |  1 Extrusion E2040 x 70mm
+  |  | 8| 6|12|  |  |  |  |  | 2|  |  |  |  |  |  |  | 28 L-Bracket (20x20)
+  |  |  |  |  |  |  |  |  |  |  |  |  |20|  |  |  |  | 20 Nut M2 x 1.6mm 
+  |  |  |  |  |  |  | 4| 4|  |  |  |  |  |  |  |  |  |  8 Nut M3 x 2.4mm 
+  |  | 2|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  2 Pulley GT2 idler smooth 12mm
+  |  |  |  |  |  |  |  |  |  | 1|  | 4|  |  |  |  |  |  5 Pulley GT2OB 20 teeth
+  |  |  |  |  |  |  |  |  |  |  |  |  | 4|  |  |  |  |  4 Linear rail MGN7 x 70mm
+  |  |  |  |  |  |  |  |  |  | 1|  |  |  |  |  |  |  |  1 Smooth rod 8mm x 50mm
+  |  |  |  |  |  |  | 8| 8|  |  |  |  |  |  |  |  |  | 16 Screw M2 cap x 10mm
+  |  |  |  |  |  |  |  |  |  |  |  |  |20|  |  |  |  | 20 Screw M2 cap x  6mm
+  |  |  |  |  |  |  |  |  |  | 2|  |  |  |  |  | 4|  |  6 Screw M3 grub x  4mm
+  |  |16|12|24|  |  |  |  |  | 6|  | 8|  |  |  |  |  | 66 Screw M3 grub x  6mm
+  |  |  |  |  |  |  | 4| 4|  |  |  |  |  |  |  |  |  |  8 Screw M3 pan x 12mm
+  | 4|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  4 Screw M4 pan x 11mm
+  |  |  |  |  |  |  |  |  |  |  |  | 8|  |  |  |  |  |  8 Screw M4 pan x 14mm
+  |  |  |  |  |  |  | 6| 6|  |  |  |  |  |  |  | 8|  | 20 Screw M4 pan x 15mm
+  |  | 2|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  2 Screw M4 pan x 20mm
+  |  |  |  |  |  |  |  |  |  | 4|  |  |  |  |  |  |  |  4 Screw M4 pan x  8mm
+  |  |  |  |  |  |  |  |  |  |  |  | 4|  |  |  |  |  |  4 Threaded rod M8 x 100mm
+  |  |  |  |  |  |  |  |  |  | 1|  |  |  |  |  | 4|  |  5 Lock ring (8mm)
+  |  |  |  |  |  |  | 2| 2|  |  |  |  |  |  |  |  |  |  4 T8-Nut (narrow)
+  | 4|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  4 T-Nut (20x20)
+  |  |  |  |  |  |  |  |  |  |  |  | 8|  |  |  |  |  |  8 T-Nut (20x20)
+  |  |  |  |  |  |  | 6| 6|  |  |  |  |  |  |  | 8|  | 20 T-Nut (20x20)
+  |  | 2|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  2 T-Nut (20x20)
+  |  |  |  |  |  |  |  |  |  | 4|  |  |  |  |  |  |  |  4 T-Nut (20x20)
+  |  |  |  |  |  |  | 8| 8|  |  |  |  |  |  |  |  |  | 16 Washer  M2 x 5mm x 0.3mm
+  | 4| 2|  |  |  |  | 6| 6|  | 4|  | 8|  |  |  | 8|  | 38 Washer  M4 x 9mm x 0.8mm
 
 Printed:
-  |  |  |  |  |  |  |  |  | 2|  |  |  |  |  |  |  |  2 DIYLB_CBearing.stl
-  |  |  |  | 4|  |  |  |  |  |  |  |  |  |  |  |  |  4 DIYLB_Carriage.stl
-  |  |  |  |  |  |  |  |  |  |  | 4|  |  |  |  |  |  4 DIYLB_LBearing.stl
-  |  |  |  |  |  |  |  |  |  |  |  |  | 4|  |  |  |  4 DIYLB_Rail.stl
-  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 4|  |  4 DIYLB_UBearing.stl
+  |  |  |  |  |  |  | 2|  |  |  |  |  |  |  |  |  |  |  2 DIYLB_carriage_left.stl
+  |  |  |  |  |  |  |  | 2|  |  |  |  |  |  |  |  |  |  2 DIYLB_carriage_right.stl
+  |  |  |  |  |  |  |  |  |  | 2|  |  |  |  |  |  |  |  2 DIYLB_crank_bearing.stl
+  |  |  |  |  |  |  |  |  |  |  |  | 4|  |  |  |  |  |  4 DIYLB_lower_bearing.stl
+  |  |  |  |  |  |  |  |  |  |  |  |  | 4|  |  |  |  |  4 DIYLB_rail.stl
+  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 4|  |  4 DIYLB_upper_bearing.stl
 
 Assemblies:
   1 DIYLB_Base_assembly
-  1 DIYLB_Bed_assembly
-  1 DIYLB_Belt_assembly
-  1 DIYLB_CBase_assembly
-  4 DIYLB_Carriage_assemblies
-  1 DIYLB_ColumnsBase_assembly
-  1 DIYLB_ColumnsBed_assembly
-  1 DIYLB_ColumnsTop_assembly
-  1 DIYLB_CrankBase_assembly
-  1 DIYLB_Crank_assembly
-  1 DIYLB_LBase_assembly
-  4 DIYLB_LBearing_assemblies
-  1 DIYLB_RBase_assembly
-  4 DIYLB_Rail_assemblies
-  1 DIYLB_Top_assembly
-  4 DIYLB_UBearing_assemblies
+  1 DIYLB_base_center_assembly
+  1 DIYLB_base_left_assembly
+  1 DIYLB_base_right_assembly
+  1 DIYLB_bed_assembly
+  1 DIYLB_bed_to_columns_assembly
+  1 DIYLB_belt_assembly
+  2 DIYLB_carriage_left_assemblies
+  2 DIYLB_carriage_right_assemblies
+  1 DIYLB_columns_to_base_assembly
+  1 DIYLB_crank_assembly
+  1 DIYLB_crank_to_base_assembly
+  4 DIYLB_lower_bearing_assemblies
+  4 DIYLB_rail_assemblies
+  1 DIYLB_top_assembly
+  1 DIYLB_top_to_columns_assembly
+  4 DIYLB_upper_bearing_assemblies
   1 main_assembly
