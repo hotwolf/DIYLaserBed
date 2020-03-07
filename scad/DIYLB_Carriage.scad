@@ -65,7 +65,8 @@ module DIYLB_carriage_shape() {
                         translate([0,0,-3]) cylinder(15,d=2.4);
                         translate([0,0,7]) cylinder(5,d=6);
                     }
-                    carriage(MGN7_carriage, MGN7);
+                    translate([0.1,0,0])  carriage(MGN7_carriage, MGN7);
+                    translate([-0.1,0,0]) carriage(MGN7_carriage, MGN7);
                 }
 
                 //T-Nuts
@@ -103,13 +104,13 @@ module DIYLB_carriage_shape() {
                 translate([aoffs,40,-1])
                 cylinder(6,d=22);
                 
-                translate([aoffs,32,16])
+                translate([aoffs,32,20])
                 rotate([0,0,0])
-                nut_trap(M3_cap_screw,M3_nut, depth=5, h=40, horizontal=true);
+                nut_trap(M3_cap_screw,M3_nut, depth=5, h=50, horizontal=true);
  
-                translate([aoffs,48,16])
+                translate([aoffs,48,20])
                 rotate([0,0,0])
-                nut_trap(M3_cap_screw,M3_nut, depth=5, h=40, horizontal=true);
+                nut_trap(M3_cap_screw,M3_nut, depth=5, h=50, horizontal=true);
               
             }
         }
@@ -159,17 +160,17 @@ module DIYLB_carriage_vitamins() {
 
     translate([aoffs,48,2])
     rotate([180,0,0])
-    screw(M3_pan_screw, 12);
+    screw(M3_pan_screw, 16);
 
-    translate([aoffs,48,11])
+    translate([aoffs,48,15])
     rotate([0,0,0])
     explode(20) nut(M3_nut);
 
     translate([aoffs,32,2])
     rotate([180,0,0])
-    screw(M3_pan_screw, 12);
+    screw(M3_pan_screw, 16);
 
-    translate([aoffs,32,11])
+    translate([aoffs,32,15])
     rotate([0,0,0])
     explode(20) nut(M3_nut);
 }

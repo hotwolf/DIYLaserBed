@@ -114,10 +114,10 @@ module DIYLB_crank_assembly () {
         translate([aoffs,20,64]) rotate([0,0,$rotation]) explode(150) crank();
     
         //T-nuts
-        translate([-80,40,39]) rotate([90,90,180]) explode([-70,0,20])  tnut(2);
-        translate([-80,0,39])  rotate([90,90,0])   explode([-70,0,20])  tnut(2);
-        translate([-80,40,54]) rotate([90,90,180]) explode([-125,0,20]) tnut(2);
-        translate([-80,0,54])  rotate([90,90,0])   explode([-125,0,20]) tnut(2);
+        translate([-80,40,39]) rotate([90,90,180]) explode([-70,0,20])  tnut(2,M4_dome_screw);
+        translate([-80,0,39])  rotate([90,90,0])   explode([-70,0,20])  tnut(2,M4_dome_screw);
+        translate([-80,40,54]) rotate([90,90,180]) explode([-125,0,20]) tnut(2,M4_dome_screw);
+        translate([-80,0,54])  rotate([90,90,0])   explode([-125,0,20]) tnut(2,M4_dome_screw);
     
         //Ball bearing brackets
         translate([0,20,39]) rotate([180,0,0]) explode(-70) DIYLB_crank_bearing_stl();

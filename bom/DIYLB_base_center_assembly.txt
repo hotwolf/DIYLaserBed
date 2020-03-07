@@ -1,6 +1,6 @@
 DIYLB_base_center_assembly:
 Vitamins:
   2 Extrusion E2020 x 320mm
-  4 Screw M4 pan x 10mm
+  4 Screw M4 dome x  8mm
   4 T-Nut (20x20)
   4 Washer  M4 x 9mm x 0.8mm

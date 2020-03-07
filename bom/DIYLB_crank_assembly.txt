@@ -9,7 +9,7 @@ Vitamins:
   1 Smooth rod 8mm x 50mm
   2 Screw M3 grub x  4mm
   6 Screw M3 grub x  6mm
-  4 Screw M4 pan x  8mm
+  4 Screw M4 dome x  8mm
   1 Lock ring (8mm)
   4 T-Nut (20x20)
   4 Washer  M4 x 9mm x 0.8mm

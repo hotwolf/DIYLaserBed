@@ -2,8 +2,8 @@ DIYLB_carriage_left_assemblies:
 Vitamins:
   4 Nut M3 x 2.4mm 
   8 Screw M2 cap x 10mm
-  4 Screw M3 pan x 12mm
-  6 Screw M4 pan x 12mm
+  4 Screw M3 pan x 16mm
+  6 Screw M4 cap x 12mm
   2 T8-Nut (narrow)
   6 T-Nut (20x20)
   8 Washer  M2 x 5mm x 0.3mm

@@ -51,10 +51,10 @@ module DIYLB_base_center_assembly() {
         translate([20,270,10]) rotate([0,90,0])  extrusion(E2020, 320, center=false);
 
         //T-Nuts
-        translate([160,27,0])   rotate([180,0,0]) explode(10) tnut();
-        translate([280,27,0])   rotate([180,0,0]) explode(10) tnut();
-        translate([160,270,0])  rotate([180,0,0]) explode(10) tnut();
-        translate([280,270,0])  rotate([180,0,0]) explode(10) tnut();
+        translate([160,27,0])   rotate([180,0,0]) explode(10) tnut(2,M4_dome_screw);
+        translate([280,27,0])   rotate([180,0,0]) explode(10) tnut(2,M4_dome_screw);
+        translate([160,270,0])  rotate([180,0,0]) explode(10) tnut(2,M4_dome_screw);
+        translate([280,270,0])  rotate([180,0,0]) explode(10) tnut(2,M4_dome_screw);
     }
 }
 
