@@ -61,9 +61,9 @@ module DIYLB_lower_bearing_stl() {
             translate([aoffs,40,2]) cylinder(40,d=$cent_diameter);
             translate([aoffs,40,2+$cent_thickness]) cylinder(40,d=$bb_diameter);
             translate([-4,58,10])                 rotate([90,0,90]) cylinder(20,d=4.9);
-            translate([($bb_diameter/2)-3,58,10]) rotate([90,0,90]) cylinder(10,d=10);
+            translate([($bb_diameter/2)-5,58,10]) rotate([90,0,90]) cylinder(10,d=10);
             translate([-4,22,10])                 rotate([90,0,90]) cylinder(20,d=4.9);
-            translate([($bb_diameter/2)-3,22,10]) rotate([90,0,90]) cylinder(10,d=10);        
+            translate([($bb_diameter/2)-5,22,10]) rotate([90,0,90]) cylinder(10,d=10);        
         }
     }
 }
@@ -91,8 +91,8 @@ module DIYLB_lower_bearing_assembly()
     translate([aoffs,40,$p_offs]) rotate([0,0,$rotation]) explode(25) pulley_assembly($p_type); 
 
     //T-nuts
-    translate([0,58,10]) rotate([90,180,90]) tnut(($bb_diameter/2)-3);
-    translate([0,22,10]) rotate([90,0,90])   tnut(($bb_diameter/2)-3);
+    translate([0,58,10]) rotate([90,180,90]) tnut(($bb_diameter/2)-5);
+    translate([0,22,10]) rotate([90,0,90])   tnut(($bb_diameter/2)-5);
 
     //Bracket
     DIYLB_lower_bearing_stl();    

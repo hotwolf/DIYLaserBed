@@ -8,12 +8,12 @@
             "DIYLB_upper_bearing.stl": 4
         }, 
         "vitamins": {
+            "tnut(M4_pan_screw, 12): T-Nut (20x20)": 8, 
             "ball_bearing(BB608): Ball bearing 608-2RS 8mm x 22mm x 7mm": 4, 
             "washer(M4_washer): Washer  M4 x 9mm x 0.8mm": 8, 
-            "tnut(M4_pan_screw, 15): T-Nut (20x20)": 8, 
+            "screw(M4_pan_screw, 12): Screw M4 pan x 12mm": 8, 
             "t8lock(): Lock ring (8mm)": 4, 
-            "screw(M3_grub_screw, 4): Screw M3 grub x  4mm": 4, 
-            "screw(M4_pan_screw, 15): Screw M4 pan x 15mm": 8
+            "screw(M3_grub_screw, 4): Screw M3 grub x  4mm": 4
         }
     }, 
     {
@@ -37,14 +37,14 @@
             "DIYLB_carriage_left.stl": 2
         }, 
         "vitamins": {
+            "tnut(M4_pan_screw, 12): T-Nut (20x20)": 6, 
             "washer(M2_washer): Washer  M2 x 5mm x 0.3mm": 8, 
             "nut(M3_nut): Nut M3 x 2.4mm ": 4, 
             "washer(M4_washer): Washer  M4 x 9mm x 0.8mm": 6, 
-            "tnut(M4_pan_screw, 15): T-Nut (20x20)": 6, 
+            "screw(M4_pan_screw, 12): Screw M4 pan x 12mm": 6, 
             "screw(M2_cap_screw, 10): Screw M2 cap x 10mm": 8, 
             "screw(M3_pan_screw, 12): Screw M3 pan x 12mm": 4, 
-            "t8nut(): T8-Nut (narrow)": 2, 
-            "screw(M4_pan_screw, 15): Screw M4 pan x 15mm": 6
+            "t8nut(): T8-Nut (narrow)": 2
         }
     }, 
     {
@@ -56,14 +56,14 @@
             "DIYLB_carriage_right.stl": 2
         }, 
         "vitamins": {
+            "tnut(M4_pan_screw, 12): T-Nut (20x20)": 6, 
             "washer(M2_washer): Washer  M2 x 5mm x 0.3mm": 8, 
             "nut(M3_nut): Nut M3 x 2.4mm ": 4, 
             "washer(M4_washer): Washer  M4 x 9mm x 0.8mm": 6, 
-            "tnut(M4_pan_screw, 15): T-Nut (20x20)": 6, 
+            "screw(M4_pan_screw, 12): Screw M4 pan x 12mm": 6, 
             "screw(M2_cap_screw, 10): Screw M2 cap x 10mm": 8, 
             "screw(M3_pan_screw, 12): Screw M3 pan x 12mm": 4, 
-            "t8nut(): T8-Nut (narrow)": 2, 
-            "screw(M4_pan_screw, 15): Screw M4 pan x 15mm": 6
+            "t8nut(): T8-Nut (narrow)": 2
         }
     }, 
     {
@@ -130,14 +130,14 @@
             "DIYLB_lower_bearing.stl": 4
         }, 
         "vitamins": {
-            "tnut(M4_pan_screw, 14): T-Nut (20x20)": 8, 
+            "tnut(M4_pan_screw, 12): T-Nut (20x20)": 8, 
             "ball_bearing(BB608): Ball bearing 608-2RS 8mm x 22mm x 7mm": 4, 
             "cent(): Euro-Cent coin": 4, 
+            "screw(M4_pan_screw, 12): Screw M4 pan x 12mm": 8, 
             "washer(M4_washer): Washer  M4 x 9mm x 0.8mm": 8, 
             "pulley(GT2x20_pulley): Pulley GT2OB 20 teeth": 4, 
             "studding(8, 100): Threaded rod M8 x 100mm": 4, 
-            "screw(M3_grub_screw, 6): Screw M3 grub x  6mm": 8, 
-            "screw(M4_pan_screw, 14): Screw M4 pan x 14mm": 8
+            "screw(M3_grub_screw, 6): Screw M3 grub x  6mm": 8
         }
     }, 
     {
@@ -162,9 +162,9 @@
         "printed": {}, 
         "vitamins": {
             "extrusion(E2020, 320): Extrusion E2020 x 320mm": 2, 
-            "tnut(M4_pan_screw, 11): T-Nut (20x20)": 4, 
+            "tnut(M4_pan_screw, 10): T-Nut (20x20)": 4, 
             "washer(M4_washer): Washer  M4 x 9mm x 0.8mm": 4, 
-            "screw(M4_pan_screw, 11): Screw M4 pan x 11mm": 4
+            "screw(M4_pan_screw, 10): Screw M4 pan x 10mm": 4
         }
     }, 
     {

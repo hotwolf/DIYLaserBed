@@ -36,7 +36,7 @@ include <NopSCADlib/vitamins/screws.scad>
 
 //$explode = 1;
 
-module tnut(length=5, screw_type=M4_pan_screw) {//! Draw a nut for a 20x20 aluminium extrusion, including a screw
+module tnut(length=4, screw_type=M4_pan_screw) {//! Draw a nut for a 20x20 aluminium extrusion, including a screw
     description = str("T-Nut (20x20)");
     vitamin(str("tnut(", screw_type[0], "_screw, ", length+6, "): ", description));
     

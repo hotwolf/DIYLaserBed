@@ -62,9 +62,9 @@ module DIYLB_upper_bearing_stl() {
             translate([aoffs,40,83]) cylinder(20,d=$bb_diameter);
             translate([aoffs,40,100]) cylinder(20,d=10);
             translate([-8,58,100]) rotate([90,0,90]) cylinder(($bb_diameter/2)+10,d=4.5);
-            translate([9,58,100])  rotate([90,0,90]) cylinder(($bb_diameter/2)+10,d=10);
+            translate([6,58,100])  rotate([90,0,90]) cylinder(($bb_diameter/2)+10,d=10);
             translate([-8,22,100]) rotate([90,0,90]) cylinder(($bb_diameter/2)+10,d=4.5);
-            translate([9,22,100])  rotate([90,0,90]) cylinder(($bb_diameter/2)+10,d=10);        
+            translate([6,22,100])  rotate([90,0,90]) cylinder(($bb_diameter/2)+10,d=10);        
         }
     }
 }
@@ -85,8 +85,8 @@ module DIYLB_upper_bearing_assembly () {
         translate([aoffs,40,97-$bb_height]) rotate([0,0,$rotation]) explode(-20) t8lock(); 
     
         //T-nuts
-        translate([0,58,100]) rotate([90,180,90]) tnut(($bb_diameter/2)-2);
-        translate([0,22,100]) rotate([90,0,90])   tnut(($bb_diameter/2)-2);
+        translate([0,58,100]) rotate([90,180,90]) tnut(($bb_diameter/2)-5);
+        translate([0,22,100]) rotate([90,0,90])   tnut(($bb_diameter/2)-5);
     
         //Bracket
         DIYLB_upper_bearing_stl();

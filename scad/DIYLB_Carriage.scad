@@ -75,7 +75,7 @@ module DIYLB_carriage_shape() {
 
                 translate([aoffs-7,55,10])
                 rotate([0,90,0])
-                cylinder(4,d=10);
+                cylinder(10,d=10);
 
                 translate([aoffs-5,25,10])
                 rotate([0,90,0])
@@ -83,7 +83,7 @@ module DIYLB_carriage_shape() {
 
                 translate([aoffs-7,25,10])
                 rotate([0,90,0])
-                cylinder(4,d=10);
+                cylinder(10,d=10);
 
                 translate([aoffs-5,-5,10])
                 rotate([0,90,0])
@@ -91,7 +91,7 @@ module DIYLB_carriage_shape() {
 
                 translate([aoffs-7,-5,10])
                 rotate([0,90,0])
-                cylinder(4,d=10);
+                cylinder(10,d=10);
       
                 //T8-Nut
                 translate([aoffs,40,-1])
@@ -140,17 +140,17 @@ module DIYLB_carriage_vitamins() {
     }
      
     //T-Nuts
-    translate([aoffs+6,55,10])
+    translate([aoffs+9,55,10])
     rotate([90,0,-90])
-    tnut(9);
+    tnut(6);
 
-    translate([aoffs+6,25,10])
+    translate([aoffs+9,25,10])
     rotate([90,180,-90])
-    tnut(9);
+    tnut(6);
 
-    translate([aoffs+6,-5,10])
+    translate([aoffs+9,-5,10])
     rotate([90,180,-90])
-    tnut(9);
+    tnut(6);
 
     //T8-Nut
     translate([aoffs,40,-0.5])    
