@@ -37,7 +37,7 @@ module Cent() {
     vitamin(str("cent(): ", description));
     
     //color("gold"){ cylinder(1.67,d=16.25); }    
-    color("gold"){ cylinder(1.75,d=16.25); }    
+    color("gold"){ cylinder(1.9,d=16.4); }    
 }
 
 //Demo coin

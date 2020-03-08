@@ -72,8 +72,8 @@ $p_offs = 20+(($p_totl-$p_hubl)/2);
 //Cent coin
 //=========
 //$cent_thickness = 1.67;
-$cent_thickness = 1.75;
-$cent_diameter  = 16.25;
+$cent_thickness = 1.9;
+$cent_diameter  = 16.4;
 
 //Animation
 //=========
