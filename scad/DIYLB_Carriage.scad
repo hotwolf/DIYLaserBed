@@ -96,13 +96,13 @@ module DIYLB_carriage_shape() {
       
                 //T8-Nut
                 translate([aoffs,40,-1])
-                cylinder(22,d=9);
+                poly_cylinder(h=22,r=4.5);
  
                 translate([aoffs,40,-1])
-                cylinder(18,d=10);
+                poly_cylinder(h=18,r=5);
  
                 translate([aoffs,40,-1])
-                cylinder(6,d=22);
+                poly_cylinder(h=6,r=11);
                 
                 translate([aoffs,32,20])
                 rotate([0,0,0])

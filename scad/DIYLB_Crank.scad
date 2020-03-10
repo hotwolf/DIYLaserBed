@@ -66,8 +66,8 @@ module DIYLB_crank_bearing_stl() {
 
         }    
         union() {
-            translate([aoffs-70,0,-($bb_height/2)])   cylinder(20,d=$bb_diameter);
-            translate([aoffs-70,0,-10])               cylinder(20,d=10);
+            translate([aoffs-70,0,-($bb_height/2)])   poly_cylinder(h=20,r=$bb_diameter/2);
+            translate([aoffs-70,0,-10])               poly_cylinder(h=20,r=5);
             translate([-80,-15,0]) rotate([90,0,0])   cylinder(($bb_diameter/2)+10,d=4.5);
             translate([-80,-22,0]) rotate([90,0,0])   cylinder(($bb_diameter/2)+10,d=10);
             translate([-80,15,0])  rotate([90,0,180]) cylinder(($bb_diameter/2)+10,d=4.5);
