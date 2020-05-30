@@ -58,8 +58,8 @@ module DIYLB_lower_bearing_stl() {
             
         }    
         union() {
-            translate([aoffs,40,2])                     poly_cylinder(h=40,r=($cent_diameter+0.8)/2);
-            translate([aoffs,40,20-$bb_height-$p_hubl]) poly_cylinder(h=40,r=($bb_diameter+0.4)/2);
+            translate([aoffs,40,2])                     poly_cylinder(h=40,r=($cent_diameter+0.4)/2);
+            translate([aoffs,40,20-$bb_height-$p_hubl]) poly_cylinder(h=40,r=($bb_diameter+0.0)/2);
             translate([-4,58,10])                 rotate([90,0,90]) cylinder(20,d=4.9);
             translate([($bb_diameter/2)-5,58,10]) rotate([90,0,90]) cylinder(10,d=9.5);
             translate([-4,22,10])                 rotate([90,0,90]) cylinder(20,d=4.9);

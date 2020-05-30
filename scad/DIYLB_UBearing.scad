@@ -59,7 +59,7 @@ module DIYLB_upper_bearing_stl() {
 
         }    
         union() {
-            translate([aoffs,40,83])  poly_cylinder(h=20,r=($bb_diameter+0.4)/2);
+            translate([aoffs,40,83])  poly_cylinder(h=20,r=($bb_diameter+0.0)/2);
             translate([aoffs,40,100]) poly_cylinder(h=20,r=5);
             translate([-8,58,100]) rotate([90,0,90]) cylinder(($bb_diameter/2)+10,d=4.9);
             translate([6,58,100])  rotate([90,0,90]) cylinder(($bb_diameter/2)+10,d=9.5);

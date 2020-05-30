@@ -1,6 +1,7 @@
 tmp.png: \
 	/home/dirk/Projects/DIYLaserBed/scad/vitamins/T8Nut.scad \
 	/home/dirk/Projects/DIYLaserBed/scad/DIYLB_Carriage.scad \
+	/home/family/.local/share/OpenSCAD/libraries/NopSCADlib/core.scad \
 	/home/dirk/Tools/NopSCADlib/vitamins/e3d.scad \
 	/home/dirk/Tools/NopSCADlib/vitamins/jhead.scad \
 	/home/dirk/Projects/DIYLaserBed/scad/vitamins/Cent.scad \
@@ -10,6 +11,9 @@ tmp.png: \
 	/home/dirk/Projects/DIYLaserBed/scad/DIYLB_Top.scad \
 	/home/dirk/Projects/DIYLaserBed/scad/DIYLB_Rail.scad \
 	/home/dirk/Projects/DIYLaserBed/scad/DIYLB_Base.scad \
+	/home/family/.local/share/OpenSCAD/libraries/NopSCADlib/vitamins/rails.scad \
+	/home/family/.local/share/OpenSCAD/libraries/NopSCADlib/vitamins/ball_bearings.scad \
+	/home/family/.local/share/OpenSCAD/libraries/NopSCADlib/vitamins/pulleys.scad \
 	/home/dirk/Tools/NopSCADlib/utils/offset.scad \
 	/home/dirk/Tools/NopSCADlib/utils/round.scad \
 	/home/dirk/Tools/NopSCADlib/utils/layout.scad \
@@ -22,6 +26,7 @@ tmp.png: \
 	/home/dirk/Tools/NopSCADlib/vitamins/pin_headers.scad \
 	/home/dirk/Tools/NopSCADlib/vitamins/cable_strip.scad \
 	/home/dirk/Tools/NopSCADlib/vitamins/sealing_strip.scad \
+	/home/family/.local/share/OpenSCAD/libraries/NopSCADlib/vitamins/screws.scad \
 	/home/dirk/Tools/NopSCADlib/vitamins/hygrometer.scad \
 	/home/dirk/Tools/NopSCADlib/vitamins/sk_bracket.scad \
 	/home/dirk/Tools/NopSCADlib/vitamins/extrusion.scad \
@@ -55,22 +60,20 @@ tmp.png: \
 	/home/dirk/Tools/NopSCADlib/vitamins/psu.scad \
 	/home/dirk/Tools/NopSCADlib/vitamins/zipties.scad \
 	/home/dirk/Tools/NopSCADlib/vitamins/spade.scad \
+	/home/dirk/Projects/DIYLaserBed/scad/vitamins/T-Nut.scad \
+	/home/dirk/Tools/NopSCADlib/vitamins/tubing.scad \
 	/home/dirk/Tools/NopSCADlib/vitamins/sheet.scad \
 	/home/dirk/Tools/NopSCADlib/vitamins/screws.scad \
 	/home/dirk/Tools/NopSCADlib/vitamins/geared_stepper.scad \
 	/home/dirk/Tools/NopSCADlib/vitamins/sheets.scad \
+	/home/family/.local/share/OpenSCAD/libraries/NopSCADlib/vitamins/extrusions.scad \
 	/home/dirk/Tools/NopSCADlib/vitamins/battery.scad \
 	png.scad \
 	/home/dirk/Tools/NopSCADlib/utils/core/rounded_rectangle.scad \
 	/home/dirk/Tools/NopSCADlib/vitamins/iec.scad \
 	/home/dirk/Tools/NopSCADlib/core.scad \
 	/home/dirk/Tools/NopSCADlib/vitamins/iecs.scad \
-	/home/dirk/Projects/DIYLaserBed/scad/vitamins/T-Nut.scad \
-	/home/dirk/Tools/NopSCADlib/vitamins/tubing.scad \
-	/home/dirk/Tools/NopSCADlib/lib.scad \
-	/home/dirk/Tools/NopSCADlib/vitamins/microview.scad \
-	/home/dirk/Tools/NopSCADlib/vitamins/opengrab.scad \
-	/home/dirk/Tools/NopSCADlib/vitamins/pulley.scad \
+	/home/family/.local/share/OpenSCAD/libraries/NopSCADlib/lib.scad \
 	/home/dirk/Tools/NopSCADlib/vitamins/light_strip.scad \
 	/home/dirk/Tools/NopSCADlib/global_defs.scad \
 	/home/dirk/Tools/NopSCADlib/vitamins/stepper_motor.scad \
@@ -83,6 +86,9 @@ tmp.png: \
 	/home/dirk/Tools/NopSCADlib/vitamins/displays.scad \
 	/home/dirk/Tools/NopSCADlib/vitamins/screw.scad \
 	/home/dirk/Tools/NopSCADlib/vitamins/button.scad \
+	/home/dirk/Tools/NopSCADlib/vitamins/microview.scad \
+	/home/dirk/Tools/NopSCADlib/vitamins/opengrab.scad \
+	/home/dirk/Tools/NopSCADlib/vitamins/pulley.scad \
 	/home/dirk/Tools/NopSCADlib/vitamins/ldrs.scad \
 	/home/dirk/Tools/NopSCADlib/vitamins/linear_bearing.scad \
 	/home/dirk/Tools/NopSCADlib/vitamins/ring_terminals.scad \
@@ -132,6 +138,7 @@ tmp.png: \
 	/home/dirk/Tools/NopSCADlib/vitamins/pillar.scad \
 	/home/dirk/Projects/DIYLaserBed/scad/DIYLB_Bed.scad \
 	/home/dirk/Tools/NopSCADlib/vitamins/ssr.scad \
+	/home/family/.local/share/OpenSCAD/libraries/NopSCADlib/vitamins/rod.scad \
 	/home/dirk/Tools/NopSCADlib/utils/maths.scad \
 	/home/dirk/Tools/NopSCADlib/vitamins/pcbs.scad \
 	/home/dirk/Tools/NopSCADlib/vitamins/jack.scad \
@@ -141,6 +148,7 @@ tmp.png: \
 	/home/dirk/Tools/NopSCADlib/vitamins/nut.scad \
 	/home/dirk/Tools/NopSCADlib/vitamins/modules.scad \
 	/home/dirk/Tools/NopSCADlib/vitamins/module.scad \
+	/home/family/.local/share/OpenSCAD/libraries/NopSCADlib/vitamins/belts.scad \
 	/home/dirk/Tools/NopSCADlib/vitamins/transformers.scad \
 	/home/dirk/Tools/NopSCADlib/vitamins/display.scad \
 	/home/dirk/Tools/NopSCADlib/vitamins/blower.scad \
