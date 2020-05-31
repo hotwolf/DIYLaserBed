@@ -3,10 +3,10 @@
     "DIYLB_crank_bearing.stl": 2.169, 
     "DIYLB_CBearing.stl": 2.128, 
     "DIYLB_rail.stl": 1.678, 
-    "DIYLB_carriage_right.stl": 8.046, 
+    "DIYLB_carriage_right.stl": 9.789, 
     "DIYLB_Carriage.stl": 6.882, 
     "DIYLB_upper_bearing.stl": 2.461, 
-    "DIYLB_carriage_left.stl": 8.21, 
+    "DIYLB_carriage_left.stl": 10.036, 
     "DIYLB_LBearing.stl": 2.077, 
     "DIYLB_lower_bearing.stl": 2.515, 
     "DIYLB_UBearing.stl": 2.002

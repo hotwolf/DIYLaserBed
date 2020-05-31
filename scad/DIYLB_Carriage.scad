@@ -65,9 +65,11 @@ module DIYLB_carriage_shape() {
                         translate([0,0,-3]) cylinder(15,d=2.4);
                         translate([0,0,7]) cylinder(5,d=6);
                     }
-                    translate([0.1,0,0])  carriage(MGN7_carriage, MGN7);
-                    translate([-0.1,0,0]) carriage(MGN7_carriage, MGN7);
-                }
+                    translate([0.1,0.2,0])  carriage(MGN7_carriage, MGN7);
+                    translate([-0.1,0.2,0]) carriage(MGN7_carriage, MGN7);
+                    translate([0.1,-0.2,0])  carriage(MGN7_carriage, MGN7);
+                    translate([-0.1,-0.2,0]) carriage(MGN7_carriage, MGN7);
+                    }
 
                 //T-Nuts
                 translate([aoffs-5,55,10])
@@ -99,7 +101,7 @@ module DIYLB_carriage_shape() {
                 poly_cylinder(h=22,r=4.5);
  
                 translate([aoffs,40,-1])
-                poly_cylinder(h=18,r=5);
+                poly_cylinder(h=18,r=5.2);
  
                 translate([aoffs,40,-1])
                 poly_cylinder(h=6,r=11);
