@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Printing Struggles
+title:  New Printer
 ---
 
 As it turns out, I didn't need to make my design more printer friendly.
