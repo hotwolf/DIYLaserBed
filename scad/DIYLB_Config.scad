@@ -48,9 +48,10 @@ include <NopSCADlib/vitamins/rails.scad>
 //               e     e  m   g   o                             
 //                        .   h   r                          
 //                            t                             
-$bb_type     = ["608", 8, 22, 7, "OrangeRed"]; //Standard 608 bearings
-$bb_height   = $bb_type[3];                    //Ball bearing height
-$bb_diameter = $bb_type[2];                    //Ball bearing diameter
+//$bb_type   = ["608", 8, 22, 7, "OrangeRed", 1.4, 2.0]; //Standard 608 bearings
+$bb_type     = BB608;                                    //Standard 608 bearings
+$bb_height   = $bb_type[3];                              //Ball bearing height
+$bb_diameter = $bb_type[2];                              //Ball bearing diameter
 
 //Pulleys
 //=======

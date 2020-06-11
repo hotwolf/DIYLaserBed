@@ -2,73 +2,133 @@
     {
         "count": 4, 
         "name": "DIYLB_upper_bearing_assembly", 
+        "big": null, 
         "assemblies": {}, 
         "routed": {}, 
         "printed": {
-            "DIYLB_upper_bearing.stl": 4
+            "DIYLB_upper_bearing.stl": {
+                "count": 4, 
+                "colour": "[0, 0.572549, 0]"
+            }
         }, 
         "vitamins": {
-            "screw(M4_cap_screw, 12): Screw M4 cap x 12mm": 8, 
-            "washer(M4_washer): Washer  M4 x 9mm x 0.8mm": 8, 
-            "ball_bearing(BB608): Ball bearing 608-2RS 8mm x 22mm x 7mm": 4, 
-            "tnut(M4_cap_screw, 12): T-Nut (20x20)": 8, 
-            "screw(M3_grub_screw, 4): Screw M3 grub x  4mm": 4, 
-            "t8lock(): Lock ring (8mm)": 4
+            "washer(M4_washer): Washer  M4 x 9mm x 0.8mm": {
+                "count": 8
+            }, 
+            "screw(M4_cap_screw, 12): Screw M4 cap x 12mm": {
+                "count": 8
+            }, 
+            "tnut(M4_cap_screw, 12): T-Nut (20x20)": {
+                "count": 8
+            }, 
+            "ball_bearing(BB608): Ball bearing 608-2RS 8mm x 22mm x 7mm": {
+                "count": 4
+            }, 
+            "t8lock(): Lock ring (8mm)": {
+                "count": 4
+            }, 
+            "screw(M3_grub_screw, 4): Screw M3 grub x  4mm": {
+                "count": 4
+            }
         }
     }, 
     {
         "count": 1, 
         "name": "DIYLB_top_assembly", 
+        "big": null, 
         "assemblies": {
             "DIYLB_upper_bearing_assembly": 4
         }, 
         "routed": {}, 
         "printed": {}, 
         "vitamins": {
-            "extrusion(E2020, 300): Extrusion E2020 x 300mm": 2
+            "extrusion(E2020, 300): Extrusion E2020 x 300mm": {
+                "count": 2
+            }
         }
     }, 
     {
         "count": 2, 
         "name": "DIYLB_carriage_left_assembly", 
+        "big": null, 
         "assemblies": {}, 
         "routed": {}, 
         "printed": {
-            "DIYLB_carriage_left.stl": 2
+            "DIYLB_carriage_left.stl": {
+                "count": 2, 
+                "colour": "[0, 0.572549, 0]"
+            }
         }, 
         "vitamins": {
-            "washer(M2_washer): Washer  M2 x 5mm x 0.3mm": 8, 
-            "screw(M4_cap_screw, 12): Screw M4 cap x 12mm": 6, 
-            "washer(M4_washer): Washer  M4 x 9mm x 0.8mm": 6, 
-            "nut(M3_nut): Nut M3 x 2.4mm ": 4, 
-            "screw(M2_cap_screw, 10): Screw M2 cap x 10mm": 8, 
-            "tnut(M4_cap_screw, 12): T-Nut (20x20)": 6, 
-            "t8nut(): T8-Nut (narrow)": 2, 
-            "screw(M3_pan_screw, 16): Screw M3 pan x 16mm": 4
+            "washer(M2_washer): Washer  M2 x 5mm x 0.3mm": {
+                "count": 8
+            }, 
+            "screw(M4_cap_screw, 12): Screw M4 cap x 12mm": {
+                "count": 6
+            }, 
+            "tnut(M4_cap_screw, 12): T-Nut (20x20)": {
+                "count": 6
+            }, 
+            "nut(M3_nut): Nut M3 x 2.4mm ": {
+                "count": 4
+            }, 
+            "screw(M2_cap_screw, 10): Screw M2 cap x 10mm": {
+                "count": 8
+            }, 
+            "washer(M4_washer): Washer  M4 x 9mm x 0.8mm": {
+                "count": 6
+            }, 
+            "t8nut(): T8-Nut (narrow)": {
+                "count": 2
+            }, 
+            "screw(M3_pan_screw, 16): Screw M3 pan x 16mm": {
+                "count": 4
+            }
         }
     }, 
     {
         "count": 2, 
         "name": "DIYLB_carriage_right_assembly", 
+        "big": null, 
         "assemblies": {}, 
         "routed": {}, 
         "printed": {
-            "DIYLB_carriage_right.stl": 2
+            "DIYLB_carriage_right.stl": {
+                "count": 2, 
+                "colour": "[0, 0.572549, 0]"
+            }
         }, 
         "vitamins": {
-            "washer(M2_washer): Washer  M2 x 5mm x 0.3mm": 8, 
-            "screw(M4_cap_screw, 12): Screw M4 cap x 12mm": 6, 
-            "washer(M4_washer): Washer  M4 x 9mm x 0.8mm": 6, 
-            "nut(M3_nut): Nut M3 x 2.4mm ": 4, 
-            "screw(M2_cap_screw, 10): Screw M2 cap x 10mm": 8, 
-            "tnut(M4_cap_screw, 12): T-Nut (20x20)": 6, 
-            "t8nut(): T8-Nut (narrow)": 2, 
-            "screw(M3_pan_screw, 16): Screw M3 pan x 16mm": 4
+            "washer(M2_washer): Washer  M2 x 5mm x 0.3mm": {
+                "count": 8
+            }, 
+            "screw(M4_cap_screw, 12): Screw M4 cap x 12mm": {
+                "count": 6
+            }, 
+            "tnut(M4_cap_screw, 12): T-Nut (20x20)": {
+                "count": 6
+            }, 
+            "nut(M3_nut): Nut M3 x 2.4mm ": {
+                "count": 4
+            }, 
+            "screw(M2_cap_screw, 10): Screw M2 cap x 10mm": {
+                "count": 8
+            }, 
+            "washer(M4_washer): Washer  M4 x 9mm x 0.8mm": {
+                "count": 6
+            }, 
+            "t8nut(): T8-Nut (narrow)": {
+                "count": 2
+            }, 
+            "screw(M3_pan_screw, 16): Screw M3 pan x 16mm": {
+                "count": 4
+            }
         }
     }, 
     {
         "count": 1, 
         "name": "DIYLB_bed_assembly", 
+        "big": null, 
         "assemblies": {
             "DIYLB_carriage_right_assembly": 2, 
             "DIYLB_carriage_left_assembly": 2
@@ -76,118 +136,221 @@
         "routed": {}, 
         "printed": {}, 
         "vitamins": {
-            "extrusion(E2020, 320): Extrusion E2020 x 320mm": 2, 
-            "lbracket(): L-Bracket (20x20)": 12, 
-            "extrusion(E2020, 260): Extrusion E2020 x 260mm": 4, 
-            "screw(M3_grub_screw, 6): Screw M3 grub x  6mm": 24
+            "extrusion(E2020, 320): Extrusion E2020 x 320mm": {
+                "count": 2
+            }, 
+            "lbracket(): L-Bracket (20x20)": {
+                "count": 12
+            }, 
+            "extrusion(E2020, 260): Extrusion E2020 x 260mm": {
+                "count": 4
+            }, 
+            "screw(M3_grub_screw, 6): Screw M3 grub x  6mm": {
+                "count": 24
+            }
         }
     }, 
     {
         "count": 4, 
         "name": "DIYLB_rail_assembly", 
+        "big": null, 
         "assemblies": {}, 
         "routed": {}, 
         "printed": {
-            "DIYLB_rail.stl": 4
+            "DIYLB_rail.stl": {
+                "count": 4, 
+                "colour": "[0, 0.572549, 0]"
+            }
         }, 
         "vitamins": {
-            "screw(M2_cap_screw, 6): Screw M2 cap x  6mm": 20, 
-            "nut(M2_nut): Nut M2 x 1.6mm ": 20, 
-            "extrusion(E2020, 70): Extrusion E2020 x 70mm": 4, 
-            "rail(MGN7, 70): Linear rail MGN7 x 70mm": 4
+            "screw(M2_cap_screw, 6): Screw M2 cap x  6mm": {
+                "count": 20
+            }, 
+            "nut(M2_nut): Nut M2 x 1.6mm ": {
+                "count": 20
+            }, 
+            "extrusion(E2020, 70): Extrusion E2020 x 70mm": {
+                "count": 4
+            }, 
+            "rail(MGN7, 70): Linear rail MGN7 x 70mm": {
+                "count": 4
+            }
         }
     }, 
     {
         "count": 1, 
         "name": "DIYLB_crank_assembly", 
+        "big": null, 
         "assemblies": {}, 
         "routed": {}, 
         "printed": {
-            "DIYLB_crank_bearing.stl": 2
+            "DIYLB_crank_bearing.stl": {
+                "count": 2, 
+                "colour": "[0, 0.572549, 0]"
+            }, 
+            "DIYLB_crank.stl": {
+                "count": 1, 
+                "colour": "[0, 0.572549, 0]"
+            }
         }, 
         "vitamins": {
-            "screw(M4_dome_screw, 8): Screw M4 dome x  8mm": 4, 
-            "crank(): Crank for 8mm shaft": 1, 
-            "ball_bearing(BB608): Ball bearing 608-2RS 8mm x 22mm x 7mm": 2, 
-            "washer(M4_washer): Washer  M4 x 9mm x 0.8mm": 4, 
-            "tnut(M4_dome_screw, 8): T-Nut (20x20)": 4, 
-            "extrusion(E2040, 60): Extrusion E2040 x 60mm": 1, 
-            "screw(M3_grub_screw, 4): Screw M3 grub x  4mm": 2, 
-            "rod(8, 50): Smooth rod 8mm x 50mm": 1, 
-            "lbracket(): L-Bracket (20x20)": 2, 
-            "extrusion(E2040, 70): Extrusion E2040 x 70mm": 1, 
-            "pulley(GT2x20_pulley): Pulley GT2OB 20 teeth": 1, 
-            "screw(M3_grub_screw, 6): Screw M3 grub x  6mm": 6, 
-            "t8lock(): Lock ring (8mm)": 1
+            "ball_bearing(BB608): Ball bearing 608-2RS 8mm x 22mm x 7mm": {
+                "count": 2
+            }, 
+            "washer(M4_washer): Washer  M4 x 9mm x 0.8mm": {
+                "count": 4
+            }, 
+            "screw(M8_hex_screw, 0): Screw M8 hex x  0mm": {
+                "count": 1
+            }, 
+            "tnut(M4_dome_screw, 8): T-Nut (20x20)": {
+                "count": 4
+            }, 
+            "washer(M8_washer): Washer  M8 x 17mm x 1.6mm": {
+                "count": 1
+            }, 
+            "pulley(GT2x20_pulley): Pulley GT2OB 20 teeth": {
+                "count": 1
+            }, 
+            "extrusion(E2040, 60): Extrusion E2040 x 60mm": {
+                "count": 1
+            }, 
+            "screw(M4_dome_screw, 8): Screw M4 dome x  8mm": {
+                "count": 4
+            }, 
+            "extrusion(E2040, 70): Extrusion E2040 x 70mm": {
+                "count": 1
+            }, 
+            "lbracket(): L-Bracket (20x20)": {
+                "count": 2
+            }, 
+            "screw(M3_grub_screw, 6): Screw M3 grub x  6mm": {
+                "count": 6
+            }, 
+            "screw(M8_hex_screw, 35): Screw M8 hex x 35mm": {
+                "count": 1
+            }
         }
     }, 
     {
         "count": 4, 
         "name": "DIYLB_lower_bearing_assembly", 
+        "big": null, 
         "assemblies": {}, 
         "routed": {}, 
         "printed": {
-            "DIYLB_lower_bearing.stl": 4
+            "DIYLB_lower_bearing.stl": {
+                "count": 4, 
+                "colour": "[0, 0.572549, 0]"
+            }
         }, 
         "vitamins": {
-            "washer(M4_washer): Washer  M4 x 9mm x 0.8mm": 8, 
-            "ball_bearing(BB608): Ball bearing 608-2RS 8mm x 22mm x 7mm": 4, 
-            "cent(): Euro-Cent coin": 4, 
-            "screw(M4_cap_screw, 12): Screw M4 cap x 12mm": 8, 
-            "tnut(M4_cap_screw, 12): T-Nut (20x20)": 8, 
-            "pulley(GT2x20_pulley): Pulley GT2OB 20 teeth": 4, 
-            "studding(8, 100): Threaded rod M8 x 100mm": 4, 
-            "screw(M3_grub_screw, 6): Screw M3 grub x  6mm": 8
+            "washer(M4_washer): Washer  M4 x 9mm x 0.8mm": {
+                "count": 8
+            }, 
+            "ball_bearing(BB608): Ball bearing 608-2RS 8mm x 22mm x 7mm": {
+                "count": 4
+            }, 
+            "tnut(M4_cap_screw, 12): T-Nut (20x20)": {
+                "count": 8
+            }, 
+            "screw(M4_cap_screw, 12): Screw M4 cap x 12mm": {
+                "count": 8
+            }, 
+            "cent(): Euro-Cent coin": {
+                "count": 4
+            }, 
+            "pulley(GT2x20_pulley): Pulley GT2OB 20 teeth": {
+                "count": 4
+            }, 
+            "studding(8, 100): Threaded rod M8 x 100mm": {
+                "count": 4
+            }, 
+            "screw(M3_grub_screw, 6): Screw M3 grub x  6mm": {
+                "count": 8
+            }
         }
     }, 
     {
         "count": 1, 
         "name": "DIYLB_base_right_assembly", 
+        "big": null, 
         "assemblies": {
             "DIYLB_lower_bearing_assembly": 2
         }, 
         "routed": {}, 
         "printed": {}, 
         "vitamins": {
-            "lbracket(): L-Bracket (20x20)": 6, 
-            "extrusion(E2020, 300): Extrusion E2020 x 300mm": 1, 
-            "screw(M3_grub_screw, 6): Screw M3 grub x  6mm": 12
+            "lbracket(): L-Bracket (20x20)": {
+                "count": 6
+            }, 
+            "extrusion(E2020, 300): Extrusion E2020 x 300mm": {
+                "count": 1
+            }, 
+            "screw(M3_grub_screw, 6): Screw M3 grub x  6mm": {
+                "count": 12
+            }
         }
     }, 
     {
         "count": 1, 
         "name": "DIYLB_base_center_assembly", 
+        "big": null, 
         "assemblies": {}, 
         "routed": {}, 
         "printed": {}, 
         "vitamins": {
-            "extrusion(E2020, 320): Extrusion E2020 x 320mm": 2, 
-            "tnut(M4_dome_screw, 8): T-Nut (20x20)": 4, 
-            "screw(M4_dome_screw, 8): Screw M4 dome x  8mm": 4, 
-            "washer(M4_washer): Washer  M4 x 9mm x 0.8mm": 4
+            "extrusion(E2020, 320): Extrusion E2020 x 320mm": {
+                "count": 2
+            }, 
+            "tnut(M4_dome_screw, 8): T-Nut (20x20)": {
+                "count": 4
+            }, 
+            "screw(M4_dome_screw, 8): Screw M4 dome x  8mm": {
+                "count": 4
+            }, 
+            "washer(M4_washer): Washer  M4 x 9mm x 0.8mm": {
+                "count": 4
+            }
         }
     }, 
     {
         "count": 1, 
         "name": "DIYLB_base_left_assembly", 
+        "big": null, 
         "assemblies": {
             "DIYLB_lower_bearing_assembly": 2
         }, 
         "routed": {}, 
         "printed": {}, 
         "vitamins": {
-            "extrusion(E2020, 300): Extrusion E2020 x 300mm": 1, 
-            "washer(M4_washer): Washer  M4 x 9mm x 0.8mm": 2, 
-            "pulley(GT2x20_plain_idler): Pulley GT2 idler smooth 12mm": 2, 
-            "screw(M4_cap_screw, 20): Screw M4 cap x 20mm": 2, 
-            "lbracket(): L-Bracket (20x20)": 8, 
-            "tnut(M4_cap_screw, 20): T-Nut (20x20)": 2, 
-            "screw(M3_grub_screw, 6): Screw M3 grub x  6mm": 16
+            "extrusion(E2020, 300): Extrusion E2020 x 300mm": {
+                "count": 1
+            }, 
+            "washer(M4_washer): Washer  M4 x 9mm x 0.8mm": {
+                "count": 2
+            }, 
+            "pulley(GT2x20_plain_idler): Pulley GT2 idler smooth 12mm": {
+                "count": 2
+            }, 
+            "screw(M4_cap_screw, 20): Screw M4 cap x 20mm": {
+                "count": 2
+            }, 
+            "lbracket(): L-Bracket (20x20)": {
+                "count": 8
+            }, 
+            "tnut(M4_cap_screw, 20): T-Nut (20x20)": {
+                "count": 2
+            }, 
+            "screw(M3_grub_screw, 6): Screw M3 grub x  6mm": {
+                "count": 16
+            }
         }
     }, 
     {
         "count": 1, 
         "name": "DIYLB_Base_assembly", 
+        "big": null, 
         "assemblies": {
             "DIYLB_base_center_assembly": 1, 
             "DIYLB_base_right_assembly": 1, 
@@ -200,6 +363,7 @@
     {
         "count": 1, 
         "name": "DIYLB_crank_to_base_assembly", 
+        "big": null, 
         "assemblies": {
             "DIYLB_Base_assembly": 1, 
             "DIYLB_crank_assembly": 1
@@ -211,6 +375,7 @@
     {
         "count": 1, 
         "name": "DIYLB_columns_to_base_assembly", 
+        "big": null, 
         "assemblies": {
             "DIYLB_crank_to_base_assembly": 1, 
             "DIYLB_rail_assembly": 4
@@ -222,6 +387,7 @@
     {
         "count": 1, 
         "name": "DIYLB_bed_to_columns_assembly", 
+        "big": null, 
         "assemblies": {
             "DIYLB_columns_to_base_assembly": 1, 
             "DIYLB_bed_assembly": 1
@@ -233,6 +399,7 @@
     {
         "count": 1, 
         "name": "DIYLB_top_to_columns_assembly", 
+        "big": null, 
         "assemblies": {
             "DIYLB_top_assembly": 1, 
             "DIYLB_bed_to_columns_assembly": 1
@@ -244,18 +411,22 @@
     {
         "count": 1, 
         "name": "DIYLB_belt_assembly", 
+        "big": null, 
         "assemblies": {
             "DIYLB_top_to_columns_assembly": 1
         }, 
         "routed": {}, 
         "printed": {}, 
         "vitamins": {
-            "belt(GT2x6, [[10, 159.64, -5.88], [32, 228, 6.3662], [328, 228, 6.3662], [328, 72, 6.3662], [32, 72, 6.3662], [10, 140.36, -5.88], [-58, 150, 6.3662]]): Belt GT2 x 6mm x 1140mm": 1
+            "belt(GT2x6, [[10, 159.64, -5.88], [32, 228, 6.3662], [328, 228, 6.3662], [328, 72, 6.3662], [32, 72, 6.3662], [10, 140.36, -5.88], [-58, 150, 6.3662]]): Belt GT2 x 6mm x 1140mm": {
+                "count": 1
+            }
         }
     }, 
     {
         "count": 1, 
         "name": "main_assembly", 
+        "big": null, 
         "assemblies": {
             "DIYLB_belt_assembly": 1
         }, 

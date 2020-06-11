@@ -23,7 +23,6 @@ Vitamins:
   |  |  |  |  |  |  |  |  |  | 2|  | 4|  |  |  | 4|  | 10 Ball bearing 608-2RS 8mm x 22mm x 7mm
   |  |  |  |  |  | 1|  |  |  |  |  |  |  |  |  |  |  |  1 Belt GT2 x 6mm x 1140mm
   |  |  |  |  |  |  |  |  |  |  |  | 4|  |  |  |  |  |  4 Euro-Cent coin
-  |  |  |  |  |  |  |  |  |  | 1|  |  |  |  |  |  |  |  1 Crank for 8mm shaft
   |  |  |  | 4|  |  |  |  |  |  |  |  |  |  |  |  |  |  4 Extrusion E2020 x 260mm
   |  | 1| 1|  |  |  |  |  |  |  |  |  |  | 2|  |  |  |  4 Extrusion E2020 x 300mm
   | 2|  |  | 2|  |  |  |  |  |  |  |  |  |  |  |  |  |  4 Extrusion E2020 x 320mm
@@ -36,27 +35,30 @@ Vitamins:
   |  | 2|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  2 Pulley GT2 idler smooth 12mm
   |  |  |  |  |  |  |  |  |  | 1|  | 4|  |  |  |  |  |  5 Pulley GT2OB 20 teeth
   |  |  |  |  |  |  |  |  |  |  |  |  | 4|  |  |  |  |  4 Linear rail MGN7 x 70mm
-  |  |  |  |  |  |  |  |  |  | 1|  |  |  |  |  |  |  |  1 Smooth rod 8mm x 50mm
   |  |  |  |  |  |  | 8| 8|  |  |  |  |  |  |  |  |  | 16 Screw M2 cap x 10mm
   |  |  |  |  |  |  |  |  |  |  |  |  |20|  |  |  |  | 20 Screw M2 cap x  6mm
-  |  |  |  |  |  |  |  |  |  | 2|  |  |  |  |  | 4|  |  6 Screw M3 grub x  4mm
+  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 4|  |  4 Screw M3 grub x  4mm
   |  |16|12|24|  |  |  |  |  | 6|  | 8|  |  |  |  |  | 66 Screw M3 grub x  6mm
   |  |  |  |  |  |  | 4| 4|  |  |  |  |  |  |  |  |  |  8 Screw M3 pan x 16mm
   |  |  |  |  |  |  | 6| 6|  |  |  | 8|  |  |  | 8|  | 28 Screw M4 cap x 12mm
   |  | 2|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  2 Screw M4 cap x 20mm
   | 4|  |  |  |  |  |  |  |  | 4|  |  |  |  |  |  |  |  8 Screw M4 dome x  8mm
+  |  |  |  |  |  |  |  |  |  | 1|  |  |  |  |  |  |  |  1 Screw M8 hex x  0mm
+  |  |  |  |  |  |  |  |  |  | 1|  |  |  |  |  |  |  |  1 Screw M8 hex x 35mm
   |  |  |  |  |  |  |  |  |  |  |  | 4|  |  |  |  |  |  4 Threaded rod M8 x 100mm
-  |  |  |  |  |  |  |  |  |  | 1|  |  |  |  |  | 4|  |  5 Lock ring (8mm)
+  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 4|  |  4 Lock ring (8mm)
   |  |  |  |  |  |  | 2| 2|  |  |  |  |  |  |  |  |  |  4 T8-Nut (narrow)
   |  |  |  |  |  |  | 6| 6|  |  |  | 8|  |  |  | 8|  | 28 T-Nut (20x20)
   |  | 2|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  2 T-Nut (20x20)
   | 4|  |  |  |  |  |  |  |  | 4|  |  |  |  |  |  |  |  8 T-Nut (20x20)
   |  |  |  |  |  |  | 8| 8|  |  |  |  |  |  |  |  |  | 16 Washer  M2 x 5mm x 0.3mm
   | 4| 2|  |  |  |  | 6| 6|  | 4|  | 8|  |  |  | 8|  | 38 Washer  M4 x 9mm x 0.8mm
+  |  |  |  |  |  |  |  |  |  | 1|  |  |  |  |  |  |  |  1 Washer  M8 x 17mm x 1.6mm
 
 Printed:
   |  |  |  |  |  |  | 2|  |  |  |  |  |  |  |  |  |  |  2 DIYLB_carriage_left.stl
   |  |  |  |  |  |  |  | 2|  |  |  |  |  |  |  |  |  |  2 DIYLB_carriage_right.stl
+  |  |  |  |  |  |  |  |  |  | 1|  |  |  |  |  |  |  |  1 DIYLB_crank.stl
   |  |  |  |  |  |  |  |  |  | 2|  |  |  |  |  |  |  |  2 DIYLB_crank_bearing.stl
   |  |  |  |  |  |  |  |  |  |  |  | 4|  |  |  |  |  |  4 DIYLB_lower_bearing.stl
   |  |  |  |  |  |  |  |  |  |  |  |  | 4|  |  |  |  |  4 DIYLB_rail.stl

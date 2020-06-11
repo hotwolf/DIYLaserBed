@@ -29,6 +29,10 @@
 //#   February 19, 2020                                                         #
 //#      - Initial release                                                      #
 //#                                                                             #
+//#   June 11, 2020                                                             #
+//#      - Fixed design flaw:                                                   #
+//#        Shortened the rail holder.                                           #
+//#                                                                             #
 //###############################################################################
 include <DIYLB_Config.scad>
 

@@ -1,5 +1,5 @@
 //###############################################################################
-//# DIY Laser Bed - Bracket for the Lower Ball Bearings                         #
+//# DIY Laser Bed - Bracket for the Upper Ball Bearings                         #
 //###############################################################################
 //#    Copyright 2018 - 2019 Dirk Heisswolf                                     #
 //#    This file is part of the DIY Laser Bed project.                          #
