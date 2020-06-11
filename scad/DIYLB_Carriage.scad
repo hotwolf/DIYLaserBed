@@ -29,6 +29,10 @@
 //#   February 13, 2020                                                         #
 //#      - Initial release                                                      #
 //#                                                                             #
+//#   June 11, 2020                                                             #
+//#      - Fixed design flaw:                                                   #
+//#        T-Nuts had not been placed correctly, reaching into the extrusion.   #
+//#                                                                             #
 //###############################################################################
 include <DIYLB_Config.scad>
 use <./vitamins/T-Nut.scad>
@@ -76,7 +80,7 @@ module DIYLB_carriage_shape() {
                 rotate([0,90,0])
                 cylinder(13,d=4.5);
 
-                translate([aoffs-7,55,10])
+                translate([aoffs-10,55,10])
                 rotate([0,90,0])
                 cylinder(10,d=10);
 
@@ -84,7 +88,7 @@ module DIYLB_carriage_shape() {
                 rotate([0,90,0])
                 cylinder(13,d=4.5);
 
-                translate([aoffs-7,25,10])
+                translate([aoffs-10,25,10])
                 rotate([0,90,0])
                 cylinder(10,d=10);
 
@@ -92,7 +96,7 @@ module DIYLB_carriage_shape() {
                 rotate([0,90,0])
                 cylinder(13,d=4.5);
 
-                translate([aoffs-7,-5,10])
+                translate([aoffs-10,-5,10])
                 rotate([0,90,0])
                 cylinder(10,d=10);
       
@@ -143,15 +147,15 @@ module DIYLB_carriage_vitamins() {
     }
      
     //T-Nuts
-    translate([aoffs+9,55,10])
+    translate([aoffs+6,55,10])
     rotate([90,0,-90])
     tnut(6);
 
-    translate([aoffs+9,25,10])
+    translate([aoffs+6,25,10])
     rotate([90,180,-90])
     tnut(6);
 
-    translate([aoffs+9,-5,10])
+    translate([aoffs+6,-5,10])
     rotate([90,180,-90])
     tnut(6);
 
@@ -217,17 +221,27 @@ if ($preview) {
 
     //Axis offset
     aoffs = 1 + ($bb_diameter/2);  //Axis offset
+ 
+    difference() {
+        union() {
     
-    //Demo Carriage (right side)
-    DIYLB_carriage_right_assembly();
+        //Demo Carriage (right side)
+        DIYLB_carriage_right_assembly();
     
-    //Demo Carriage (left side)
-    translate([0,200,0]) DIYLB_carriage_left_assembly();
+        //Demo Carriage (left side)
+        translate([0,200,0]) DIYLB_carriage_left_assembly();
     
-    //Demo extrusions
-    translate([16+aoffs,220,$elevation+10]) rotate([90,0,0]) extrusion(E2020, 240, center=false);
+        //Demo extrusions
+        translate([16+aoffs,220,$elevation+10]) rotate([90,0,0]) extrusion(E2020, 240, center=false);
     
-    //Demo rail
-    translate([0,10,40])   rotate([0,90,0]) rail(MGN7, 60);
-    translate([0,190,40]) rotate([0,90,0]) rail(MGN7, 60);
+        //Demo rail
+        translate([0,10,40])  rotate([0,90,0]) rail(MGN7, 60);
+        translate([0,190,40]) rotate([0,90,0]) rail(MGN7, 60);
+            
+        }
+        union() {
+            //Cut
+            //box(-200,-200,-200,200,24,200);
+         }
+    }       
 }

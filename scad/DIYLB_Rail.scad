@@ -45,9 +45,9 @@ module DIYLB_rail_stl() {
     difference() {
         union() {
 
-            translate([0,10,20])
+            translate([0,10,22])
             rotate([0,0,180])
-            linear_extrude(70)
+            linear_extrude(66)
             polygon([[3.5,4],[5.5,2],[5.5,-2],[3.5,-4],[1.5,-2.5],[1.5,2.5]]);
             
         }    
