@@ -87,10 +87,14 @@ module DIYLB_crank_stl() {
               translate([0,0,0]) screw(M8_hex_screw,0);
               
               //Scale
-              for (angle=[0:18:360]) {
-                  rotate([0,0,angle]) translate([0,30,12]) cube([1,20,2], center=true);
-                  rotate([0,0,angle]) translate([0,35,8]) cube([1,2,10], center=true);
-              }
+              for (angle=[0:18:360])   rotate([0,0,angle]) translate([0,35,6.5])  cube([1,2,8], center=true);
+              for (angle=[126:18:244]) rotate([0,0,angle]) translate([0,26.5,12]) cube([1,15,2], center=true);
+              for (angle=[306:18:424]) rotate([0,0,angle]) translate([0,26.5,12]) cube([1,15,2], center=true);
+                                       rotate([0,0,108])   translate([0,33,12])   cube([1,2,2], center=true);
+                                       rotate([0,0,72])    translate([0,33,12])   cube([1,2,2], center=true);
+                                       rotate([0,0,252])   translate([0,33,12])   cube([1,2,2], center=true);
+                                       rotate([0,0,288])   translate([0,33,12])   cube([1,2,2], center=true);
+              
          }
     }
 }
