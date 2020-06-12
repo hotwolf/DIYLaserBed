@@ -4,14 +4,13 @@ Vitamins:
   1 Extrusion E2040 x 60mm
   1 Extrusion E2040 x 70mm
   2 L-Bracket (20x20)
+  1 Nut M8 x 6.5mm 
   1 Pulley GT2OB 20 teeth
   6 Screw M3 grub x  6mm
   4 Screw M4 dome x  8mm
-  1 Screw M8 hex x  0mm
-  1 Screw M8 hex x 35mm
+  2 Screw M8 hex x 50mm
   4 T-Nut (20x20)
   4 Washer  M4 x 9mm x 0.8mm
-  1 Washer  M8 x 17mm x 1.6mm
 
 Printed:
   1 DIYLB_crank.stl

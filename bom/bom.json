@@ -194,20 +194,17 @@
             }
         }, 
         "vitamins": {
+            "nut(M8_nut): Nut M8 x 6.5mm ": {
+                "count": 1
+            }, 
             "ball_bearing(BB608): Ball bearing 608-2RS 8mm x 22mm x 7mm": {
                 "count": 2
             }, 
             "washer(M4_washer): Washer  M4 x 9mm x 0.8mm": {
                 "count": 4
             }, 
-            "screw(M8_hex_screw, 0): Screw M8 hex x  0mm": {
-                "count": 1
-            }, 
             "tnut(M4_dome_screw, 8): T-Nut (20x20)": {
                 "count": 4
-            }, 
-            "washer(M8_washer): Washer  M8 x 17mm x 1.6mm": {
-                "count": 1
             }, 
             "pulley(GT2x20_pulley): Pulley GT2OB 20 teeth": {
                 "count": 1
@@ -227,8 +224,8 @@
             "screw(M3_grub_screw, 6): Screw M3 grub x  6mm": {
                 "count": 6
             }, 
-            "screw(M8_hex_screw, 35): Screw M8 hex x 35mm": {
-                "count": 1
+            "screw(M8_hex_screw, 50): Screw M8 hex x 50mm": {
+                "count": 2
             }
         }
     }, 

@@ -32,6 +32,7 @@ Vitamins:
   |  | 8| 6|12|  |  |  |  |  | 2|  |  |  |  |  |  |  | 28 L-Bracket (20x20)
   |  |  |  |  |  |  |  |  |  |  |  |  |20|  |  |  |  | 20 Nut M2 x 1.6mm 
   |  |  |  |  |  |  | 4| 4|  |  |  |  |  |  |  |  |  |  8 Nut M3 x 2.4mm 
+  |  |  |  |  |  |  |  |  |  | 1|  |  |  |  |  |  |  |  1 Nut M8 x 6.5mm 
   |  | 2|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  2 Pulley GT2 idler smooth 12mm
   |  |  |  |  |  |  |  |  |  | 1|  | 4|  |  |  |  |  |  5 Pulley GT2OB 20 teeth
   |  |  |  |  |  |  |  |  |  |  |  |  | 4|  |  |  |  |  4 Linear rail MGN7 x 70mm
@@ -43,8 +44,7 @@ Vitamins:
   |  |  |  |  |  |  | 6| 6|  |  |  | 8|  |  |  | 8|  | 28 Screw M4 cap x 12mm
   |  | 2|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  2 Screw M4 cap x 20mm
   | 4|  |  |  |  |  |  |  |  | 4|  |  |  |  |  |  |  |  8 Screw M4 dome x  8mm
-  |  |  |  |  |  |  |  |  |  | 1|  |  |  |  |  |  |  |  1 Screw M8 hex x  0mm
-  |  |  |  |  |  |  |  |  |  | 1|  |  |  |  |  |  |  |  1 Screw M8 hex x 35mm
+  |  |  |  |  |  |  |  |  |  | 2|  |  |  |  |  |  |  |  2 Screw M8 hex x 50mm
   |  |  |  |  |  |  |  |  |  |  |  | 4|  |  |  |  |  |  4 Threaded rod M8 x 100mm
   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 4|  |  4 Lock ring (8mm)
   |  |  |  |  |  |  | 2| 2|  |  |  |  |  |  |  |  |  |  4 T8-Nut (narrow)
@@ -53,7 +53,6 @@ Vitamins:
   | 4|  |  |  |  |  |  |  |  | 4|  |  |  |  |  |  |  |  8 T-Nut (20x20)
   |  |  |  |  |  |  | 8| 8|  |  |  |  |  |  |  |  |  | 16 Washer  M2 x 5mm x 0.3mm
   | 4| 2|  |  |  |  | 6| 6|  | 4|  | 8|  |  |  | 8|  | 38 Washer  M4 x 9mm x 0.8mm
-  |  |  |  |  |  |  |  |  |  | 1|  |  |  |  |  |  |  |  1 Washer  M8 x 17mm x 1.6mm
 
 Printed:
   |  |  |  |  |  |  | 2|  |  |  |  |  |  |  |  |  |  |  2 DIYLB_carriage_left.stl

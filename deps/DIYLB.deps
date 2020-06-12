@@ -1,6 +1,5 @@
 tmp.png: \
 	/home/dirk/Projects/DIYLaserBed/scad/DIYLB_Carriage.scad \
-	/home/dirk/Projects/DIYLaserBed/scad/vitamins/Cent.scad \
 	/home/dirk/Tools/NopSCADlib/vitamins/light_strips.scad \
 	/home/dirk/Projects/DIYLaserBed/scad/DIYLB_LBearing.scad \
 	/home/dirk/Projects/DIYLaserBed/scad/vitamins/T8Nut.scad \
@@ -15,6 +14,7 @@ tmp.png: \
 	/home/dirk/Tools/NopSCADlib/utils/core/teardrops.scad \
 	/home/dirk/Tools/NopSCADlib/vitamins/washers.scad \
 	/home/dirk/Tools/NopSCADlib/vitamins/green_terminal.scad \
+	/home/dirk/Projects/DIYLaserBed/scad/vitamins/Cent.scad \
 	/home/dirk/Tools/NopSCADlib/vitamins/geared_stepper.scad \
 	/home/dirk/Tools/NopSCADlib/vitamins/sheets.scad \
 	/home/dirk/Tools/NopSCADlib/vitamins/extrusion_bracket.scad \
@@ -112,7 +112,6 @@ tmp.png: \
 	/home/dirk/Tools/NopSCADlib/vitamins/pillars.scad \
 	/home/dirk/Tools/NopSCADlib/vitamins/pin_headers.scad \
 	/home/dirk/Tools/NopSCADlib/vitamins/belt.scad \
-	/home/dirk/Projects/DIYLaserBed/scad/vitamins/Crank.scad \
 	/home/dirk/Tools/NopSCADlib/vitamins/pulley.scad \
 	/home/dirk/Tools/NopSCADlib/utils/core/bom.scad \
 	/home/dirk/Tools/NopSCADlib/vitamins/opengrab.scad \

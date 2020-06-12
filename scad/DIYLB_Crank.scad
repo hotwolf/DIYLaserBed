@@ -35,12 +35,14 @@
 //#        Replaced the shaft by a M8 hex screw.                                #
 //#        Added a printed crank to fit on top of the hex screw's head.         #
 //#                                                                             #
+//#   June 12, 2020                                                             #
+//#      - Redesigned crank wheel                                               #
+//#                                                                             #
 //###############################################################################
 include <DIYLB_Config.scad>
 use <./vitamins/T-Nut.scad>
 use <./vitamins/L-Bracket.scad>
-use <./vitamins/T8Lock.scad>
-use <./vitamins/Crank.scad>
+//use <./vitamins/Crank.scad>
 
 //$explode = 1;
 //$vpr = [80, 0, 65];
@@ -55,47 +57,34 @@ module DIYLB_crank_stl() {
     difference() {   
         union() {
             //Screw head fitting
-            translate([0,0,0]) cylinder(screw_head_height(M8_hex_screw), r=(screw_head_radius(M8_hex_screw)+2));
+            translate([0,0,11]) cylinder(screw_head_height(M8_hex_screw), r=(screw_head_radius(M8_hex_screw)+2));
 
-            // Disk
-            difference() {
-                translate([0,0,4]) cylinder(8, d=70);
-                union() {
-                    //Finger holes
-                    translate([-22,0,0])  cylinder(20, d=20);
-                    translate([-22,0,0])  cylinder( 6, d=24);
-                    translate([-22,0,10]) cylinder(10, d=24);
-              
-                    translate([22,0,0])  cylinder(20, d=20);
-                    translate([22,0,0])  cylinder( 6, d=24);
-                    translate([22,0,10]) cylinder(10, d=24);
+            //Wheel
+            minkowski() {
+                difference() {
+                    //Disk
+                    translate([0,0,6.5]) cylinder(6,d=66);
+                    //Handles  
+                    for (angle=[0:36:360]) rotate([0,0,angle]) translate([0,38,0]) cylinder(20,d=20);
                 }
+                sphere(r=2);
             }
-            intersection() {
-                translate([0,0,4]) cylinder(8, d=70);
-                union() {
-                    translate([-22,0,10]) rotate([0,0,0]) rotate_extrude() translate([12,0]) circle(r=2);
-                    translate([-22,0,6])  rotate([0,0,0]) rotate_extrude() translate([12,0]) circle(r=2);                
 
-                    translate([22,0,10]) rotate([0,0,0]) rotate_extrude() translate([12,0]) circle(r=2);
-                    translate([22,0,6])  rotate([0,0,0]) rotate_extrude() translate([12,0]) circle(r=2);
-                }
-            }         
         }    
         union() {
               //Screw head fitting
-              translate([0,0,0]) screw(M8_hex_screw,0);
-              
-              //Scale
-              for (angle=[0:18:360])   rotate([0,0,angle]) translate([0,35,6.5])  cube([1,2,8], center=true);
-              for (angle=[126:18:244]) rotate([0,0,angle]) translate([0,26.5,12]) cube([1,15,2], center=true);
-              for (angle=[306:18:424]) rotate([0,0,angle]) translate([0,26.5,12]) cube([1,15,2], center=true);
-                                       rotate([0,0,108])   translate([0,33,12])   cube([1,2,2], center=true);
-                                       rotate([0,0,72])    translate([0,33,12])   cube([1,2,2], center=true);
-                                       rotate([0,0,252])   translate([0,33,12])   cube([1,2,2], center=true);
-                                       rotate([0,0,288])   translate([0,33,12])   cube([1,2,2], center=true);
-              
-         }
+              translate([0,0,11]) screw(M8_hex_screw,50);
+          }
+    }
+    
+    //Markings
+    color("white") 
+    union() {
+        for (angle=[0:36:360])  rotate([0,0,angle]) translate([0,25,14.5]) cube([1,4,2], center= true);
+        for (angle=[18:36:378]) rotate([0,0,angle]) translate([0,26,14.5]) cube([1,6,2], center= true);
+        labels = ["0.0","0.2","0.4","0.6","0.8","1.0","1.2","1.4","1.6","1.8"];
+        for (idx=[0:1:9]) rotate([0,0,18+idx*36]) translate([0,22,13.5]) rotate([0,0,270]) linear_extrude(2) text(labels[idx], size=5.5, valign="center");
+        
     }
 }
 
@@ -120,8 +109,6 @@ module DIYLB_crank_bearing_stl() {
             translate([-90,10,-7])  rotate([0,0,0])   linear_extrude(14) polygon([[0,3],[1,2],[1,-2],[0,-3]]);
             translate([-80,-20,-7]) rotate([0,0,90])  linear_extrude(14) polygon([[0,3],[1,2],[1,-2],[0,-3]]);
             translate([-80,20,-7])  rotate([0,0,270]) linear_extrude(14) polygon([[0,3],[1,2],[1,-2],[0,-3]]);
-//          translate([-70,-10,-7]) rotate([0,0,180]) linear_extrude(14) polygon([[0,3],[1,2],[1,-2],[0,-3]]);
-//          translate([-70,10,-7])  rotate([0,0,180]) linear_extrude(14) polygon([[0,3],[1,2],[1,-2],[0,-3]]);
 
         }    
         union() {
@@ -167,14 +154,16 @@ module DIYLB_crank_assembly () {
     
         //Shaft
         //translate([aoffs,20,45]) explode(100) rod(8, 50);
-        translate([aoffs,20,58]) rotate([0,0,$rotation]) explode(125) screw_and_washer(M8_hex_screw, 35);
+        translate([aoffs,20,71]) rotate([0,0,$rotation]) explode(140) screw(M8_hex_screw, 50);
+        translate([aoffs,20,58]) rotate([0,0,$rotation]) explode(90) nut(M8_nut);
+        
     
         //t8lock
         //translate([aoffs,20,58]) rotate([0,0,$rotation+30]) explode(145) t8lock(); 
     
         //Crank
         //translate([aoffs,20,64]) rotate([0,0,$rotation]) explode(150) crank();
-        translate([aoffs,20,60]) rotate([0,0,$rotation]) explode(140) DIYLB_crank_stl();
+        translate([aoffs,20,60]) rotate([0,0,$rotation]) explode(155) DIYLB_crank_stl();
         
     
         //T-nuts

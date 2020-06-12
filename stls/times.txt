@@ -1,6 +1,6 @@
 {
     "DIYLB_Rail.stl": 1.46, 
-    "DIYLB_crank_bearing.stl": 4.785, 
+    "DIYLB_crank_bearing.stl": 1.89, 
     "DIYLB_CBearing.stl": 2.128, 
     "DIYLB_rail.stl": 3.493, 
     "DIYLB_crank.stl": 79.67, 
