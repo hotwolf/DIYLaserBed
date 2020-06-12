@@ -79,7 +79,7 @@ $cent_diameter  = 16.4;
 //Animation
 //=========
 $elevation = 70 - abs(($t-0.5) * 80);
-$rotation  = $t*360;
+$rotation  = $t*360*20;
 //$elevation = 30;
 //$rotation  = 20;
 $vpr = [70, 0, $t * 360];
