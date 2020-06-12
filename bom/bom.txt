@@ -44,7 +44,7 @@ Vitamins:
   |  |  |  |  |  |  | 6| 6|  |  |  | 8|  |  |  | 8|  | 28 Screw M4 cap x 12mm
   |  | 2|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  2 Screw M4 cap x 20mm
   | 4|  |  |  |  |  |  |  |  | 4|  |  |  |  |  |  |  |  8 Screw M4 dome x  8mm
-  |  |  |  |  |  |  |  |  |  | 2|  |  |  |  |  |  |  |  2 Screw M8 hex x 50mm
+  |  |  |  |  |  |  |  |  |  | 3|  |  |  |  |  |  |  |  3 Screw M8 hex x 50mm
   |  |  |  |  |  |  |  |  |  |  |  | 4|  |  |  |  |  |  4 Threaded rod M8 x 100mm
   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 4|  |  4 Lock ring (8mm)
   |  |  |  |  |  |  | 2| 2|  |  |  |  |  |  |  |  |  |  4 T8-Nut (narrow)

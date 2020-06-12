@@ -74,6 +74,7 @@ module DIYLB_crank_stl() {
         union() {
               //Screw head fitting
               translate([0,0,11]) screw(M8_hex_screw,50);
+              translate([0,0,13]) screw(M8_hex_screw,50);
           }
     }
     
@@ -154,7 +155,7 @@ module DIYLB_crank_assembly () {
     
         //Shaft
         //translate([aoffs,20,45]) explode(100) rod(8, 50);
-        translate([aoffs,20,71]) rotate([0,0,$rotation]) explode(140) screw(M8_hex_screw, 50);
+        translate([aoffs,20,71]) rotate([0,0,$rotation]) explode(160) screw(M8_hex_screw, 50);
         translate([aoffs,20,58]) rotate([0,0,$rotation]) explode(90) nut(M8_nut);
         
     
@@ -163,7 +164,7 @@ module DIYLB_crank_assembly () {
     
         //Crank
         //translate([aoffs,20,64]) rotate([0,0,$rotation]) explode(150) crank();
-        translate([aoffs,20,60]) rotate([0,0,$rotation]) explode(155) DIYLB_crank_stl();
+        translate([aoffs,20,60]) rotate([0,0,$rotation]) explode(100) DIYLB_crank_stl();
         
     
         //T-nuts
