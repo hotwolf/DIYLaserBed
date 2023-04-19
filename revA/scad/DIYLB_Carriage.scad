@@ -65,14 +65,14 @@ module DIYLB_carriage_shape() {
                 
                 //Carriage
                 translate([0,10,10]) rotate([0,90,0]) {
-                    carriage_hole_positions(MGN7_carriage) {                 
+                    carriage_hole_positions(MGN7C_carriage) {                 
                         translate([0,0,-3]) cylinder(15,d=2.4);
                         translate([0,0,7]) cylinder(5,d=6);
                     }
-                    translate([0.1,0.2,0])  carriage(MGN7_carriage, MGN7);
-                    translate([-0.1,0.2,0]) carriage(MGN7_carriage, MGN7);
-                    translate([0.1,-0.2,0])  carriage(MGN7_carriage, MGN7);
-                    translate([-0.1,-0.2,0]) carriage(MGN7_carriage, MGN7);
+                    translate([0.1,0.2,0])  carriage(MGN7C_carriage);
+                    translate([-0.1,0.2,0]) carriage(MGN7C_carriage);
+                    translate([0.1,-0.2,0])  carriage(MGN7C_carriage);
+                    translate([-0.1,-0.2,0]) carriage(MGN7C_carriage);
                     }
 
                 //T-Nuts
@@ -140,9 +140,9 @@ module DIYLB_carriage_vitamins() {
  
     //Carriage
     translate([0,10,10]) rotate([0,90,0]) {
-        explode(-10) carriage(MGN7_carriage, MGN7);
+        explode(-10) carriage(MGN7C_carriage);
 
-        carriage_hole_positions(MGN7_carriage)                 
+        carriage_hole_positions(MGN7C_carriage)                 
             translate([0,0,7]) explode(20) screw_and_washer(M2_cap_screw, 10);
     }
      

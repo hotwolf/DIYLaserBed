@@ -77,7 +77,8 @@ module DIYLB_lower_bearing_assembly()
     assembly("DIYLB_lower_bearing") {
     
     aoffs = 1 + ($bb_diameter/2);  //Axis offset
-    
+    poffs = 24;
+        
     //Cent
     translate([aoffs,40,2]) explode(15) Cent();    
 
@@ -88,7 +89,7 @@ module DIYLB_lower_bearing_assembly()
     translate([aoffs,40,20-($bb_height/2)-$p_hubl]) explode(20) ball_bearing($bb_type);
 
     //Pulley
-    translate([aoffs,40,$p_offs]) rotate([0,0,$rotation]) explode(25) pulley_assembly($p_type); 
+    translate([aoffs,40,poffs]) rotate([0,0,$rotation]) explode(25) pulley_assembly($p_type); 
 
     //T-nuts
     translate([0,58,10]) rotate([90,180,90]) tnut(($bb_diameter/2)-5);

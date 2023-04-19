@@ -39,7 +39,7 @@ module lbracket() {//! Draw a L-bracket for a 20x20 aluminium extrusion, includi
     vitamin(str("lbracket(): ", description));
 
     //L-Bracket
-    color(grey70) {
+    color(grey(70)) {
 
         translate([7,0,-3])
         cube([24,6,4], true);

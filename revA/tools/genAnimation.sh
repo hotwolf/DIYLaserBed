@@ -5,12 +5,11 @@ cd $(dirname $0)/..
 mkdir -p tmp
 rm -f tmp/*.png
 
-openscad -o tmp/wp.png \
-	 --camera 610,-400,0,10,30,0,3500 \
+openscad -o tmp/lb.png \
 	 --projection p \
-	 --imgsize 800,800 \
-	 --colorscheme Sunset \
-	 --animate 120 \
+	 --imgsize 800,600 \
+	 --colorscheme Solarized \
+	 --animate 240 \
 	 scad/DIYLB.scad
 
 magick convert -delay 5 -loop 0 -dispose previous tmp/lb*.png doc/DIYLB.gif

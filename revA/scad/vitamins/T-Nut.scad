@@ -45,7 +45,7 @@ module tnut(length=4, screw_type=M4_cap_screw) {//! Draw a nut for a 20x20 alumi
     screw_and_washer(screw_type, length+6);
 
     //T-nut
-    color(grey70) {
+    color(grey(70)) {
         difference() {
             translate([8,0,-1.4])
             rotate([-90,0,90])

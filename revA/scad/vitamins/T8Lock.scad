@@ -42,7 +42,7 @@ module t8lock ()  {//! Draw a lock ring for an 8mm rod
     vitamin(str("t8lock(): ", description));
 
     
-   color(grey70)
+    color(grey(70))
    difference() {
        cylinder($t8lock_width,d=12);
        translate([0,0,-1]) cylinder($t8lock_width+2,d=8);

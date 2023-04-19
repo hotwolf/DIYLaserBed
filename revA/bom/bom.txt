@@ -21,7 +21,8 @@ Vitamins:
  s  e  f  h  e  n  l  f  h  s  n  s  n  i  o  n  n  i
  e  r  t  t  d  s  t  t  t  e  k  e  g  l  p  s  g  n
   |  |  |  |  |  |  |  |  |  | 2|  | 4|  |  |  | 4|  | 10 Ball bearing 608-2RS 8mm x 22mm x 7mm
-  |  |  |  |  |  | 1|  |  |  |  |  |  |  |  |  |  |  |  1 Belt GT2 x 6mm x 1140mm
+  |  |  |  |  |  | 1|  |  |  |  |  |  |  |  |  |  |  |  1 Belt GT2 x 6mm x 1104mm
+  |  |  |  |  |  |  |10|10|  |  |  |  |  |  |  |  |  | 20 Linear rail carriage MGN7C
   |  |  |  |  |  |  |  |  |  |  |  | 4|  |  |  |  |  |  4 Euro-Cent coin
   |  |  |  | 4|  |  |  |  |  |  |  |  |  |  |  |  |  |  4 Extrusion E2020 x 260mm
   |  | 1| 1|  |  |  |  |  |  |  |  |  |  | 2|  |  |  |  4 Extrusion E2020 x 300mm

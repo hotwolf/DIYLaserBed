@@ -30,15 +30,15 @@
 //#      - Initial release                                                      #
 //#                                                                             #
 //###############################################################################
-include <NopSCADlib/lib.scad>
-//include <NopSCADlib/core.scad>
-include <NopSCADlib/vitamins/extrusions.scad>
-include <NopSCADlib/vitamins/screws.scad>
-include <NopSCADlib/vitamins/belts.scad>
-include <NopSCADlib/vitamins/pulleys.scad>
-include <NopSCADlib/vitamins/ball_bearings.scad>
-include <NopSCADlib/vitamins/rod.scad>
-include <NopSCADlib/vitamins/rails.scad>
+include <../../lib/NopSCADlib/lib.scad>
+//include <../../lib/NopSCADlib/core.scad>
+include <../../lib/NopSCADlib/vitamins/extrusions.scad>
+include <../../lib/NopSCADlib/vitamins/screws.scad>
+include <../../lib/NopSCADlib/vitamins/belts.scad>
+include <../../lib/NopSCADlib/vitamins/pulleys.scad>
+include <../../lib/NopSCADlib/vitamins/ball_bearings.scad>
+include <../../lib/NopSCADlib/vitamins/rod.scad>
+include <../../lib/NopSCADlib/vitamins/rails.scad>
 
 //Ball bearings
 //=============

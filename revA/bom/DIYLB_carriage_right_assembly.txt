@@ -1,5 +1,6 @@
 DIYLB_carriage_right_assemblies:
 Vitamins:
+ 10 Linear rail carriage MGN7C
   4 Nut M3 x 2.4mm 
   8 Screw M2 cap x 10mm
   4 Screw M3 pan x 16mm

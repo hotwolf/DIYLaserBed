@@ -145,7 +145,7 @@ module DIYLB_belt_assembly() {
         belt = GT2x6;
         translate([0,0,24]) belt(belt, belt_path);
             
-        echo(Belt_length=belt_length(belt_path));
+        echo(Belt_length=belt_length(belt, belt_path));
 
     }
 }

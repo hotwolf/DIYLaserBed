@@ -40,7 +40,7 @@ module crank ()  {
 
        explode(20) {
 
-        color(grey70) {
+	 color(grey(70)) {
             difference() {
                 cylinder(6,d=12);
                 translate([0,0,-1]) cylinder(8,d=8);
@@ -49,7 +49,7 @@ module crank ()  {
             translate([7,0,3]) rotate([0,90,0]) screw(M3_grub_screw, 4);
         }
         
-        color(grey30) {
+	 color(grey(30)) {
             translate([0,0,6])   cylinder(8,d=60);
             translate([0,25,14]) cylinder(20,d=8);
         }
