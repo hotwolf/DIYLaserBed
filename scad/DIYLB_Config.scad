@@ -64,11 +64,10 @@ $bb_diameter = $bb_type[2];                              //Ball bearing diameter
 //                                                                            e     e                            s
 //                                                                                       l  z     
 //                                                                            d     t             
-$i_type = ["GT2x20_plain_idler", "GT2",    0, 12.0,  GT2x6,  6.5,  18, 0,   5, 18.0, 1.0, 0, 0,    false,         0];
-$p_type = ["GT2x20_pulley",      "GT2OB", 20, 12.22, GT2x6,  7.5,  16, 5.5, 8, 16.0, 1.0, 6, 3.25, M3_grub_screw, 2]; //Standarf GT2 T20 pulley
-$p_hubl = $p_type[7];                                                                                            //Length of the hub
-$p_totl = $p_type[7] + 2*$p_type[10] + $p_type[5];                                                               //Total length of the pulley
-$p_offs = 20+(($p_totl-$p_hubl)/2);
+$i_type  = ["GT2x20_plain_idler", "GT2",    0, 12.0,  GT2x6,  6.5,  18, 0,   5, 18.0, 1.0, 0, 0,    false,         0];
+$p_type  = ["GT2x20_pulley",      "GT2OB", 20, 12.22, GT2x6,  7.5,  16, 5.5, 8, 16.0, 1.0, 6, 3.25, M3_grub_screw, 2]; //Standarf GT2 T20 pulley
+$p_hubl  = $p_type[7];                                                                                            //Length of the hub
+$p_width = $p_type[4]; 
 
 //Cent coin
 //=========
