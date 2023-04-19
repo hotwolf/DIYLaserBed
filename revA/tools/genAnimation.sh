@@ -11,6 +11,6 @@ openscad -o tmp/wp.png \
 	 --imgsize 800,800 \
 	 --colorscheme Sunset \
 	 --animate 120 \
-	 scad/WPMain.scad
+	 scad/DIYLB.scad
 
-magick convert -delay 5 -loop 0 -dispose previous tmp/wp*.png img/wp.gif
+magick convert -delay 5 -loop 0 -dispose previous tmp/lb*.png doc/DIYLB.gif
