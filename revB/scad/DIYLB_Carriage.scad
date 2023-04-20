@@ -147,36 +147,36 @@ module DIYLB_carriage_vitamins() {
     }
      
     //T-Nuts
-    translate([aoffs+6,55,10])
-    rotate([90,0,-90])
+    translate([0,55,10])
+    rotate([90,0,90])
     tnut(6);
 
-    translate([aoffs+6,25,10])
-    rotate([90,180,-90])
+    translate([0,25,10])
+    rotate([90,0,90])
     tnut(6);
 
-    translate([aoffs+6,-5,10])
-    rotate([90,180,-90])
+    *translate([aoffs+6,-5,10])
+    rotate([90,0,0])
     tnut(6);
 
     //T8-Nut
-    translate([aoffs,40,-0.5])    
+    translate([aoffs,aoffs+20,-0.5])    
     rotate([0,0,0])
     t8nut();
 
-    translate([aoffs,48,2])
+    translate([aoffs,aoffs+28,2])
     rotate([180,0,0])
     screw(M3_pan_screw, 16);
 
-    translate([aoffs,48,15])
+    translate([aoffs,aoffs+28,15])
     rotate([0,0,0])
     explode(20) nut(M3_nut);
 
-    translate([aoffs,32,2])
+    translate([aoffs,aoffs+12,2])
     rotate([180,0,0])
     screw(M3_pan_screw, 16);
 
-    translate([aoffs,32,15])
+    translate([aoffs,aoffs+12,15])
     rotate([0,0,0])
     explode(20) nut(M3_nut);
 }
@@ -192,7 +192,7 @@ module DIYLB_carriage_right_assembly() {
  
         translate([0,0,$elevation]) {
     
-            DIYLB_carriage_right_stl();
+            *DIYLB_carriage_right_stl();
 
             DIYLB_carriage_vitamins();
         }
@@ -208,9 +208,9 @@ module DIYLB_carriage_left_assembly() {
 
         aoffs = 1 + ($bb_diameter/2);  //Axis offset
  
-        translate([0,0,$elevation]) {
+        translate([0,100,$elevation]) {
     
-            DIYLB_carriage_left_stl();
+            *DIYLB_carriage_left_stl();
 
             mirror([0,1,0]) DIYLB_carriage_vitamins();
         }
@@ -232,11 +232,12 @@ if ($preview) {
         translate([0,200,0]) DIYLB_carriage_left_assembly();
     
         //Demo extrusions
-        translate([16+aoffs,220,$elevation+10]) rotate([90,0,0]) extrusion(E2020, 240, center=false);
+        *ranslate([16+aoffs,300,$elevation+10]) rotate([90,0,0]) extrusion(E2020, 300, center=false);
+        translate([-10,280,$elevation+10]) rotate([90,0,0]) extrusion(E2020, 260, center=false);
     
         //Demo rail
         translate([0,10,40])  rotate([0,90,0]) rail(MGN7, 60);
-        translate([0,190,40]) rotate([0,90,0]) rail(MGN7, 60);
+        translate([0,290,40]) rotate([0,90,0]) rail(MGN7, 60);
             
         }
         union() {

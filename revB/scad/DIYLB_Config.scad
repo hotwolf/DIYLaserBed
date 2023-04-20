@@ -75,6 +75,11 @@ $p_width = $p_type[4];
 $cent_thickness = 1.9;
 $cent_diameter  = 16.4;
 
+//Magnet
+//=========
+$magnet_thickness = 4.5;
+$magnet_diameter  = 19.8;
+
 //Animation
 //=========
 $elevation = 70 - abs(($t-0.5) * 80);

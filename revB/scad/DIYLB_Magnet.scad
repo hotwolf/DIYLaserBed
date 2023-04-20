@@ -1,5 +1,5 @@
 //###############################################################################
-//# DIY Laser Bed - Rail and Frame Column                                       #
+//# DIY Laser Bed - Magnet Mount                         #
 //###############################################################################
 //#    Copyright 2018 - 2019 Dirk Heisswolf                                     #
 //#    This file is part of the DIY Laser Bed project.                          #
@@ -22,75 +22,80 @@
 //#                                                                             #
 //###############################################################################
 //# Description:                                                                #
-//#   The rail and column of the Z-axis.                                        #
+//#   A bracket for the lower ball bearing.                                     #
 //#                                                                             #
 //###############################################################################
 //# Version History:                                                            #
-//#   February 19, 2020                                                         #
+//#   February 14, 2020                                                         #
 //#      - Initial release                                                      #
-//#                                                                             #
-//#   June 11, 2020                                                             #
-//#      - Fixed design flaw:                                                   #
-//#        Shortened the rail holder.                                           #
 //#                                                                             #
 //###############################################################################
 include <DIYLB_Config.scad>
+use <./vitamins/T-Nut.scad>
+use <./vitamins/L-Bracket.scad>
+use <./vitamins/Magnet.scad>
 
-//$explode = 1;
-//$vpr = [70, 0, 25];
-//$vpt = [0,0,50];
+//$explode=1;
 
-module DIYLB_rail_stl() {
-    stl("DIYLB_rail");   
-
-    aoffs = 1 + ($bb_diameter/2);  //Axis offset
+module DIYLB_magnet_stl() {  
+    stl("DIYLB_magnet");
+    
+    moffs = 1 + ($magnet_diameter/2);  //Axis offset
         
     color(pp1_colour)
     difference() {
         union() {
+            translate([0,-25,0]) cube([($magnet_diameter/2)+1,50,20]);
+            intersection() {
+                translate([moffs,0,0])cylinder($magnet_thickness+0.4,d=$magnet_diameter+4.5);
+                translate([0,-25,0]) cube([($magnet_diameter)+4,50,20]);
+            }
 
-            translate([0,10,22])
-            rotate([0,0,180])
-            linear_extrude(66)
-            polygon([[3.5,4],[5.5,2],[5.5,-2],[3.5,-4],[1.5,-2.5],[1.5,2.5]]);
+            translate([0,-25,10])
+            rotate([90,0,180])
+            linear_extrude(50)
+            polygon([[0,3],[1,2],[1,-2],[0,-3]]);
             
         }    
         union() {
-
-            translate([0,10,55]) rotate([0,90,0]) rail_hole_positions(MGN7, 70) {
-                translate([0,0,-5]) rotate([0,0,30]) nut_trap(M2_cap_screw, M2_nut, depth=2, horizontal=true, h=20);
-            }
+            translate([moffs,0,-10]) poly_cylinder(h=20,r=8/2);
+            translate([moffs,0,0.4]) poly_cylinder(h=40,r=($magnet_diameter+0.0)/2);
+            translate([-4,20,10])                 rotate([90,0,90]) cylinder(20,d=4.9);
+            translate([($bb_diameter/2)-5,20,10]) rotate([90,0,90]) cylinder(10,d=9.5);
+            translate([-4,-20,10])                 rotate([90,0,90]) cylinder(20,d=4.9);
+            translate([($bb_diameter/2)-5,-20,10]) rotate([90,0,90]) cylinder(10,d=9.5);        
         }
-    }    
-}
-
-//! 1. Insert the M2 nuts into the printed holder.
-//! 2. Attach the rail loosely.
-//! 3. Slide the printed holder into the 20x20 extrusion and tighten the screws.
-module DIYLB_rail_assembly () {
-    pose([70, 0, 25],[0, 0, 50])
-    assembly("DIYLB_rail") {
-
-        //Column
-        translate([-10,10,20]) rotate([0,0,0]) extrusion(E2020, 70, center=false);
-
-        //Rail
-        translate([0,10,55]) rotate([0,90,0]) explode(30) rail(MGN7, 70);
-        translate([0,10,55]) rotate([0,90,0]) rail_hole_positions(MGN7, 70) {     
-            translate([0,0,2]) rotate([0,0,0]) explode(40) screw(M2_cap_screw, 6);
-            translate([0,0,-4]) rotate([0,0,30]) explode(10) nut(M2_nut);
-        }
-
-        //Nut holder
-        explode([20,0,0]) DIYLB_rail_stl();
     }
 }
 
+//! 1. Squeze the magnet into the holder.
+//! 2. Attach two T-nuts with screws and washers.
+module DIYLB_magnet_assembly() 
+    pose([65,0,65], [0,40,30])
+    assembly("DIYLB_magnet") {
+    
+    moffs = 1 + ($magnet_diameter/2);  //Magnet offset
+        
+    //Magnet
+    translate([moffs,0,0.41]) explode(30) magnet();    
+
+    //T-nuts
+    translate([0,20,10]) rotate([90,180,90]) tnut(($bb_diameter/2)-5);
+    translate([0,-20,10]) rotate([90,0,90])   tnut(($bb_diameter/2)-5);
+
+    //Bracket
+    DIYLB_magnet_stl();    
+ }
+
 if ($preview) {
+    //$explode = 1;
 
     //Demo assembly
-    DIYLB_rail_assembly();
+    DIYLB_magnet_assembly();
 
     //Demo extrusions
-    translate([-10,-30,10])  rotate([-90,0,0]) extrusion(E2020, 80, center=false);
+    *translate([-10,-35,10]) rotate([-90,0,0]) extrusion(E2020, 70, center=false);
 }
+
+
+

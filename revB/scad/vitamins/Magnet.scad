@@ -1,7 +1,7 @@
 //###############################################################################
-//# DIY Laser Bed - Euro-Cent                                                   #
+//# DIY Laser Bed - Magnet                                                      #
 //###############################################################################
-//#    Copyright 2020 Dirk Heisswolf                                            #
+//#    Copyright 2023 Dirk Heisswolf                                            #
 //#    This file is part of the DIY Laser Bed project.                          #
 //#                                                                             #
 //#    This project is free software: you can redistribute it and/or modify     #
@@ -32,13 +32,12 @@
 //###############################################################################
 include <../DIYLB_Config.scad>
 
-module cent() {
-    description = str("Euro-Cent coin");
-    vitamin(str("cent(): ", description));
+module magnet() {
+    description = str("Neodym Magnet (D=20,H=4.5)");
+    vitamin(str("magnet(): ", description));
     
-    //color("gold"){ cylinder(1.67,d=16.25); }    
-    color("gold"){ cylinder(1.9,d=16.4); }    
+    color("Silver"){ cylinder(4.5,d=19.8); }    
 }
 
 //Demo coin
-cent();
+magnet();

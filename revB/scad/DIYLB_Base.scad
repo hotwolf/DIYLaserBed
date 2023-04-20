@@ -1,7 +1,7 @@
 //###############################################################################
 //# DIY Laser Bed - Base Assembly                                               #
 //###############################################################################
-//#    Copyright 2020 Dirk Heisswolf                                            #
+//#    Copyright 2023 Dirk Heisswolf                                            #
 //#    This file is part of the DIY Laser Bed project.                          #
 //#                                                                             #
 //#    This project is free software: you can redistribute it and/or modify     #
@@ -28,10 +28,13 @@
 //# Version History:                                                            #
 //#   February 13, 2020                                                         #
 //#      - Initial release                                                      #
+//#   April 20, 2023                                                            #
+//#      - Modified for revB                                                    #
 //#                                                                             #
 //###############################################################################
 include <DIYLB_Config.scad>
 use <./DIYLB_LBearing.scad>
+use <./DIYLB_Magnet.scad>
 use <./vitamins/L-Bracket.scad>
 use <./vitamins/T-Nut.scad>
 
@@ -39,31 +42,27 @@ use <./vitamins/T-Nut.scad>
 //$vpr = [55, 0, 0];
 //$vpt = [100,200,0];
 
-//! 1. Slide two T-nuts into the bottom slot of the 20x20 extrusions.
-//! 2. Attach the 20x20 extrusions to the case of the laser cutter, using the 
-//    screw holes of the original bed.
+//! 1. Attach two magnet holders to the 320mm 20x20 extrusion.
+
 module DIYLB_base_center_assembly() {
     pose([45, 0, 0],[150, 150, 0])
     assembly("DIYLB_base_center") {
         
-        //Extrusions
-        translate([20,27,10])  rotate([0,90,0])  extrusion(E2020, 320, center=false);
-        translate([20,270,10]) rotate([0,90,0])  extrusion(E2020, 320, center=false);
+        //Extrusion
+        translate([20,10,10])  rotate([0,90,0])  extrusion(E2020, 320, center=false);
 
-        //T-Nuts
-        translate([160,27,0])   rotate([180,0,0]) explode(10) tnut(2,M4_dome_screw);
-        translate([280,27,0])   rotate([180,0,0]) explode(10) tnut(2,M4_dome_screw);
-        translate([160,270,0])  rotate([180,0,0]) explode(10) tnut(2,M4_dome_screw);
-        translate([280,270,0])  rotate([180,0,0]) explode(10) tnut(2,M4_dome_screw);
+        //Magnets
+        translate([60,0,0])  rotate([0,0,270])  DIYLB_magnet_assembly();
+        translate([300,0,0])  rotate([0,0,270])  DIYLB_magnet_assembly();
+
     }
 }
 
 //! 1. Slide two idlers on T-nuts onto the top slot of the 20x20 extrusion.
-//! 2. Slide four L-brackets onto the top slot of the 20x20 extrusion.
-//! 3. Slide the two holders for the lower ball bearings onto the right-hand slot
+//! 2. Slide two L-brackets onto the top slot of the 20x20 extrusion.
+//! 3. Slide the two holders for the ball bearings onto the right-hand slot
 //!    of the 20x20 extrusion.
-//! 4. Slide two L-brackets onto the right-hand slot of the 20x20 extrusion.
-//! 5. Slide two L-brackets onto the left-hand slot of the 20x20 extrusion.
+//! 4. Slide two L-brackets onto the left-hand slot of the 20x20 extrusion.
 module DIYLB_base_left_assembly() {
     pose([55, 0, 0],[100, 200, 0])
     assembly("DIYLB_base_left") {
@@ -78,30 +77,22 @@ module DIYLB_base_left_assembly() {
         translate([10,159.64,20]) explode(2) pulley($i_type);
     
         //Ball bearings
-        translate([20,32,0])   mirror([0,0,0]) explode([20,0,0]) DIYLB_lower_bearing_assembly();
-        translate([20,268,0])  mirror([0,1,0]) explode([20,0,0]) DIYLB_lower_bearing_assembly();
+        translate([20,20,0])   mirror([0,0,0]) explode([20,0,0]) DIYLB_lower_bearing_assembly();
+        translate([20,280,0])  mirror([0,1,0]) explode([20,0,0]) DIYLB_lower_bearing_assembly();
           
         //Horizontal L-Brackets
         translate([0,130,10])    rotate([90,180,0])  explode([10,0,0]) lbracket();
         translate([0,170,10])   rotate([270,180,0])  explode([10,0,0]) lbracket();
 
-        translate([20,17,10])  rotate([90,0,0])    explode([10,0,0]) lbracket();   
-        //translate([20,260,10]) rotate([90,0,0])  explode([10,0,0]) lbracket();   
-        //translate([20,37,10])  rotate([-90,0,0]) explode([10,0,0]) lbracket();   
-        translate([20,280,10]) rotate([-90,0,0])   explode([10,0,0]) lbracket();   
-    
         //Vertical L-Brackets
-        translate([10,32,20])  rotate([0,270,90])  explode([10,0,0]) lbracket();
-        translate([10,50,20])  rotate([0,270,270]) explode([10,0,0]) lbracket();    
-        translate([10,248,20]) rotate([0,270,90])  explode([10,0,0]) lbracket();
-        translate([10,268,20]) rotate([0,270,270]) explode([10,0,0]) lbracket();
+        translate([10,20,20])  rotate([0,270,270]) explode([10,0,0]) lbracket();    
+        translate([10,280,20]) rotate([0,270,90])  explode([10,0,0]) lbracket();
     }
 }   
 
-//! 1. Slide four L-brackets onto the top slot of the 20x20 extrusion.
-//! 2. Slide the two holders for the lower ball bearings onto the lef-thand slot
+//! 1. Slide two L-brackets onto the top slot of the 20x20 extrusion.
+//! 2. Slide the two holders for the ball bearings onto the lef-thand slot
 //!    of the 20x20 extrusion.
-//! 3. Slide two L-brackets onto the left-hand slot of the 20x20 extrusion.
 module DIYLB_base_right_assembly() {
     pose([45, 0, -40],[250, 150, 0])
     assembly("DIYLB_base_right") {
@@ -110,25 +101,17 @@ module DIYLB_base_right_assembly() {
         translate([350,0,10])  rotate([-90,0,0]) extrusion(E2020, 300, center=false);
        
         //Ball bearings
-        translate([340,32,0])  mirror([1,0,0])                 explode([20,0,0]) DIYLB_lower_bearing_assembly();
-        translate([340,268,0]) mirror([1,0,0]) mirror([0,1,0]) explode([20,0,0]) DIYLB_lower_bearing_assembly();
+        translate([340,20,0])  mirror([1,0,0])                 explode([20,0,0]) DIYLB_lower_bearing_assembly();
+        translate([340,280,0]) mirror([1,0,0]) mirror([0,1,0]) explode([20,0,0]) DIYLB_lower_bearing_assembly();
          
-        //Horizontal L-Brackets
-        translate([340,17,10])  rotate([90,180,0])  explode([10,0,0]) lbracket();   
-        //translate([340,260,10]) rotate([90,180,0])  explode([10,0,0]) lbracket();   
-        //translate([340,37,10])  rotate([-90,180,0]) explode([10,0,0]) lbracket();   
-        translate([340,280,10]) rotate([-90,180,0]) explode([10,0,0]) lbracket();   
-
         //Vertical L-Brackets
-        translate([350,32,20])  rotate([0,270,90])  explode([10,0,0]) lbracket();
-        translate([350,50,20])  rotate([0,270,270]) explode([10,0,0]) lbracket();    
-        translate([350,248,20]) rotate([0,270,90])  explode([10,0,0]) lbracket();
-        translate([350,268,20]) rotate([0,270,270]) explode([10,0,0]) lbracket();
+        translate([350,20,20])  rotate([0,270,270]) explode([10,0,0]) lbracket();    
+        translate([350,280,20]) rotate([0,270,90])  explode([10,0,0]) lbracket();
     }
 }   
 
-//! 1. Attach the three parts of the base frame
-//! 2. Tighten the screws of the L-brackets, connecting 20x20 extrusions
+//! 1. Attach all parts of the base frame
+//! 2. Tighten the screws of the bearing holders, connecting 20x20 extrusions
 module DIYLB_base_assembly() {
     pose([60, 0, 0],[240, 150, 0])
     assembly("DIYLB_Base") {
@@ -138,8 +121,12 @@ module DIYLB_base_assembly() {
         DIYLB_base_left_assembly();
         
         //Center
+        explode([0,-25,0])
         DIYLB_base_center_assembly();
-        
+        explode([0,25,0])
+        translate([360,300,0])  rotate([0,0,180])
+           DIYLB_base_center_assembly();
+       
         //Right stud
         explode([25,0,0])
         DIYLB_base_right_assembly();
@@ -147,6 +134,7 @@ module DIYLB_base_assembly() {
 }
 
 if ($preview) {
+    //$explode=1;
 
     //Base assembly
     DIYLB_base_assembly();
