@@ -52,41 +52,40 @@ module DIYLB_base_center_assembly() {
         translate([20,10,10])  rotate([0,90,0])  extrusion(E2020, 320, center=false);
 
         //Magnets
-        translate([60,0,0])  rotate([0,0,270])  DIYLB_magnet_assembly();
-        translate([300,0,0])  rotate([0,0,270])  DIYLB_magnet_assembly();
+        translate([100,20,0])  rotate([0,0,90])  DIYLB_magnet_assembly();
+        translate([260,20,0])  rotate([0,0,90])  DIYLB_magnet_assembly();
 
     }
 }
 
-//! 1. Slide two idlers on T-nuts onto the top slot of the 20x20 extrusion.
-//! 2. Slide two L-brackets onto the top slot of the 20x20 extrusion.
-//! 3. Slide the two holders for the ball bearings onto the right-hand slot
+//! 1. Slide two L-brackets onto the top slot of the 20x20 extrusion.
+//! 2. Slide the two holders for the ball bearings onto the right-hand slot
 //!    of the 20x20 extrusion.
-//! 4. Slide two L-brackets onto the left-hand slot of the 20x20 extrusion.
+//! 3. Slide two L-brackets onto the left-hand slot of the 20x20 extrusion.
 module DIYLB_base_left_assembly() {
     pose([55, 0, 0],[100, 200, 0])
     assembly("DIYLB_base_left") {
 
         //Extrusions
-        translate([10,0,10]) rotate([-90,0,0]) extrusion(E2020, 300, center=false);
+        translate([10,($frame_depth-300)/2,10]) rotate([-90,0,0]) extrusion(E2020, 300, center=false);
     
         //Idlers
-        translate([10,140.36,20]) rotate([0,0,270]) tnut(14);
-        translate([10,140.36,20]) explode(2) pulley($i_type);
-        translate([10,159.64,20]) rotate([0,0,90])  tnut(14);
-        translate([10,159.64,20]) explode(2) pulley($i_type);
+        //translate([10,140.36,20]) rotate([0,0,270]) tnut(9);
+        //translate([10,140.36,20]) explode(2) pulley($i_type);
+        //translate([10,159.64,20]) rotate([0,0,90])  tnut(9);
+        //translate([10,159.64,20]) explode(2) pulley($i_type);
     
         //Ball bearings
-        translate([20,20,0])   mirror([0,0,0]) explode([20,0,0]) DIYLB_lower_bearing_assembly();
-        translate([20,280,0])  mirror([0,1,0]) explode([20,0,0]) DIYLB_lower_bearing_assembly();
+        translate([20,20,0])              mirror([0,0,0]) explode([20,0,0]) DIYLB_lower_bearing_assembly();
+        translate([20,$frame_depth-20,0]) mirror([0,1,0]) explode([20,0,0]) DIYLB_lower_bearing_assembly();
           
         //Horizontal L-Brackets
-        translate([0,130,10])    rotate([90,180,0])  explode([10,0,0]) lbracket();
-        translate([0,170,10])   rotate([270,180,0])  explode([10,0,0]) lbracket();
+        translate([0,130,10]) rotate([90,180,0])  explode([10,0,0]) lbracket();
+        translate([0,170,10]) rotate([270,180,0])  explode([10,0,0]) lbracket();
 
         //Vertical L-Brackets
-        translate([10,20,20])  rotate([0,270,270]) explode([10,0,0]) lbracket();    
-        translate([10,280,20]) rotate([0,270,90])  explode([10,0,0]) lbracket();
+        translate([10,20,20])              rotate([0,270,270]) explode([10,0,0]) lbracket();    
+        translate([10,$frame_depth-20,20]) rotate([0,270,90])  explode([10,0,0]) lbracket();
     }
 }   
 
@@ -98,15 +97,15 @@ module DIYLB_base_right_assembly() {
     assembly("DIYLB_base_right") {
 
         //Extrusions
-        translate([350,0,10])  rotate([-90,0,0]) extrusion(E2020, 300, center=false);
+        translate([350,($frame_depth-300)/2,10]) rotate([-90,0,0]) extrusion(E2020, 300, center=false);
        
         //Ball bearings
-        translate([340,20,0])  mirror([1,0,0])                 explode([20,0,0]) DIYLB_lower_bearing_assembly();
-        translate([340,280,0]) mirror([1,0,0]) mirror([0,1,0]) explode([20,0,0]) DIYLB_lower_bearing_assembly();
+        translate([340,20,0])              mirror([1,0,0])                 explode([20,0,0]) DIYLB_lower_bearing_assembly();
+        translate([340,$frame_depth-20,0]) mirror([1,0,0]) mirror([0,1,0]) explode([20,0,0]) DIYLB_lower_bearing_assembly();
          
         //Vertical L-Brackets
-        translate([350,20,20])  rotate([0,270,270]) explode([10,0,0]) lbracket();    
-        translate([350,280,20]) rotate([0,270,90])  explode([10,0,0]) lbracket();
+        translate([350,20,20])              rotate([0,270,270]) explode([10,0,0]) lbracket();    
+        translate([350,$frame_depth-20,20]) rotate([0,270,90])  explode([10,0,0]) lbracket();
     }
 }   
 
@@ -124,7 +123,7 @@ module DIYLB_base_assembly() {
         explode([0,-25,0])
         DIYLB_base_center_assembly();
         explode([0,25,0])
-        translate([360,300,0])  rotate([0,0,180])
+        translate([360,$frame_depth,0])  rotate([0,0,180])
            DIYLB_base_center_assembly();
        
         //Right stud

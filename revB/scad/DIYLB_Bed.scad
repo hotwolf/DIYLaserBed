@@ -40,50 +40,59 @@ use     <./vitamins/T-Nut.scad>
 //$vpt = [200,180,0];
 
 
-//! 1. Attach carriage holders to the outer 20x20 extrusions.
-//! 2. Assemble remainding extrusions with L-profiles. 
-module DIYLB_bed_assembly() {
-    pose([15,0,0],[200,180,0])
-    assembly("DIYLB_bed") {
-
-        translate([0,0,$elevation]) {
+module DIYLB_beam_holder_stl() {
+    stl("DIYLB_beam_holder");
+    color(pp1_colour)
     
-            //Extrusions
-            translate([20,10,10])  rotate([0,90,0])  explode([0,-30,0]) extrusion(E2020, 320, center=false);
-            translate([20,290,10]) rotate([0,90,0])  explode([0,30,0])  extrusion(E2020, 320, center=false);
-            
-            translate([48,20,10])   rotate([-90,0,0]) extrusion(E2020, 260, center=false);
-            translate([312,20,10])  rotate([-90,0,0]) extrusion(E2020, 260, center=false);
-            translate([120,20,10])  rotate([-90,0,0]) extrusion(E2020, 260, center=false);
-            translate([240,20,10])  rotate([-90,0,0]) extrusion(E2020, 260, center=false);
-            
-            //L-Brackets
-            translate([58,280,10])  rotate([90,180,90]) explode([-30,0,0]) lbracket();   
-            translate([130,280,10]) rotate([90,180,90]) explode([-30,0,0]) lbracket();   
-            translate([250,280,10]) rotate([90,180,90]) explode([-30,0,0]) lbracket();   
-     
-            translate([110,280,10]) rotate([90,0,270]) explode([-30,0,0])  lbracket();   
-            translate([230,280,10]) rotate([90,0,270]) explode([-30,0,0])  lbracket();   
-            translate([302,280,10]) rotate([90,0,270]) explode([-30,0,0])  lbracket();   
-     
-            translate([58,20,10])  rotate([90,0,90]) explode([-30,0,0])    lbracket();   
-            translate([130,20,10]) rotate([90,0,90]) explode([-30,0,0])    lbracket();   
-            translate([250,20,10]) rotate([90,0,90]) explode([-30,0,0])    lbracket();   
-     
-            translate([110,20,10]) rotate([270,0,90]) explode([-30,0,0])   lbracket();   
-            translate([230,20,10]) rotate([270,0,90]) explode([-30,0,0])   lbracket();   
-            translate([302,20,10]) rotate([270,0,90]) explode([-30,0,0])   lbracket();        
-         }
-         
-         translate([20,32,0])   rotate([0,0,0])   explode([-20,0,0]) DIYLB_carriage_right_assembly();
-         translate([340,32,0])  rotate([0,0,180]) explode([-20,0,0]) DIYLB_carriage_left_assembly();
-         translate([340,268,0]) rotate([0,0,180]) explode([-20,0,0]) DIYLB_carriage_right_assembly();
-         translate([20,268,0])  rotate([0,0,0])   explode([-20,0,0]) DIYLB_carriage_left_assembly();
-     }     
+    translate([0,0,$elevation])
+    difference() {
+       union() {
+          //Side mount profiles     
+          translate([0,-5,10]) rotate([270,0,0])
+          for (a=[0,90,180])
+             rotate([0,0,a]) 
+             translate([-10.1,0,0])
+             linear_extrude(10) 
+             polygon([[0,3],[1,2],[1,-2],[0,-3]]);                
+          //Corners
+          hull() {
+             translate([-12.1,-5,20.1]) cube([2,10,1]);
+             translate([-11.1,-5,20.1]) cube([1,10,2]);
+          }
+          hull() {
+             translate([10.1,-5,20.1]) cube([2,10,1]);
+             translate([10.1,-5,20.1]) cube([1,10,2]);
+          }
+          //Sides
+          translate([-12.1,-5,7]) cube([2,10,14]);
+          translate([-11.6,-5,7]) rotate([270,0,0]) cylinder(h=10,d=1);
+          hull() {
+             translate([10.1,-5,7])  cube([2,10,14]);
+             translate([10.1,-3,0])  cube([2,6,1]);
+          }
+          translate([-11,-5,20.1])  cube([22,10,2]);
+
+          
+          //Beam holder
+          //translate([aoffs,aoffs+20,0]) poly_cylinder(h=20,r=12);
+          hull() {
+             translate([10.1,-3,-7]) cube([2,6,17]);
+             translate([10.1,-3,-7]) cube([14,6,7]);
+          }         
+      }
+      union() {
+         //Beam holder
+         translate([12.1,-1,-5]) cube([40,2,20]);
+      }
+   }   
 }
 
 if ($preview) {
 
-    //Table assembly
-    DIYLB_bed_assembly();
+   //Beam holder
+    DIYLB_beam_holder_stl();
+
+   //Demo extrusions
+   translate([0,30,$elevation+10]) rotate([90,0,0]) extrusion(E2020, 60, center=false);
+    
 }

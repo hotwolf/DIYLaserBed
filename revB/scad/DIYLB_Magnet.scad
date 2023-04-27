@@ -63,7 +63,9 @@ module DIYLB_magnet_stl() {
             translate([-4,20,10])                 rotate([90,0,90]) cylinder(20,d=4.9);
             translate([($bb_diameter/2)-5,20,10]) rotate([90,0,90]) cylinder(10,d=9.5);
             translate([-4,-20,10])                 rotate([90,0,90]) cylinder(20,d=4.9);
-            translate([($bb_diameter/2)-5,-20,10]) rotate([90,0,90]) cylinder(10,d=9.5);        
+            translate([($bb_diameter/2)-5,-20,10]) rotate([90,0,90]) cylinder(10,d=9.5);
+    
+            translate([1,-30,15.6]) cube([20,60,20]);
         }
     }
 }

@@ -31,32 +31,101 @@
 //#                                                                             #
 //###############################################################################
 include <DIYLB_Config.scad>
-use     <DIYLB_UBearing.scad>
 
 //$explode = 1;
 //$vpr = [15, 0, 0];
 //$vpt = [200,180,0];
 
-//! 1. Attach the four upper ball bearing holder to the upper 20x20 extrusions 
-//     of the frame.
+module extrusion_endmount(h=10) {
+
+    gap = 0.1;
+
+    linear_extrude(h) {
+ 
+       //Inner mounts
+       for(a=[0,90,180]) {
+          rotate([0,0,a])      
+          difference() {
+              union() {
+                 translate([-3+gap,5,0]) square([6-2*gap,6]);
+                 translate([-5.5+gap,4.5+gap,0]) square([11-2*gap,3.5-2*gap]);
+              }             
+             union() {
+                translate([-1.5-gap,0,0]) rotate([0,0,315]) square(20);
+                translate([1.5+gap,0,0]) rotate([0,0,135]) square(20);
+             }        
+          }
+       }
+       //Outer mounts
+       difference() {
+          translate([-1,-1,0]) square([22,21],center=true);
+          translate([0,0,0]) square(20+2*gap,center=true);
+       }
+    }   
+}
+//extrusion_endmount();
+
+module DIYLB_top_shape() {
+    aoffs = 1 + ($bb_diameter/2);  //Axis offset
+
+    difference() {
+       union() { 
+          translate([-10,10,80]) extrusion_endmount(15);
+          hull() {
+            translate([-22,-2,90]) cube([24,24,16]);
+            translate([aoffs,20+aoffs,90]) poly_cylinder(h=16,r=12/2);
+          }
+       }
+       union() {
+          translate([aoffs,20+aoffs,90]) poly_cylinder(h=15,r=8.8/2);
+          translate([-10,10,70]) poly_cylinder(h=40,r=screw_radius(M6_cap_screw));
+          translate([-10,10,96]) poly_cylinder(h=20,r=screw_boss_diameter(M6_cap_screw)/2);
+          translate([-20,20,70]) cube([20,10,20]);
+      }
+   }    
+}
+
+module DIYLB_top_front_stl() {
+     stl("DIYLB_top_front");   
+     color(pp1_colour) 
+     DIYLB_top_shape();
+}
+
+module DIYLB_top_back_stl() {
+     stl("DIYLB_top_back");   
+     color(pp1_colour) 
+     mirror([0,1,0]) DIYLB_top_shape();
+}
+
+//! 1. Cut a M6 thread into the top of the vertical 20x20 extrusions 
+//! 2. Attach the top holders
+//! 3. Secure the top holders with M6 screws
 module DIYLB_top_assembly() {
     pose([15,0,0], [200,180,0])
     assembly("DIYLB_top") {
-
-        //Extrusions
-        translate([10,0,100])   rotate([-90,0,0]) extrusion(E2020, 300, center=false);
-        translate([350,0,100])  rotate([-90,0,0]) extrusion(E2020, 300, center=false);
+      translate([0,0,0]) DIYLB_top_front_stl();
+      translate([-10,10,96]) screw_and_washer(M6_cap_screw, 20);
         
-        //Upper ball bearing holders
-        translate([20,32,0])   mirror([0,0,0])                 explode([20,0,0]) DIYLB_upper_bearing_assembly();
-        translate([340,32,0])  mirror([1,0,0])                 explode([20,0,0]) DIYLB_upper_bearing_assembly();
-        translate([340,268,0]) mirror([1,0,0]) mirror([0,1,0]) explode([20,0,0]) DIYLB_upper_bearing_assembly();
-        translate([20,268,0])  mirror([0,1,0])                 explode([20,0,0]) DIYLB_upper_bearing_assembly();
+      translate([0,$frame_depth,0]) DIYLB_top_back_stl();
+      translate([-10,$frame_depth-10,96]) screw_and_washer(M6_cap_screw, 20);        
     } 
 }
 
 if ($preview) {
     
+    aoffs = 1 + ($bb_diameter/2);  //Axis offset
+
     //Top beam assembly
     DIYLB_top_assembly();
+    
+    //Demo threaded rods   
+    translate([aoffs,20+aoffs,52+$cent_thickness]) studding(8, 100);
+    translate([aoffs,280-aoffs,52+$cent_thickness]) studding(8, 100);
+    
+    //Demo extrusions   
+    translate([-10,10,20]) extrusion(E2020, 70, center=false);
+    translate([0,10,55])   rotate([0,90,0]) explode(30) rail(MGN7, 70);
+
+    translate([-10,$frame_depth-10,20])                extrusion(E2020, 70, center=false);
+    translate([0,$frame_depth-10,55]) rotate([0,90,0]) explode(30) rail(MGN7, 70);   
 }

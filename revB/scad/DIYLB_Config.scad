@@ -69,6 +69,10 @@ $p_type  = ["GT2x20_pulley",      "GT2OB", 20, 12.22, GT2x6,  7.5,  16, 5.5, 8, 
 $p_hubl  = $p_type[7];                                                                                            //Length of the hub
 $p_width = $p_type[4]; 
 
+//Dimensions
+//==========
+$frame_depth = 295;
+
 //Cent coin
 //=========
 //$cent_thickness = 1.67;
@@ -82,8 +86,10 @@ $magnet_diameter  = 19.8;
 
 //Animation
 //=========
-$elevation = 70 - abs(($t-0.5) * 80);
-$rotation  = 360*20*abs($t-0.5);
+highest_pos = 70;
+lowest_pos  = 27;
+$elevation = lowest_pos + (highest_pos-lowest_pos) * 2 * abs($t-0.5);
+$rotation  = 180 * (highest_pos-lowest_pos) * 2 * abs($t-0.5);
 //$elevation = 30;
 //$rotation  = 20;
 $vpr = [70, 0, $t * 360];

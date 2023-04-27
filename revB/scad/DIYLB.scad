@@ -40,6 +40,8 @@ use     <DIYLB_Crank.scad>
 use     <DIYLB_Rail.scad>
 use     <DIYLB_Bed.scad>
 use     <DIYLB_Top.scad>
+use     <DIYLB_Carriage.scad>
+use     <./vitamins/FlatSection.scad>
 
 //$explode=1;
 //$vpr = [30,0,0];
@@ -74,17 +76,17 @@ module DIYLB_columns_to_base_assembly() {
     DIYLB_crank_to_base_assembly();    
 
     //Columns
-    translate([20,32,0])   mirror([0,0,0])                  explode(20) DIYLB_rail_assembly();
-    translate([340,32,0])  mirror([1,0,0])                  explode(20) DIYLB_rail_assembly();
-    translate([340,268,0]) mirror([1,0,0])  mirror([0,1,0]) explode(20) DIYLB_rail_assembly();
-    translate([20,268,0])  mirror([0,1,0])                  explode(20) DIYLB_rail_assembly();
+    translate([20,0,0])                mirror([0,0,0]) explode(20) DIYLB_rail_assembly();
+    translate([340,0,0])               mirror([1,0,0]) explode(20) DIYLB_rail_assembly();
+    translate([340,$frame_depth-20,0]) mirror([1,0,0]) explode(20) DIYLB_rail_assembly();
+    translate([20,$frame_depth,0])     mirror([0,1,0]) explode(20) DIYLB_rail_assembly();
 
     }
 }
 
 //Bed to Columns
 //==============
-//! 1. Thread the assembled bed into the rails and rods of the Z-axis.
+//! 1. Thread the assembled carriage holders into the rails and rods of the Z-axis.
 module DIYLB_bed_to_columns_assembly() {
     pose([70, 0, 0], [150,150,0])
     assembly("DIYLB_bed_to_columns") {
@@ -93,7 +95,40 @@ module DIYLB_bed_to_columns_assembly() {
         DIYLB_columns_to_base_assembly();
         
         //Bed    
-        explode(100) DIYLB_bed_assembly();
+        explode(100) translate([20,0,0]) DIYLB_carriage_AB_assembly();
+        explode(100) translate([20,0,0]) DIYLB_carriage_CD_assembly();
+    }
+}
+
+//Beams to Bed
+//============
+//! 1. Attach the beam holders to the horizontal 20x20 extrusions of the bed.
+//! 2. Slide the beams into the beam holders
+module DIYLB_beams_to_bed_assembly() {
+    pose([70, 0, 0], [150,150,0])
+    assembly("DIYLB_beams_to_bed") {
+
+       aoffs = 1 + ($bb_diameter/2);  //Axis offset
+
+       //Beam holders
+       translate([10,70,0])  DIYLB_beam_holder_stl();
+       translate([10,120,0]) DIYLB_beam_holder_stl();
+       translate([10,170,0]) DIYLB_beam_holder_stl();
+       translate([10,220,0]) DIYLB_beam_holder_stl();
+       translate([350,70,0])  rotate([0,0,180]) DIYLB_beam_holder_stl();
+       translate([350,120,0]) rotate([0,0,180]) DIYLB_beam_holder_stl();
+       translate([350,170,0]) rotate([0,0,180]) DIYLB_beam_holder_stl();
+       translate([350,220,0]) rotate([0,0,180]) DIYLB_beam_holder_stl();
+    
+       //Beams    
+       translate([180,aoffs+20,$elevation+2.5]) flatSection(272,center=true);
+       translate([180,70,$elevation+2.5])       flatSection(316,center=true);
+       translate([180,120,$elevation+2.5])      flatSection(316,center=true);
+       translate([180,170,$elevation+2.5])      flatSection(316,center=true);
+       translate([180,220,$elevation+2.5])      flatSection(316,center=true);
+  
+       //Base and bed
+       DIYLB_bed_to_columns_assembly();
     }
 }
 
@@ -105,19 +140,25 @@ module DIYLB_top_to_columns_assembly() {
     assembly("DIYLB_top_to_columns") {
 
         //Base
-        DIYLB_bed_to_columns_assembly();
+        DIYLB_beams_to_bed_assembly();
     
         //Top
-        DIYLB_top_assembly();
+        translate([20,0,0]) DIYLB_top_assembly();
+        translate([340,$frame_depth,0]) rotate([0,0,180]) DIYLB_top_assembly();
     }
 }
+
+
+
 
 //Timing Belt
 //===========
 //! 1. Insert the timing belt
 //! 2. Level the bed by turning the thraded rods, before tightening the pulleys 
 module DIYLB_belt_assembly() {
-    pose([99,0,75], [200, 100, 28])
+    pose([99,0,75], [200, 100, 28]);
+
+    aoffs = 1 + ($bb_diameter/2);  //Axis offset
 
     assembly("DIYLB_belt") {
 
@@ -127,12 +168,12 @@ module DIYLB_belt_assembly() {
     
         //Timing belt
         p0=[-58,150];   //Crank
-        p1=[10,140.36]; //Front idler
-        p2=[32,72];     //Front left pulley
-        p3=[328,72];    //Front right pulley
-        p4=[328,228];   //Rear right pulley
-        p5=[32,228];    //Rear left pulley
-        p6=[10,159.64]; //Rear idler
+        p1=[-15,140]; //Front idler
+        p2=[20+aoffs,20+aoffs];     //Front left pulley
+        p3=[340-aoffs,20+aoffs];    //Front right pulley
+        p4=[340-aoffs,$frame_depth-20-aoffs];   //Rear right pulley
+        p5=[20+aoffs,$frame_depth-20-aoffs];    //Rear left pulley
+        p6=[-15,160]; //Rear idler
     
         belt_path = [[p6.x, p6.y, -pulley_pr(GT2x20_plain_idler)],
                     [p5.x, p5.y,  pulley_pr(GT2x20ob_pulley)],

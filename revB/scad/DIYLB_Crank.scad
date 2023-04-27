@@ -130,6 +130,7 @@ module DIYLB_crank_bearing_stl() {
 //! 3. Slide the printed holders over the vertical 20x40 extrusion
 //!    (and loosely insert the timing belt).
 //! 4. Move the two printed holders as far apart as possible and tighten the screws.
+//! 5. Slide two idlers on T-nuts onto the top slot of the horizontal 20x40 extrusion.
 module DIYLB_crank_assembly () {
     pose([80, 0, 65], [-30,0,100])
     assembly("DIYLB_crank") {
@@ -176,6 +177,12 @@ module DIYLB_crank_assembly () {
         //Ball bearing brackets
         translate([0,20,39]) rotate([180,0,0]) explode(-60) DIYLB_crank_bearing_stl();
         translate([0,20,54]) rotate([0,0,0])   explode(70)  DIYLB_crank_bearing_stl();
+
+        //Idlers
+        translate([-15,10,20]) rotate([0,0,0]) tnut(9);
+        translate([-15,10,20]) explode(2) pulley($i_type);
+        translate([-15,30,20]) rotate([0,0,0])  tnut(9);
+        translate([-15,30,20]) explode(2) pulley($i_type);        
     }
 }
 
