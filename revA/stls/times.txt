@@ -1,9 +1,9 @@
 {
-    "DIYLB_crank_bearing.stl": 4.427,
-    "DIYLB_rail.stl": 3.499,
-    "DIYLB_crank.stl": 1313.109,
-    "DIYLB_carriage_right.stl": 23.288,
-    "DIYLB_upper_bearing.stl": 4.613,
-    "DIYLB_carriage_left.stl": 24.583,
-    "DIYLB_lower_bearing.stl": 5.653
+    "DIYLB_crank_bearing.stl": 4.33,
+    "DIYLB_rail.stl": 3.513,
+    "DIYLB_crank.stl": 1288.922,
+    "DIYLB_carriage_right.stl": 24.573,
+    "DIYLB_upper_bearing.stl": 4.496,
+    "DIYLB_carriage_left.stl": 23.856,
+    "DIYLB_lower_bearing.stl": 5.585
 }

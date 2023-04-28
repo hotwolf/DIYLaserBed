@@ -1,10 +1,9 @@
 <a name="TOP"></a>
-# DIYLaserBed
+# RevA
 This is a DIY laser bed for K40 cutters and clones. 
 ![inside](doc/DIYLB.gif?raw=true)
 
-![Main Assembly](assemblies/DIYLB_belt_assembled.png)
-
+<span></span>
 
 ---
 ## Table of Contents
@@ -27,16 +26,17 @@ This is a DIY laser bed for K40 cutters and clones.
 1. [DIYLB Top To Columns Assembly](#DIYLB_top_to_columns_assembly)
 1. [DIYLB Belt Assembly](#DIYLB_belt_assembly)
 
+<span></span>
 [Top](#TOP)
 
 ---
 <a name="Parts_list"></a>
 ## Parts list
-| <span style="writing-mode: vertical-rl; text-orientation: mixed;">DIYLB&nbsp;Upper&nbsp;Bearing</span> | <span style="writing-mode: vertical-rl; text-orientation: mixed;">DIYLB&nbsp;Top</span> | <span style="writing-mode: vertical-rl; text-orientation: mixed;">DIYLB&nbsp;Carriage&nbsp;Left</span> | <span style="writing-mode: vertical-rl; text-orientation: mixed;">DIYLB&nbsp;Carriage&nbsp;Right</span> | <span style="writing-mode: vertical-rl; text-orientation: mixed;">DIYLB&nbsp;Bed</span> | <span style="writing-mode: vertical-rl; text-orientation: mixed;">DIYLB&nbsp;Rail</span> | <span style="writing-mode: vertical-rl; text-orientation: mixed;">DIYLB&nbsp;Crank</span> | <span style="writing-mode: vertical-rl; text-orientation: mixed;">DIYLB&nbsp;Lower&nbsp;Bearing</span> | <span style="writing-mode: vertical-rl; text-orientation: mixed;">DIYLB&nbsp;Base&nbsp;Right</span> | <span style="writing-mode: vertical-rl; text-orientation: mixed;">DIYLB&nbsp;Base&nbsp;Center</span> | <span style="writing-mode: vertical-rl; text-orientation: mixed;">DIYLB&nbsp;Base&nbsp;Left</span> | <span style="writing-mode: vertical-rl; text-orientation: mixed;">DIYLB&nbsp;Base</span> | <span style="writing-mode: vertical-rl; text-orientation: mixed;">DIYLB&nbsp;Crank&nbsp;To&nbsp;Base</span> | <span style="writing-mode: vertical-rl; text-orientation: mixed;">DIYLB&nbsp;Columns&nbsp;To&nbsp;Base</span> | <span style="writing-mode: vertical-rl; text-orientation: mixed;">DIYLB&nbsp;Bed&nbsp;To&nbsp;Columns</span> | <span style="writing-mode: vertical-rl; text-orientation: mixed;">DIYLB&nbsp;Top&nbsp;To&nbsp;Columns</span> | <span style="writing-mode: vertical-rl; text-orientation: mixed;">DIYLB&nbsp;Belt</span> | <span style="writing-mode: vertical-rl; text-orientation: mixed;">TOTALS</span> |  |
+| <span style="writing-mode: vertical-rl; text-orientation: mixed;">4 x DIYLB&nbsp;Upper&nbsp;Bearing</span> | <span style="writing-mode: vertical-rl; text-orientation: mixed;">DIYLB&nbsp;Top</span> | <span style="writing-mode: vertical-rl; text-orientation: mixed;">2 x DIYLB&nbsp;Carriage&nbsp;Left</span> | <span style="writing-mode: vertical-rl; text-orientation: mixed;">2 x DIYLB&nbsp;Carriage&nbsp;Right</span> | <span style="writing-mode: vertical-rl; text-orientation: mixed;">DIYLB&nbsp;Bed</span> | <span style="writing-mode: vertical-rl; text-orientation: mixed;">4 x DIYLB&nbsp;Rail</span> | <span style="writing-mode: vertical-rl; text-orientation: mixed;">DIYLB&nbsp;Crank</span> | <span style="writing-mode: vertical-rl; text-orientation: mixed;">4 x DIYLB&nbsp;Lower&nbsp;Bearing</span> | <span style="writing-mode: vertical-rl; text-orientation: mixed;">DIYLB&nbsp;Base&nbsp;Right</span> | <span style="writing-mode: vertical-rl; text-orientation: mixed;">DIYLB&nbsp;Base&nbsp;Center</span> | <span style="writing-mode: vertical-rl; text-orientation: mixed;">DIYLB&nbsp;Base&nbsp;Left</span> | <span style="writing-mode: vertical-rl; text-orientation: mixed;">DIYLB&nbsp;Base</span> | <span style="writing-mode: vertical-rl; text-orientation: mixed;">DIYLB&nbsp;Crank&nbsp;To&nbsp;Base</span> | <span style="writing-mode: vertical-rl; text-orientation: mixed;">DIYLB&nbsp;Columns&nbsp;To&nbsp;Base</span> | <span style="writing-mode: vertical-rl; text-orientation: mixed;">DIYLB&nbsp;Bed&nbsp;To&nbsp;Columns</span> | <span style="writing-mode: vertical-rl; text-orientation: mixed;">DIYLB&nbsp;Top&nbsp;To&nbsp;Columns</span> | <span style="writing-mode: vertical-rl; text-orientation: mixed;">DIYLB&nbsp;Belt</span> | <span style="writing-mode: vertical-rl; text-orientation: mixed;">TOTALS</span> |  |
 |---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|:---|
 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | | **Vitamins** |
 | &nbsp;&nbsp;4&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;2&nbsp; | &nbsp;&nbsp;4&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; |  &nbsp;&nbsp;10&nbsp; | &nbsp;&nbsp; Ball bearing 608-2RS 8mm x 22mm x 7mm |
-| &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;1&nbsp; |  &nbsp;&nbsp;1&nbsp; | &nbsp;&nbsp; Belt GT2 x 6mm x 1140mm |
+| &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;1&nbsp; |  &nbsp;&nbsp;1&nbsp; | &nbsp;&nbsp; Belt GT2 x 6mm x 1104mm |
 | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;4&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; |  &nbsp;&nbsp;4&nbsp; | &nbsp;&nbsp; Euro-Cent coin |
 | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;4&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; |  &nbsp;&nbsp;4&nbsp; | &nbsp;&nbsp; Extrusion E2020 x 260mm |
 | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;2&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;1&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;1&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; |  &nbsp;&nbsp;4&nbsp; | &nbsp;&nbsp; Extrusion E2020 x 300mm |
@@ -46,6 +46,7 @@ This is a DIY laser bed for K40 cutters and clones.
 | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;1&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; |  &nbsp;&nbsp;1&nbsp; | &nbsp;&nbsp; Extrusion E2040 x 70mm |
 | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;12&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;2&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;6&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;8&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; |  &nbsp;&nbsp;28&nbsp; | &nbsp;&nbsp; L-Bracket (20x20) |
 | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;4&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; |  &nbsp;&nbsp;4&nbsp; | &nbsp;&nbsp; Linear rail MGN7 x 70mm |
+| &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;10&nbsp; | &nbsp;&nbsp;10&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; |  &nbsp;&nbsp;20&nbsp; | &nbsp;&nbsp; Linear rail carriage MGN7C |
 | &nbsp;&nbsp;4&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; |  &nbsp;&nbsp;4&nbsp; | &nbsp;&nbsp; Lock ring (8mm) |
 | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;20&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; |  &nbsp;&nbsp;20&nbsp; | &nbsp;&nbsp; Nut M2 x 1.6mm  |
 | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;4&nbsp; | &nbsp;&nbsp;4&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; |  &nbsp;&nbsp;8&nbsp; | &nbsp;&nbsp; Nut M3 x 2.4mm  |
@@ -62,13 +63,13 @@ This is a DIY laser bed for K40 cutters and clones.
 | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;4&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;4&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; |  &nbsp;&nbsp;8&nbsp; | &nbsp;&nbsp; Screw M4 dome x  8mm |
 | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;3&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; |  &nbsp;&nbsp;3&nbsp; | &nbsp;&nbsp; Screw M8 hex x 50mm |
 | &nbsp;&nbsp;8&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;6&nbsp; | &nbsp;&nbsp;6&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;8&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; |  &nbsp;&nbsp;28&nbsp; | &nbsp;&nbsp; T-Nut (20x20) |
-| &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;2&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; |  &nbsp;&nbsp;2&nbsp; | &nbsp;&nbsp; T-Nut (20x20) |
 | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;4&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;4&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; |  &nbsp;&nbsp;8&nbsp; | &nbsp;&nbsp; T-Nut (20x20) |
+| &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;2&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; |  &nbsp;&nbsp;2&nbsp; | &nbsp;&nbsp; T-Nut (20x20) |
 | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;2&nbsp; | &nbsp;&nbsp;2&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; |  &nbsp;&nbsp;4&nbsp; | &nbsp;&nbsp; T8-Nut (narrow) |
 | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;4&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; |  &nbsp;&nbsp;4&nbsp; | &nbsp;&nbsp; Threaded rod M8 x 100mm |
 | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;8&nbsp; | &nbsp;&nbsp;8&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; |  &nbsp;&nbsp;16&nbsp; | &nbsp;&nbsp; Washer  M2 x 5mm x 0.3mm |
 | &nbsp;&nbsp;8&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;6&nbsp; | &nbsp;&nbsp;6&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;4&nbsp; | &nbsp;&nbsp;8&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;4&nbsp; | &nbsp;&nbsp;2&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; |  &nbsp;&nbsp;38&nbsp; | &nbsp;&nbsp; Washer  M4 x 9mm x 0.8mm |
-| &nbsp;&nbsp;36&nbsp; | &nbsp;&nbsp;2&nbsp; | &nbsp;&nbsp;44&nbsp; | &nbsp;&nbsp;44&nbsp; | &nbsp;&nbsp;42&nbsp; | &nbsp;&nbsp;48&nbsp; | &nbsp;&nbsp;29&nbsp; | &nbsp;&nbsp;48&nbsp; | &nbsp;&nbsp;19&nbsp; | &nbsp;&nbsp;14&nbsp; | &nbsp;&nbsp;33&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;1&nbsp; | &nbsp;&nbsp;360&nbsp; | &nbsp;&nbsp;Total vitamins count |
+| &nbsp;&nbsp;36&nbsp; | &nbsp;&nbsp;2&nbsp; | &nbsp;&nbsp;54&nbsp; | &nbsp;&nbsp;54&nbsp; | &nbsp;&nbsp;42&nbsp; | &nbsp;&nbsp;48&nbsp; | &nbsp;&nbsp;29&nbsp; | &nbsp;&nbsp;48&nbsp; | &nbsp;&nbsp;19&nbsp; | &nbsp;&nbsp;14&nbsp; | &nbsp;&nbsp;33&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;1&nbsp; | &nbsp;&nbsp;380&nbsp; | &nbsp;&nbsp;Total vitamins count |
 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | | **3D printed parts** |
 | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;2&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; |  &nbsp;&nbsp;2&nbsp; | &nbsp;&nbsp;DIYLB_carriage_left.stl |
 | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;2&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; |  &nbsp;&nbsp;2&nbsp; | &nbsp;&nbsp;DIYLB_carriage_right.stl |
@@ -79,6 +80,7 @@ This is a DIY laser bed for K40 cutters and clones.
 | &nbsp;&nbsp;4&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; |  &nbsp;&nbsp;4&nbsp; | &nbsp;&nbsp;DIYLB_upper_bearing.stl |
 | &nbsp;&nbsp;4&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;2&nbsp; | &nbsp;&nbsp;2&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;4&nbsp; | &nbsp;&nbsp;3&nbsp; | &nbsp;&nbsp;4&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;.&nbsp; | &nbsp;&nbsp;19&nbsp; | &nbsp;&nbsp;Total 3D printed parts count |
 
+<span></span>
 [Top](#TOP)
 
 ---
@@ -112,6 +114,7 @@ This is a DIY laser bed for K40 cutters and clones.
 
 ![DIYLB_upper_bearing_assembled](assemblies/DIYLB_upper_bearing_assembled_tn.png)
 
+<span></span>
 [Top](#TOP)
 
 ---
@@ -138,6 +141,7 @@ This is a DIY laser bed for K40 cutters and clones.
 
 ![DIYLB_top_assembled](assemblies/DIYLB_top_assembled_tn.png)
 
+<span></span>
 [Top](#TOP)
 
 ---
@@ -146,6 +150,7 @@ This is a DIY laser bed for K40 cutters and clones.
 ### Vitamins
 |Qty|Description|
 |---:|:----------|
+|10| Linear rail carriage MGN7C|
 |4| Nut M3 x 2.4mm |
 |8| Screw M2 cap x 10mm|
 |4| Screw M3 pan x 16mm|
@@ -173,6 +178,7 @@ This is a DIY laser bed for K40 cutters and clones.
 
 ![DIYLB_carriage_left_assembled](assemblies/DIYLB_carriage_left_assembled_tn.png)
 
+<span></span>
 [Top](#TOP)
 
 ---
@@ -181,6 +187,7 @@ This is a DIY laser bed for K40 cutters and clones.
 ### Vitamins
 |Qty|Description|
 |---:|:----------|
+|10| Linear rail carriage MGN7C|
 |4| Nut M3 x 2.4mm |
 |8| Screw M2 cap x 10mm|
 |4| Screw M3 pan x 16mm|
@@ -208,6 +215,7 @@ This is a DIY laser bed for K40 cutters and clones.
 
 ![DIYLB_carriage_right_assembled](assemblies/DIYLB_carriage_right_assembled_tn.png)
 
+<span></span>
 [Top](#TOP)
 
 ---
@@ -238,6 +246,7 @@ This is a DIY laser bed for K40 cutters and clones.
 
 ![DIYLB_bed_assembled](assemblies/DIYLB_bed_assembled_tn.png)
 
+<span></span>
 [Top](#TOP)
 
 ---
@@ -269,6 +278,7 @@ This is a DIY laser bed for K40 cutters and clones.
 
 ![DIYLB_rail_assembled](assemblies/DIYLB_rail_assembled_tn.png)
 
+<span></span>
 [Top](#TOP)
 
 ---
@@ -309,6 +319,7 @@ This is a DIY laser bed for K40 cutters and clones.
 
 ![DIYLB_crank_assembled](assemblies/DIYLB_crank_assembled_tn.png)
 
+<span></span>
 [Top](#TOP)
 
 ---
@@ -345,6 +356,7 @@ This is a DIY laser bed for K40 cutters and clones.
 
 ![DIYLB_lower_bearing_assembled](assemblies/DIYLB_lower_bearing_assembled_tn.png)
 
+<span></span>
 [Top](#TOP)
 
 ---
@@ -376,6 +388,7 @@ This is a DIY laser bed for K40 cutters and clones.
 
 ![DIYLB_base_right_assembled](assemblies/DIYLB_base_right_assembled_tn.png)
 
+<span></span>
 [Top](#TOP)
 
 ---
@@ -398,6 +411,7 @@ This is a DIY laser bed for K40 cutters and clones.
 
 ![DIYLB_base_center_assembled](assemblies/DIYLB_base_center_assembled_tn.png)
 
+<span></span>
 [Top](#TOP)
 
 ---
@@ -435,6 +449,7 @@ This is a DIY laser bed for K40 cutters and clones.
 
 ![DIYLB_base_left_assembled](assemblies/DIYLB_base_left_assembled_tn.png)
 
+<span></span>
 [Top](#TOP)
 
 ---
@@ -456,6 +471,7 @@ This is a DIY laser bed for K40 cutters and clones.
 
 ![DIYLB_Base_assembled](assemblies/DIYLB_Base_assembled_tn.png)
 
+<span></span>
 [Top](#TOP)
 
 ---
@@ -477,6 +493,7 @@ This is a DIY laser bed for K40 cutters and clones.
 
 ![DIYLB_crank_to_base_assembled](assemblies/DIYLB_crank_to_base_assembled_tn.png)
 
+<span></span>
 [Top](#TOP)
 
 ---
@@ -498,6 +515,7 @@ This is a DIY laser bed for K40 cutters and clones.
 
 ![DIYLB_columns_to_base_assembled](assemblies/DIYLB_columns_to_base_assembled_tn.png)
 
+<span></span>
 [Top](#TOP)
 
 ---
@@ -518,6 +536,7 @@ This is a DIY laser bed for K40 cutters and clones.
 
 ![DIYLB_bed_to_columns_assembled](assemblies/DIYLB_bed_to_columns_assembled_tn.png)
 
+<span></span>
 [Top](#TOP)
 
 ---
@@ -538,6 +557,7 @@ This is a DIY laser bed for K40 cutters and clones.
 
 ![DIYLB_top_to_columns_assembled](assemblies/DIYLB_top_to_columns_assembled_tn.png)
 
+<span></span>
 [Top](#TOP)
 
 ---
@@ -546,7 +566,7 @@ This is a DIY laser bed for K40 cutters and clones.
 ### Vitamins
 |Qty|Description|
 |---:|:----------|
-|1| Belt GT2 x 6mm x 1140mm|
+|1| Belt GT2 x 6mm x 1104mm|
 
 
 ### Sub-assemblies
@@ -565,9 +585,11 @@ This is a DIY laser bed for K40 cutters and clones.
 
 ![DIYLB_belt_assembled](assemblies/DIYLB_belt_assembled_tn.png)
 
+<span></span>
 [Top](#TOP)
 
 ---
 Finished!
 
+<span></span>
 [Top](#TOP)
