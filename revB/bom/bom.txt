@@ -1,0 +1,97 @@
+Vitamins:
+                                     D                        
+                D                    i                    D   
+                i                    y     D  D           i   
+             D  y                    l     i  i           y   
+    D        i  l     D              b     y  y           l   
+    i     D  y  b     i  D  D  D  D        l  l           b   
+    y  D  i  l        y  i  i  i  i  c     b  b               
+    l  i  y  b  b     l  y  y  y  y  o                    t   
+    b  y  l     e     b  l  l  l  l  l     c  l           o   
+       l  b  b  d        b  b  b  b  u     r  o  D        p   
+    b  b     e        c              m  D  a  w  i            
+ D  a     b  a  t  D  a  c  c  c  c  n  i  n  e  y  D     t   
+ i  s  b  a  m  o  i  r  a  a  a  a  s  y  k  r  l  i  D  o   
+ y  e  a  s  s     y  r  r  r  r  r     l        b  y  i      
+ l     s  e     c  l  i  r  r  r  r  t  b  t  b     l  y  c   
+ b  c  e     t  o  b  a  i  i  i  i  o     o  e  m  b  l  o   
+    e     r  o  l     g  a  a  a  a     c     a  a     b  l   
+ b  n  l  i     u  b  e  g  g  g  g  b  r  b  r  g  r     u  M
+ a  t  e  g  b  m  e     e  e  e  e  a  a  a  i  n  a  t  m  a
+ s  e  f  h  e  n  l  a              s  n  s  n  e  i  o  n  i
+ e  r  t  t  d  s  t  b  a  b  c  d  e  k  e  g  t  l  p  s  n
+  |  |  |  |  |  |  |  |  |  |  |  |  | 2|  | 4|  |  |  |  |  |  6 Ball bearing 608-2RS 8mm x 22mm x 7mm
+  |  |  |  |  |  | 1|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  1 Belt GT2 x 6mm x 1212mm
+  |  |  |  |  |  |  |  | 5| 5| 5| 5|  |  |  |  |  |  |  |  |  | 20 Linear rail carriage MGN7C
+  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 4|  |  |  |  |  |  4 Euro-Cent coin
+  |  |  |  |  |  |  | 2|  |  |  |  |  |  |  |  |  |  |  |  |  |  2 Extrusion E2020 x 235mm
+  |  | 1| 1|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  2 Extrusion E2020 x 300mm
+  | 2|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  2 Extrusion E2020 x 320mm
+  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 4|  |  |  |  4 Extrusion E2020 x 70mm
+  |  |  |  |  |  |  |  |  |  |  |  |  | 1|  |  |  |  |  |  |  |  1 Extrusion E2040 x 60mm
+  |  |  |  |  |  |  |  |  |  |  |  |  | 1|  |  |  |  |  |  |  |  1 Extrusion E2040 x 70mm
+  |  |  |  | 1|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  1 Flat section 15mmx2mm, 272mm
+  |  |  |  | 4|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  4 Flat section 15mmx2mm, 316mm
+  |  | 4| 2|  |  |  |  |  |  |  |  |  | 2|  |  |  |  |  |  |  |  8 L-Bracket (20x20)
+  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 4|  |  |  |  |  4 Neodym Magnet (D=20,H=4.5)
+  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |20|  |  |  | 20 Nut M2 x 1.6mm 
+  |  |  |  |  |  |  |  | 2| 2| 2| 2|  |  |  |  |  |  |  |  |  |  8 Nut M3 x 2.4mm 
+  |  |  |  |  |  |  |  |  |  |  |  |  | 1|  |  |  |  |  |  |  |  1 Nut M8 x 6.5mm 
+  |  |  |  |  |  |  |  |  |  |  |  |  | 2|  |  |  |  |  |  |  |  2 Pulley GT2 idler smooth 12mm
+  |  |  |  |  |  |  |  |  |  |  |  |  | 1|  | 4|  |  |  |  |  |  5 Pulley GT2OB 20 teeth
+  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 4|  |  |  |  4 Linear rail MGN7 x 70mm
+  |  |  |  |  |  |  |  | 4| 4| 4| 4|  |  |  |  |  |  |  |  |  | 16 Screw M2 cap x 10mm
+  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |20|  |  |  | 20 Screw M2 cap x  6mm
+  |  | 8| 4|  |  |  |  |  |  |  |  |  | 6|  | 8|  |  |  |  |  | 26 Screw M3 grub x  6mm
+  |  |  |  |  |  |  |  | 2| 2| 2| 2|  |  |  |  |  |  |  |  |  |  8 Screw M3 pan x 12mm
+  |  |  |  |  |  |  |  | 1| 1| 1| 1|  |  |  | 8| 8|  |  |  |  | 20 Screw M4 cap x 12mm
+  |  |  |  |  |  |  |  |  |  |  |  |  | 2|  |  |  |  |  |  |  |  2 Screw M4 cap x 15mm
+  |  |  |  |  |  |  |  |  |  |  |  |  | 4|  |  |  |  |  |  |  |  4 Screw M4 dome x  8mm
+  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 4|  |  |  4 Screw M6 cap x 20mm
+  |  |  |  |  |  |  |  | 1| 1| 1| 1|  |  |  |  |  |  |  |  |  |  4 Screw M6 pan x 20mm
+  |  |  |  |  |  |  |  |  |  |  |  |  | 3|  |  |  |  |  |  |  |  3 Screw M8 hex x 50mm
+  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 4|  |  |  |  |  |  4 Threaded rod M8 x 100mm
+  |  |  |  |  |  |  |  | 1| 1| 1| 1|  |  |  |  |  |  |  |  |  |  4 T8-Nut (narrow)
+  |  |  |  |  |  |  |  | 1| 1| 1| 1|  |  |  | 8| 8|  |  |  |  | 20 T-Nut (20x20)
+  |  |  |  |  |  |  |  |  |  |  |  |  | 2|  |  |  |  |  |  |  |  2 T-Nut (20x20)
+  |  |  |  |  |  |  |  |  |  |  |  |  | 4|  |  |  |  |  |  |  |  4 T-Nut (20x20)
+  |  |  |  |  |  |  |  | 4| 4| 4| 4|  |  |  |  |  |  |  |  |  | 16 Washer  M2 x 5mm x 0.3mm
+  |  |  |  |  |  |  |  | 1| 1| 1| 1|  | 6|  | 8| 8|  |  |  |  | 26 Washer  M4 x 9mm x 0.8mm
+  |  |  |  |  |  |  |  | 1| 1| 1| 1|  |  |  |  |  |  | 4|  |  |  8 Washer  M6 x 12.5mm x 1.5mm
+
+Printed:
+  |  |  |  | 8|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  8 DIYLB_beam_holder.stl
+  |  |  |  |  |  |  |  | 1|  |  |  |  |  |  |  |  |  |  |  |  |  1 DIYLB_carriage_A.stl
+  |  |  |  |  |  |  |  |  | 1|  |  |  |  |  |  |  |  |  |  |  |  1 DIYLB_carriage_B.stl
+  |  |  |  |  |  |  |  |  |  | 1|  |  |  |  |  |  |  |  |  |  |  1 DIYLB_carriage_C.stl
+  |  |  |  |  |  |  |  |  |  |  | 1|  |  |  |  |  |  |  |  |  |  1 DIYLB_carriage_D.stl
+  |  |  |  |  |  |  |  |  |  |  |  |  | 1|  |  |  |  |  |  |  |  1 DIYLB_crank.stl
+  |  |  |  |  |  |  |  |  |  |  |  |  | 2|  |  |  |  |  |  |  |  2 DIYLB_crank_bearing.stl
+  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 4|  |  |  |  |  |  4 DIYLB_lower_bearing.stl
+  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 4|  |  |  |  |  4 DIYLB_magnet.stl
+  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 4|  |  |  |  4 DIYLB_rail.stl
+  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 2|  |  |  2 DIYLB_top_back.stl
+  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 2|  |  |  2 DIYLB_top_front.stl
+
+Assemblies:
+  1 DIYLB_Base_assembly
+  2 DIYLB_base_center_assemblies
+  1 DIYLB_base_left_assembly
+  1 DIYLB_base_right_assembly
+  1 DIYLB_beams_to_bed_assembly
+  1 DIYLB_bed_to_columns_assembly
+  1 DIYLB_belt_assembly
+  2 DIYLB_carriage_AB_assemblies
+  1 DIYLB_carriage_A_assembly
+  1 DIYLB_carriage_B_assembly
+  1 DIYLB_carriage_C_assembly
+  1 DIYLB_carriage_D_assembly
+  1 DIYLB_columns_to_base_assembly
+  1 DIYLB_crank_assembly
+  1 DIYLB_crank_to_base_assembly
+  4 DIYLB_lower_bearing_assemblies
+  4 DIYLB_magnet_assemblies
+  4 DIYLB_rail_assemblies
+  2 DIYLB_top_assemblies
+  1 DIYLB_top_to_columns_assembly
+  1 main_assembly

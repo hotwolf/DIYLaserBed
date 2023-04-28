@@ -1,0 +1,6 @@
+DIYLB_base_center_assemblies:
+Vitamins:
+  2 Extrusion E2020 x 320mm
+
+Assemblies:
+  4 DIYLB_magnet_assemblies

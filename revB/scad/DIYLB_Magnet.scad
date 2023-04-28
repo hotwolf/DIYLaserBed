@@ -45,25 +45,25 @@ module DIYLB_magnet_stl() {
     color(pp1_colour)
     difference() {
         union() {
-            translate([0,-25,0]) cube([($magnet_diameter/2)+1,50,20]);
+            translate([0,-22,0]) cube([($magnet_diameter/2)+1,44,20]);
             intersection() {
                 translate([moffs,0,0])cylinder($magnet_thickness+0.4,d=$magnet_diameter+4.5);
                 translate([0,-25,0]) cube([($magnet_diameter)+4,50,20]);
             }
 
-            translate([0,-25,10])
+            translate([0,-22,10])
             rotate([90,0,180])
-            linear_extrude(50)
+            linear_extrude(44)
             polygon([[0,3],[1,2],[1,-2],[0,-3]]);
             
         }    
         union() {
             translate([moffs,0,-10]) poly_cylinder(h=20,r=8/2);
             translate([moffs,0,0.4]) poly_cylinder(h=40,r=($magnet_diameter+0.0)/2);
-            translate([-4,20,10])                 rotate([90,0,90]) cylinder(20,d=4.9);
-            translate([($bb_diameter/2)-5,20,10]) rotate([90,0,90]) cylinder(10,d=9.5);
-            translate([-4,-20,10])                 rotate([90,0,90]) cylinder(20,d=4.9);
-            translate([($bb_diameter/2)-5,-20,10]) rotate([90,0,90]) cylinder(10,d=9.5);
+            translate([-4,16,10])                 rotate([90,0,90]) cylinder(20,d=4.9);
+            translate([($bb_diameter/2)-5,16,10]) rotate([90,0,90]) cylinder(10,d=9.5);
+            translate([-4,-16,10])                 rotate([90,0,90]) cylinder(20,d=4.9);
+            translate([($bb_diameter/2)-5,-16,10]) rotate([90,0,90]) cylinder(10,d=9.5);
     
             translate([1,-30,15.6]) cube([20,60,20]);
         }
@@ -82,8 +82,8 @@ module DIYLB_magnet_assembly()
     translate([moffs,0,0.41]) explode(30) magnet();    
 
     //T-nuts
-    translate([0,20,10]) rotate([90,180,90]) tnut(($bb_diameter/2)-5);
-    translate([0,-20,10]) rotate([90,0,90])   tnut(($bb_diameter/2)-5);
+    translate([0,16,10]) rotate([90,180,90]) tnut(($bb_diameter/2)-5);
+    translate([0,-16,10]) rotate([90,0,90])   tnut(($bb_diameter/2)-5);
 
     //Bracket
     DIYLB_magnet_stl();    

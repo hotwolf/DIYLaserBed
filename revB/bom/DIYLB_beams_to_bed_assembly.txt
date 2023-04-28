@@ -1,0 +1,10 @@
+DIYLB_beams_to_bed_assembly:
+Vitamins:
+  1 Flat section 15mmx2mm, 272mm
+  4 Flat section 15mmx2mm, 316mm
+
+Printed:
+  8 DIYLB_beam_holder.stl
+
+Assemblies:
+  1 DIYLB_bed_to_columns_assembly

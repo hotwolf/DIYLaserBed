@@ -1,0 +1,9 @@
+DIYLB_carriage_AB_assemblies:
+Vitamins:
+  2 Extrusion E2020 x 235mm
+
+Assemblies:
+  1 DIYLB_carriage_A_assembly
+  1 DIYLB_carriage_B_assembly
+  1 DIYLB_carriage_C_assembly
+  1 DIYLB_carriage_D_assembly

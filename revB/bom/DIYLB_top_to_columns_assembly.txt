@@ -1,0 +1,5 @@
+DIYLB_top_to_columns_assembly:
+
+Assemblies:
+  1 DIYLB_beams_to_bed_assembly
+  2 DIYLB_top_assemblies

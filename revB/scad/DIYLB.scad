@@ -31,7 +31,7 @@
 //#                                                                             #
 //###############################################################################
 
-//! This is a DIY laser bed for K40 cutters and clones. 
+//! This is a DIY laser bed for K40 cutters and clones.
 //! ![inside](doc/DIYLB.gif?raw=true)
 
 include <DIYLB_Config.scad>
@@ -129,6 +129,7 @@ module DIYLB_beams_to_bed_assembly() {
   
        //Base and bed
        DIYLB_bed_to_columns_assembly();
+       //DIYLB_base_assembly();
     }
 }
 
@@ -141,7 +142,8 @@ module DIYLB_top_to_columns_assembly() {
 
         //Base
         DIYLB_beams_to_bed_assembly();
-    
+        //DIYLB_base_assembly();
+   
         //Top
         translate([20,0,0]) DIYLB_top_assembly();
         translate([340,$frame_depth,0]) rotate([0,0,180]) DIYLB_top_assembly();
@@ -164,7 +166,7 @@ module DIYLB_belt_assembly() {
 
         //Base
         DIYLB_top_to_columns_assembly();
-        //DIYLB_Base_assembly();
+        //DIYLB_base_assembly();
     
         //Timing belt
         p0=[-58,150];   //Crank

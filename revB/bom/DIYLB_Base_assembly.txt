@@ -1,0 +1,6 @@
+DIYLB_Base_assembly:
+
+Assemblies:
+  2 DIYLB_base_center_assemblies
+  1 DIYLB_base_left_assembly
+  1 DIYLB_base_right_assembly

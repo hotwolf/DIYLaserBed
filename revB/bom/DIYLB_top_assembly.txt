@@ -1,0 +1,8 @@
+DIYLB_top_assemblies:
+Vitamins:
+  4 Screw M6 cap x 20mm
+  4 Washer  M6 x 12.5mm x 1.5mm
+
+Printed:
+  2 DIYLB_top_back.stl
+  2 DIYLB_top_front.stl

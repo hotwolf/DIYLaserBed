@@ -33,11 +33,11 @@
 include <../DIYLB_Config.scad>
 
 module flatSection(length=100,center=true) {
-    description = str("Flat section: 15mmx2mm, ", length, "mm");
-    vitamin(str("flatSection(): ", description));
+    description = str("Flat section 15mmx2mm, ", length, "mm");
+    vitamin(str("flatSection(", length, "): ", description));
     
     color("Silver") cube([length,2,15],center=center);    
 }
 
 //Demo
-flatSection();
+//flatSection();

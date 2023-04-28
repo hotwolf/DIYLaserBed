@@ -1,0 +1,9 @@
+DIYLB_magnet_assemblies:
+Vitamins:
+  4 Neodym Magnet (D=20,H=4.5)
+  8 Screw M4 cap x 12mm
+  8 T-Nut (20x20)
+  8 Washer  M4 x 9mm x 0.8mm
+
+Printed:
+  4 DIYLB_magnet.stl
