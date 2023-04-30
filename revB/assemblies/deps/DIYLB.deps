@@ -1,4 +1,4 @@
-tmp/DIYLB_beams_to_bed_assembly.png: \
+tmp/DIYLB_belt_assembly.png: \
 	/home/dirk/Projects/DIYLaserBed/revB/scad/vitamins/Cent.scad \
 	/home/dirk/Projects/DIYLaserBed/revB/scad/DIYLB_Magnet.scad \
 	/home/dirk/Projects/DIYLaserBed/revB/scad/DIYLB_LBearing.scad \

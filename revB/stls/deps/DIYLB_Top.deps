@@ -1,4 +1,4 @@
-stls/DIYLB_top_back.stl: \
+stls/DIYLB_top_B.stl: \
 	/home/dirk/Projects/DIYLaserBed/lib/NopSCADlib/printed/fan_guard.scad \
 	/home/dirk/Projects/DIYLaserBed/lib/NopSCADlib/vitamins/e3d.scad \
 	/home/dirk/Projects/DIYLaserBed/lib/NopSCADlib/utils/core/teardrops.scad \

@@ -70,8 +70,8 @@ Printed:
   |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 4|  |  |  |  |  |  4 DIYLB_lower_bearing.stl
   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 4|  |  |  |  |  4 DIYLB_magnet.stl
   |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 4|  |  |  |  4 DIYLB_rail.stl
-  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 2|  |  |  2 DIYLB_top_back.stl
-  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 2|  |  |  2 DIYLB_top_front.stl
+  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 2|  |  |  2 DIYLB_top_A.stl
+  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 2|  |  |  2 DIYLB_top_B.stl
 
 Assemblies:
   1 DIYLB_Base_assembly

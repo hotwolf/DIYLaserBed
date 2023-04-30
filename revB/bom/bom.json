@@ -15,11 +15,11 @@
             }
         },
         "printed": {
-            "DIYLB_top_front.stl": {
+            "DIYLB_top_A.stl": {
                 "count": 2,
                 "colour": "[0, 0.572549, 0]"
             },
-            "DIYLB_top_back.stl": {
+            "DIYLB_top_B.stl": {
                 "count": 2,
                 "colour": "[0, 0.572549, 0]"
             }
