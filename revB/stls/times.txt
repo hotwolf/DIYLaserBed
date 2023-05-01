@@ -1,6 +1,6 @@
 {
     "DIYLB_lower_bearing.stl": 4.054,
-    "DIYLB_magnet.stl": 5.6,
+    "DIYLB_magnet.stl": 5.672,
     "DIYLB_beam_holder.stl": 2.6,
     "DIYLB_carriage_A.stl": 25.034,
     "DIYLB_carriage_B.stl": 24.858,
@@ -10,5 +10,6 @@
     "DIYLB_crank_bearing.stl": 4.033,
     "DIYLB_rail.stl": 3.376,
     "DIYLB_top_A.stl": 1.994,
-    "DIYLB_top_B.stl": 1.998
+    "DIYLB_top_B.stl": 1.998,
+    "DIYLB_magnet_cover.stl": 1.889
 }

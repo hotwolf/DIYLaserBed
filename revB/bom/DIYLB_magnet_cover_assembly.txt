@@ -1,0 +1,6 @@
+DIYLB_magnet_cover_assemblies:
+Vitamins:
+  4 Euro-Cent coin
+
+Printed:
+  4 DIYLB_magnet_cover.stl

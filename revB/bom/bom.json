@@ -403,12 +403,34 @@
         "routed": {}
     },
     {
-        "name": "DIYLB_magnet_assembly",
+        "name": "DIYLB_magnet_cover_assembly",
         "big": null,
         "ngb": false,
         "zoomed": 0,
         "count": 4,
         "assemblies": {},
+        "vitamins": {
+            "cent(): Euro-Cent coin": {
+                "count": 4
+            }
+        },
+        "printed": {
+            "DIYLB_magnet_cover.stl": {
+                "count": 4,
+                "colour": "[0, 0.572549, 0]"
+            }
+        },
+        "routed": {}
+    },
+    {
+        "name": "DIYLB_magnet_assembly",
+        "big": null,
+        "ngb": false,
+        "zoomed": 0,
+        "count": 4,
+        "assemblies": {
+            "DIYLB_magnet_cover_assembly": 4
+        },
         "vitamins": {
             "magnet(): Neodym Magnet (D=20,H=4.5)": {
                 "count": 4

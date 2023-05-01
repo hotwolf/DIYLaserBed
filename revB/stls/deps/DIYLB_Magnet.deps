@@ -19,6 +19,7 @@ stls/DIYLB_magnet.stl: \
 	/home/dirk/Tools/NopSCADlib/vitamins/nut.scad \
 	/home/dirk/Projects/DIYLaserBed/lib/NopSCADlib/utils/core/polyholes.scad \
 	/home/dirk/Projects/DIYLaserBed/lib/NopSCADlib/utils/core/bom.scad \
+	/home/dirk/Projects/DIYLaserBed/revB/scad/vitamins/Cent.scad \
 	/home/dirk/Projects/DIYLaserBed/revB/scad/vitamins/T-Nut.scad \
 	/home/dirk/Projects/DIYLaserBed/lib/NopSCADlib/utils/offset.scad \
 	/home/dirk/Tools/NopSCADlib/utils/quadrant.scad \

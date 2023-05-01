@@ -7,3 +7,6 @@ Vitamins:
 
 Printed:
   4 DIYLB_magnet.stl
+
+Assemblies:
+  4 DIYLB_magnet_cover_assemblies

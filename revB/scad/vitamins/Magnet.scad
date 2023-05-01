@@ -36,7 +36,7 @@ module magnet() {
     description = str("Neodym Magnet (D=20,H=4.5)");
     vitamin(str("magnet(): ", description));
     
-    color("Silver"){ cylinder(4.5,d=19.8); }    
+    color("Silver"){ cylinder(h=4.5,d=19.8); }    
 }
 
 //Demo coin

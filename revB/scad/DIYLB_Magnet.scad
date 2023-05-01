@@ -34,8 +34,24 @@ include <DIYLB_Config.scad>
 use <./vitamins/T-Nut.scad>
 use <./vitamins/L-Bracket.scad>
 use <./vitamins/Magnet.scad>
+use <./vitamins/Cent.scad>
 
 //$explode=1;
+
+module DIYLB_magnet_cover_stl() {  
+    stl("DIYLB_magnet_cover");
+
+    color(pp1_colour)
+    difference() {
+       union() { 
+         translate([0,0,0])cylinder(h=3,d=$magnet_diameter);
+       }
+         translate([0,1.2,2.6])
+         linear_extrude(1)
+           text("▲",font="Arial Black:style=Regular",size=8,halign="center");
+         translate([0,1.3,0.4])cylinder(h=1.9,d=16.4,$fn=64);
+    }
+}
 
 module DIYLB_magnet_stl() {  
     stl("DIYLB_magnet");
@@ -70,8 +86,20 @@ module DIYLB_magnet_stl() {
     }
 }
 
+//! 1. insert cent coin during print.
+module DIYLB_magnet_cover_assembly() {
+    pose([65,0,65], [0,40,30])
+    assembly("DIYLB_magnet_cover") {
+ 
+      translate([0,0,0]) DIYLB_magnet_cover_stl(); 
+      translate([0,1.3,0.4]) cent();      
+        
+    }
+}
+
 //! 1. Squeze the magnet into the holder.
 //! 2. Attach two T-nuts with screws and washers.
+//! 3. Put the covers on top of the magnets.
 module DIYLB_magnet_assembly() 
     pose([65,0,65], [0,40,30])
     assembly("DIYLB_magnet") {
@@ -87,6 +115,9 @@ module DIYLB_magnet_assembly()
 
     //Bracket
     DIYLB_magnet_stl();    
+
+    //Magnet cover
+    translate([moffs,0,0.41+$magnet_thickness]) rotate([0,0,90]) explode(30) DIYLB_magnet_cover_assembly();    
  }
 
 if ($preview) {
