@@ -169,27 +169,28 @@ module DIYLB_belt_assembly() {
         //DIYLB_base_assembly();
     
         //Timing belt
-        p0=[-58,150];   //Crank
-        p1=[-15,140]; //Front idler
-        p2=[20+aoffs,20+aoffs];     //Front left pulley
-        p3=[340-aoffs,20+aoffs];    //Front right pulley
-        p4=[340-aoffs,$frame_depth-20-aoffs];   //Rear right pulley
-        p5=[20+aoffs,$frame_depth-20-aoffs];    //Rear left pulley
-        p6=[-15,160]; //Rear idler
+        p0=[-58,150];                         //Crank
+        p1=[-19,140];                         //Front idler
+        p2=[20+aoffs,20+aoffs];               //Front left pulley
+        p3=[340-aoffs,20+aoffs];              //Front right pulley     
+        p4=[340+30,$frame_depth/2];           //Extra idler
+        p5=[340-aoffs,$frame_depth-20-aoffs]; //Rear right pulley
+        p6=[20+aoffs,$frame_depth-20-aoffs];  //Rear left pulley
+        p7=[-19,160];                         //Rear idler
     
-        belt_path = [[p6.x, p6.y, -pulley_pr(GT2x20_plain_idler)],
-                    [p5.x, p5.y,  pulley_pr(GT2x20ob_pulley)],
-                    [p4.x, p4.y,  pulley_pr(GT2x20ob_pulley)],
-                    [p3.x, p3.y,  pulley_pr(GT2x20ob_pulley)],            
-                    [p2.x, p2.y,  pulley_pr(GT2x20ob_pulley)],
-                    [p1.x, p1.y, -pulley_pr(GT2x20_plain_idler)],
-                    [p0.x, p0.y,  pulley_pr(GT2x20ob_pulley)]];
+        belt_path = [[p7.x, p7.y, -pulley_pr(GT2x20_plain_idler)],
+                     [p6.x, p6.y,  pulley_pr(GT2x20ob_pulley)],
+                     [p5.x, p5.y,  pulley_pr(GT2x20ob_pulley)],     
+                     [p4.x, p4.y,  pulley_pr(GT2x20_plain_idler)],
+                     [p3.x, p3.y,  pulley_pr(GT2x20ob_pulley)],            
+                     [p2.x, p2.y,  pulley_pr(GT2x20ob_pulley)],
+                     [p1.x, p1.y, -pulley_pr(GT2x20_plain_idler)],
+                     [p0.x, p0.y,  pulley_pr(GT2x20ob_pulley)]];
     
         belt = GT2x6;
         translate([0,0,24]) belt(belt, belt_path);
             
         echo(Belt_length=belt_length(belt, belt_path));
-
     }
 }
 

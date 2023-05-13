@@ -1,5 +1,5 @@
 'Ball bearing 608-2RS 8mm x 22mm x 7mm',  6
-'Belt GT2 x 6mm x 1212mm',  1
+'Belt GT2 x 6mm x 1222mm',  1
 'Linear rail carriage MGN7C', 20
 'Euro-Cent coin',  8
 'Extrusion E2020 x 235mm',  2
@@ -14,25 +14,29 @@
 'Neodym Magnet (D=20,H=4.5)',  4
 'Nut M2 x 1.6mm ', 20
 'Nut M3 x 2.4mm ',  8
+'Nut M5 x 4mm ',  1
 'Nut M8 x 6.5mm ',  1
 'Pulley GT2 idler smooth 12mm',  2
 'Pulley GT2OB 20 teeth',  5
+'Pulley GT2 idler 20 teeth',  1
 'Linear rail MGN7 x 70mm',  4
 'Screw M2 cap x 10mm', 16
 'Screw M2 cap x  6mm', 20
 'Screw M3 grub x  6mm', 26
 'Screw M3 pan x 12mm',  8
-'Screw M4 cap x 12mm', 20
+'Screw M4 cap x 12mm', 22
 'Screw M4 cap x 15mm',  2
 'Screw M4 dome x  8mm',  4
+'Screw M5 cap x 28mm',  1
 'Screw M6 cap x 20mm',  4
 'Screw M6 pan x 20mm',  4
 'Screw M8 hex x 50mm',  3
 'Threaded rod M8 x 100mm',  4
 'T8-Nut (narrow)',  4
-'T-Nut (20x20)', 20
+'T-Nut (20x20)', 22
 'T-Nut (20x20)',  2
 'T-Nut (20x20)',  4
 'Washer  M2 x 5mm x 0.3mm', 16
-'Washer  M4 x 9mm x 0.8mm', 26
+'Washer  M4 x 9mm x 0.8mm', 28
+'Washer  M5 x 10mm x 1mm',  1
 'Washer  M6 x 12.5mm x 1.5mm',  8

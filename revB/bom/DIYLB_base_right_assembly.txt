@@ -5,4 +5,5 @@ Vitamins:
   4 Screw M3 grub x  6mm
 
 Assemblies:
+  1 DIYLB_idler_assembly
   2 DIYLB_lower_bearing_assemblies

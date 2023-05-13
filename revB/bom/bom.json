@@ -339,6 +339,44 @@
         "routed": {}
     },
     {
+        "name": "DIYLB_idler_assembly",
+        "big": null,
+        "ngb": false,
+        "zoomed": 0,
+        "count": 1,
+        "assemblies": {},
+        "vitamins": {
+            "pulley(GT2x20_toothed_idler): Pulley GT2 idler 20 teeth": {
+                "count": 1
+            },
+            "tnut(M4_cap_screw, 12): T-Nut (20x20)": {
+                "count": 2
+            },
+            "washer(M4_washer): Washer  M4 x 9mm x 0.8mm": {
+                "count": 2
+            },
+            "screw(M4_cap_screw, 12): Screw M4 cap x 12mm": {
+                "count": 2
+            },
+            "washer(M5_washer): Washer  M5 x 10mm x 1mm": {
+                "count": 1
+            },
+            "screw(M5_cap_screw, 28): Screw M5 cap x 28mm": {
+                "count": 1
+            },
+            "nut(M5_nut): Nut M5 x 4mm ": {
+                "count": 1
+            }
+        },
+        "printed": {
+            "DIYLB_idler.stl": {
+                "count": 1,
+                "colour": "[0, 0.572549, 0]"
+            }
+        },
+        "routed": {}
+    },
+    {
         "name": "DIYLB_lower_bearing_assembly",
         "big": null,
         "ngb": false,
@@ -386,7 +424,8 @@
         "zoomed": 0,
         "count": 1,
         "assemblies": {
-            "DIYLB_lower_bearing_assembly": 2
+            "DIYLB_lower_bearing_assembly": 2,
+            "DIYLB_idler_assembly": 1
         },
         "vitamins": {
             "extrusion(E2020, 300): Extrusion E2020 x 300mm": {
@@ -599,7 +638,7 @@
             "DIYLB_top_to_columns_assembly": 1
         },
         "vitamins": {
-            "belt(GT2x6, [[-15, 160, -6.376], [32, 263, 6.3662], [328, 263, 6.3662], [328, 32, 6.3662], [32, 32, 6.3662], [-15, 140, -6.376], [-58, 150, 6.3662]]): Belt GT2 x 6mm x 1212mm": {
+            "belt(GT2x6, [[-19, 160, -6.376], [32, 263, 6.3662], [328, 263, 6.3662], [370, 147.5, 6.376], [328, 32, 6.3662], [32, 32, 6.3662], [-19, 140, -6.376], [-58, 150, 6.3662]]): Belt GT2 x 6mm x 1222mm": {
                 "count": 1
             }
         },

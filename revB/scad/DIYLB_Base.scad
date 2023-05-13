@@ -35,6 +35,7 @@
 include <DIYLB_Config.scad>
 use <./DIYLB_LBearing.scad>
 use <./DIYLB_Magnet.scad>
+use <./DIYLB_Idler.scad>
 use <./vitamins/L-Bracket.scad>
 use <./vitamins/T-Nut.scad>
 
@@ -69,12 +70,6 @@ module DIYLB_base_left_assembly() {
         //Extrusions
         translate([10,($frame_depth-300)/2,10]) rotate([-90,0,0]) extrusion(E2020, 300, center=false);
     
-        //Idlers
-        //translate([10,140.36,20]) rotate([0,0,270]) tnut(9);
-        //translate([10,140.36,20]) explode(2) pulley($i_type);
-        //translate([10,159.64,20]) rotate([0,0,90])  tnut(9);
-        //translate([10,159.64,20]) explode(2) pulley($i_type);
-    
         //Ball bearings
         translate([20,20,0])              mirror([0,0,0]) explode([20,0,0]) DIYLB_lower_bearing_assembly();
         translate([20,$frame_depth-20,0]) mirror([0,1,0]) explode([20,0,0]) DIYLB_lower_bearing_assembly();
@@ -92,6 +87,7 @@ module DIYLB_base_left_assembly() {
 //! 1. Slide two L-brackets onto the top slot of the 20x20 extrusion.
 //! 2. Slide the two holders for the ball bearings onto the lef-thand slot
 //!    of the 20x20 extrusion.
+//! 3. Attach the idler mount
 module DIYLB_base_right_assembly() {
     pose([45, 0, -40],[250, 150, 0])
     assembly("DIYLB_base_right") {
@@ -106,6 +102,11 @@ module DIYLB_base_right_assembly() {
         //Vertical L-Brackets
         translate([350,20,20])              rotate([0,270,270]) explode([10,0,0]) lbracket();    
         translate([350,$frame_depth-20,20]) rotate([0,270,90])  explode([10,0,0]) lbracket();
+        
+        //Idler
+        translate([360,$frame_depth/2,0]) DIYLB_idler_assembly();
+        
+        
     }
 }   
 
@@ -133,7 +134,7 @@ module DIYLB_base_assembly() {
 }
 
 if ($preview) {
-    //$explode=1;
+    $explode=1;
 
     //Base assembly
     DIYLB_base_assembly();

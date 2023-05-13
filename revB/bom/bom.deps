@@ -1,5 +1,6 @@
 openscad.echo: \
 	/home/dirk/Projects/DIYLaserBed/revB/scad/vitamins/Cent.scad \
+	/home/dirk/Projects/DIYLaserBed/revB/scad/DIYLB_Idler.scad \
 	/home/dirk/Projects/DIYLaserBed/revB/scad/DIYLB_Magnet.scad \
 	/home/dirk/Projects/DIYLaserBed/revB/scad/DIYLB_LBearing.scad \
 	/home/dirk/Tools/NopSCADlib/utils/core/rounded_rectangle.scad \

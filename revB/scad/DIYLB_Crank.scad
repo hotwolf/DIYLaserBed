@@ -179,10 +179,10 @@ module DIYLB_crank_assembly () {
         translate([0,20,54]) rotate([0,0,0])   explode(70)  DIYLB_crank_bearing_stl();
 
         //Idlers
-        translate([-15,10,20]) rotate([0,0,0]) tnut(9);
-        translate([-15,10,20]) explode(2) pulley($i_type);
-        translate([-15,30,20]) rotate([0,0,0])  tnut(9);
-        translate([-15,30,20]) explode(2) pulley($i_type);        
+        translate([-19,10,20]) rotate([0,0,0]) tnut(9);
+        translate([-19,10,20]) explode(2) pulley($i_type);
+        translate([-19,30,20]) rotate([0,0,0])  tnut(9);
+        translate([-19,30,20]) explode(2) pulley($i_type);        
     }
 }
 

@@ -1,7 +1,7 @@
 //###############################################################################
-//# DIY Laser Bed - Magnet Mount                         #
+//# DIY Laser Bed - Magnet Mount                                                #
 //###############################################################################
-//#    Copyright 2018 - 2019 Dirk Heisswolf                                     #
+//#    Copyright 2018 - 2023 Dirk Heisswolf                                     #
 //#    This file is part of the DIY Laser Bed project.                          #
 //#                                                                             #
 //#    This project is free software: you can redistribute it and/or modify     #
@@ -117,7 +117,7 @@ module DIYLB_magnet_assembly()
     DIYLB_magnet_stl();    
 
     //Magnet cover
-    translate([moffs,0,0.41+$magnet_thickness]) rotate([0,0,90]) explode(30) DIYLB_magnet_cover_assembly();    
+    explode(40) translate([moffs,0,0.41+$magnet_thickness]) rotate([0,0,90]) explode(30) DIYLB_magnet_cover_assembly();    
  }
 
 if ($preview) {
@@ -127,7 +127,7 @@ if ($preview) {
     DIYLB_magnet_assembly();
 
     //Demo extrusions
-    *translate([-10,-35,10]) rotate([-90,0,0]) extrusion(E2020, 70, center=false);
+    translate([-10,-35,10]) rotate([-90,0,0]) extrusion(E2020, 70, center=false);
 }
 
 

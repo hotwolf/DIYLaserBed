@@ -1,6 +1,6 @@
 DIYLB_belt_assembly:
 Vitamins:
-  1 Belt GT2 x 6mm x 1212mm
+  1 Belt GT2 x 6mm x 1222mm
 
 Assemblies:
   1 DIYLB_top_to_columns_assembly
