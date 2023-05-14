@@ -54,7 +54,7 @@ module DIYLB_idler_stl() {
         }    
         union() {
             translate([ioffs,0,-10]) poly_cylinder(h=50,r=screw_clearance_radius(M5_cap_screw));
-            translate([ioffs,0,-10]) cylinder(h=16,r=screw_head_radius(M5_cap_screw),$fn=6);
+            translate([ioffs,0,-10]) cylinder(h=18,r=screw_nut_radius(M5_cap_screw),$fn=6);
             translate([-4,9,10])                 rotate([90,0,90]) cylinder(30,d=4.9);
             translate([($bb_diameter/2)-5,9,10]) rotate([90,0,90]) cylinder(20,d=9.5);
             translate([-4,-9,10])                 rotate([90,0,90]) cylinder(30,d=4.9);
@@ -62,6 +62,7 @@ module DIYLB_idler_stl() {
         }
     }
 }
+//DIYLB_idler_stl();
 
 //! 1. Screw the idler onto the holder.
 //! 2. Attach two T-nuts with screws and washers.
@@ -80,7 +81,7 @@ module DIYLB_idler_assembly()
 
     //M5 screw
     translate([ioffs,0,28]) explode(20) screw_and_washer(M5_cap_screw, 28);
-    translate([ioffs,0,2]) explode(-10) nut(M5_nut);
+    translate([ioffs,0,4]) explode(-10) nut(M5_nut);
 
     //Bracket
     DIYLB_idler_stl();    

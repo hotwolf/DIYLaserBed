@@ -41,10 +41,9 @@ module miniMagnet() {
     description = str("Neodym Magnet (5mmx5mmx2mm)");
     vitamin(str("miniMagnet(): ", description));
     
-    color("Silver"){ cube([2,5,5]); }    
+    *color("Silver"){ cube([2,5,5]); }    
+    color("Silver"){ cylinder(h=1,d=4); }    
 }
-
-
 
 module DIYLB_assemblyHelper_stl() {
     stl("DIYLB_assemblyHelper");   
@@ -52,27 +51,27 @@ module DIYLB_assemblyHelper_stl() {
     color(pp1_colour)
     difference() {
         union() {
-           translate([-18,0,-4]) cube([20,20,58]);
+           translate([-8,0,-4]) cube([10,10,58]);
         }    
         union() {
-           translate([-20,-10,-20]) cube([20,40,20]);
-           translate([-20,-10,50])  cube([20,40,20]);
-           translate([-22,-10,2])  rotate([0,105,0]) cube([20,40,20]);
-           translate([-22,-10,48]) rotate([0,-15,0]) cube([20,40,20]);
+           translate([-20,-10,-19.8]) cube([20,40,20]);
+           translate([-20,-10,49.8])  cube([20,40,20]);
+           translate([-12,-10,2])  rotate([0,105,0]) cube([10,40,10]);
+           translate([-12,-10,48]) rotate([0,-15,0]) cube([10,40,10]);
            hull() {
-              translate([-30,20,4]) cube([40,40,42]);
+              translate([-30,10,4]) cube([40,40,42]);
               translate([-30,4,10]) cube([40,40,30]);
           }
           //Magnet inserts
-          translate([0,2,2])  rotate([0,0,0]) cube([4,5,5]);
-          translate([0,2,43]) rotate([0,0,0]) cube([4,5,5]);
-          translate([-20,4.5,4.5])  rotate([0,90,0]) cylinder(h=40,d=2);
-          translate([-20,4.5,45.5]) rotate([0,90,0]) cylinder(h=40,d=2);
-        }
+         translate([-3,0.2,10]) rotate([270,0,0]) cylinder(h=1.2,d=4.2,$fn=12);
+         translate([-3,0.2,25]) rotate([270,0,0]) cylinder(h=1.2,d=4.2,$fn=12);
+         translate([-3,0.2,40]) rotate([270,0,0]) cylinder(h=1.2,d=4.2,$fn=12);
+       }
     }    
 }
+DIYLB_assemblyHelper_stl();
 
-//! 1. Push the magnets into the cavities.
+//! 1. Insert the magnets during print.
 module DIYLB_assemblyHelper_assembly () {
     pose([70, 0, 25],[0, 0, 50])
     assembly("DIYLB_assemblyHelper") {
@@ -81,10 +80,9 @@ module DIYLB_assemblyHelper_assembly () {
         DIYLB_assemblyHelper_stl();
 
         //Magnets
-        explode([10,0,0]) translate([0,2,2])  rotate([0,0,0]) miniMagnet();
-        explode([10,0,0]) translate([0,2,43]) rotate([0,0,0]) miniMagnet();
-      
-
+        explode([0,-10,0]) translate([-3,0.2,10]) rotate([270,0,0]) miniMagnet();
+        explode([0,-10,0]) translate([-3,0.2,25]) rotate([270,0,0]) miniMagnet();
+        explode([0,-10,0]) translate([-3,0.2,40]) rotate([270,0,0]) miniMagnet();
     }
 }
 
