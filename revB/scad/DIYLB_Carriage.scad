@@ -33,6 +33,9 @@
 //#      - Fixed design flaw:                                                   #
 //#        T-Nuts had not been placed correctly, reaching into the extrusion.   #
 //#                                                                             #
+//#   August 26, 2025                                                           #
+//#      - Fixed number of MGN7C carriages in BOM                               #
+//#                                                                             #
 //###############################################################################
 include <DIYLB_Config.scad>
 use <./vitamins/T-Nut.scad>
@@ -130,10 +133,10 @@ module DIYLB_carriage_shape(beam_holder=true) {
                 translate([0,0,-3]) cylinder(15,d=2.4);
                 translate([0,0,5.5]) cylinder(5,d=6);
              }
-             translate([0.1,0.2,0])  carriage(MGN7C_carriage);
-             translate([-0.1,0.2,0]) carriage(MGN7C_carriage);
-             translate([0.1,-0.2,0])  carriage(MGN7C_carriage);
-             translate([-0.1,-0.2,0]) carriage(MGN7C_carriage);
+             translate([0.1,0.2,0])   not_on_bom() carriage(MGN7C_carriage);
+             translate([-0.1,0.2,0])  not_on_bom() carriage(MGN7C_carriage);
+             translate([0.1,-0.2,0])  not_on_bom() carriage(MGN7C_carriage);
+             translate([-0.1,-0.2,0]) not_on_bom() carriage(MGN7C_carriage);
              translate([-16,-8,0]) cube([30,16,6]);
           }
           //Beam holder

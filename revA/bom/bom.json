@@ -60,7 +60,7 @@
         "assemblies": {},
         "vitamins": {
             "carriage(MGN7C_carriage): Linear rail carriage MGN7C": {
-                "count": 10
+                "count": 2
             },
             "washer(M2_washer): Washer  M2 x 5mm x 0.3mm": {
                 "count": 8
@@ -104,7 +104,7 @@
         "assemblies": {},
         "vitamins": {
             "carriage(MGN7C_carriage): Linear rail carriage MGN7C": {
-                "count": 10
+                "count": 2
             },
             "washer(M2_washer): Washer  M2 x 5mm x 0.3mm": {
                 "count": 8
