@@ -117,18 +117,18 @@ This is a DIY laser bed for K40 cutters and clones.
 
 | 2 x DIYLB_top_A.stl | 2 x DIYLB_top_B.stl |
 |---|---|
-| ![DIYLB_top_A.stl](stls/DIYLB_top_A.png) | ![DIYLB_top_B.stl](stls/DIYLB_top_B.png) 
+| ![DIYLB_top_A.stl](revB/stls/DIYLB_top_A.png) | ![DIYLB_top_B.stl](revB/stls/DIYLB_top_B.png) 
 
 
 
 ### Assembly instructions
-![DIYLB_top_assembly](assemblies/DIYLB_top_assembly_tn.png)
+![DIYLB_top_assembly](revB/assemblies/DIYLB_top_assembly_tn.png)
 
 1. Cut a M6 thread into the top of the vertical 20x20 extrusions 
 2. Attach the top holders
 3. Secure the top holders with M6 screws
 
-![DIYLB_top_assembled](assemblies/DIYLB_top_assembled_tn.png)
+![DIYLB_top_assembled](revB/assemblies/DIYLB_top_assembled_tn.png)
 
 <span></span>
 [Top](#TOP)
@@ -156,18 +156,18 @@ This is a DIY laser bed for K40 cutters and clones.
 
 | 1 x DIYLB_carriage_D.stl |
 |---|
-| ![DIYLB_carriage_D.stl](stls/DIYLB_carriage_D.png) 
+| ![DIYLB_carriage_D.stl](revB/stls/DIYLB_carriage_D.png) 
 
 
 
 ### Assembly instructions
-![DIYLB_carriage_D_assembly](assemblies/DIYLB_carriage_D_assembly_tn.png)
+![DIYLB_carriage_D_assembly](revB/assemblies/DIYLB_carriage_D_assembly_tn.png)
 
 1. Attatch T8-nut to the carriage holder, using M3 screws,
 2. Attatch the rail carriage to the carriage holder using M2 screws.
 3. Put a T-nuts into the mounting hole.
 
-![DIYLB_carriage_D_assembled](assemblies/DIYLB_carriage_D_assembled_tn.png)
+![DIYLB_carriage_D_assembled](revB/assemblies/DIYLB_carriage_D_assembled_tn.png)
 
 <span></span>
 [Top](#TOP)
@@ -195,18 +195,18 @@ This is a DIY laser bed for K40 cutters and clones.
 
 | 1 x DIYLB_carriage_C.stl |
 |---|
-| ![DIYLB_carriage_C.stl](stls/DIYLB_carriage_C.png) 
+| ![DIYLB_carriage_C.stl](revB/stls/DIYLB_carriage_C.png) 
 
 
 
 ### Assembly instructions
-![DIYLB_carriage_C_assembly](assemblies/DIYLB_carriage_C_assembly_tn.png)
+![DIYLB_carriage_C_assembly](revB/assemblies/DIYLB_carriage_C_assembly_tn.png)
 
 1. Attatch T8-nut to the carriage holder, using M3 screws,
 2. Attatch the rail carriage to the carriage holder using M2 screws.
 3. Put a T-nuts into the mounting hole.
 
-![DIYLB_carriage_C_assembled](assemblies/DIYLB_carriage_C_assembled_tn.png)
+![DIYLB_carriage_C_assembled](revB/assemblies/DIYLB_carriage_C_assembled_tn.png)
 
 <span></span>
 [Top](#TOP)
@@ -224,22 +224,22 @@ This is a DIY laser bed for K40 cutters and clones.
 
 | 1 x DIYLB_carriage_A_assembly | 1 x DIYLB_carriage_B_assembly | 1 x DIYLB_carriage_C_assembly |
 |---|---|---|
-| ![DIYLB_carriage_A_assembled](assemblies/DIYLB_carriage_A_assembled_tn.png) | ![DIYLB_carriage_B_assembled](assemblies/DIYLB_carriage_B_assembled_tn.png) | ![DIYLB_carriage_C_assembled](assemblies/DIYLB_carriage_C_assembled_tn.png) 
+| ![DIYLB_carriage_A_assembled](revB/assemblies/DIYLB_carriage_A_assembled_tn.png) | ![DIYLB_carriage_B_assembled](revB/assemblies/DIYLB_carriage_B_assembled_tn.png) | ![DIYLB_carriage_C_assembled](revB/assemblies/DIYLB_carriage_C_assembled_tn.png) 
 
 
 | 1 x DIYLB_carriage_D_assembly |
 |---|
-| ![DIYLB_carriage_D_assembled](assemblies/DIYLB_carriage_D_assembled_tn.png) 
+| ![DIYLB_carriage_D_assembled](revB/assemblies/DIYLB_carriage_D_assembled_tn.png) 
 
 
 
 ### Assembly instructions
-![DIYLB_carriage_AB_assembly](assemblies/DIYLB_carriage_AB_assembly_tn.png)
+![DIYLB_carriage_AB_assembly](revB/assemblies/DIYLB_carriage_AB_assembly_tn.png)
 
 1. Cut a M6 thread into both ends of the extrusion,
 2. Attatch attxh the carriage holders
 
-![DIYLB_carriage_AB_assembled](assemblies/DIYLB_carriage_AB_assembled_tn.png)
+![DIYLB_carriage_AB_assembled](revB/assemblies/DIYLB_carriage_AB_assembled_tn.png)
 
 <span></span>
 [Top](#TOP)
@@ -267,18 +267,18 @@ This is a DIY laser bed for K40 cutters and clones.
 
 | 1 x DIYLB_carriage_B.stl |
 |---|
-| ![DIYLB_carriage_B.stl](stls/DIYLB_carriage_B.png) 
+| ![DIYLB_carriage_B.stl](revB/stls/DIYLB_carriage_B.png) 
 
 
 
 ### Assembly instructions
-![DIYLB_carriage_B_assembly](assemblies/DIYLB_carriage_B_assembly_tn.png)
+![DIYLB_carriage_B_assembly](revB/assemblies/DIYLB_carriage_B_assembly_tn.png)
 
 1. Attatch T8-nut to the carriage holder, using M3 screws,
 2. Attatch the rail carriage to the carriage holder using M2 screws.
 3. Put a T-nuts into the mounting hole.
 
-![DIYLB_carriage_B_assembled](assemblies/DIYLB_carriage_B_assembled_tn.png)
+![DIYLB_carriage_B_assembled](revB/assemblies/DIYLB_carriage_B_assembled_tn.png)
 
 <span></span>
 [Top](#TOP)
@@ -306,18 +306,18 @@ This is a DIY laser bed for K40 cutters and clones.
 
 | 1 x DIYLB_carriage_A.stl |
 |---|
-| ![DIYLB_carriage_A.stl](stls/DIYLB_carriage_A.png) 
+| ![DIYLB_carriage_A.stl](revB/stls/DIYLB_carriage_A.png) 
 
 
 
 ### Assembly instructions
-![DIYLB_carriage_A_assembly](assemblies/DIYLB_carriage_A_assembly_tn.png)
+![DIYLB_carriage_A_assembly](revB/assemblies/DIYLB_carriage_A_assembly_tn.png)
 
 1. Attatch T8-nut to the carriage holder, using M3 screws,
 2. Attatch the rail carriage to the carriage holder using M2 screws.
 3. Put a T-nuts into the mounting hole.
 
-![DIYLB_carriage_A_assembled](assemblies/DIYLB_carriage_A_assembled_tn.png)
+![DIYLB_carriage_A_assembled](revB/assemblies/DIYLB_carriage_A_assembled_tn.png)
 
 <span></span>
 [Top](#TOP)
@@ -338,18 +338,18 @@ This is a DIY laser bed for K40 cutters and clones.
 
 | 4 x DIYLB_rail.stl |
 |---|
-| ![DIYLB_rail.stl](stls/DIYLB_rail.png) 
+| ![DIYLB_rail.stl](revB/stls/DIYLB_rail.png) 
 
 
 
 ### Assembly instructions
-![DIYLB_rail_assembly](assemblies/DIYLB_rail_assembly_tn.png)
+![DIYLB_rail_assembly](revB/assemblies/DIYLB_rail_assembly_tn.png)
 
 1. Insert the M2 nuts into the printed holder.
 2. Attach the rail loosely.
 3. Slide the printed holder into the 20x20 extrusion and tighten the screws.
 
-![DIYLB_rail_assembled](assemblies/DIYLB_rail_assembled_tn.png)
+![DIYLB_rail_assembled](revB/assemblies/DIYLB_rail_assembled_tn.png)
 
 <span></span>
 [Top](#TOP)
@@ -380,12 +380,12 @@ This is a DIY laser bed for K40 cutters and clones.
 
 | 1 x DIYLB_crank.stl | 2 x DIYLB_crank_bearing.stl |
 |---|---|
-| ![DIYLB_crank.stl](stls/DIYLB_crank.png) | ![DIYLB_crank_bearing.stl](stls/DIYLB_crank_bearing.png) 
+| ![DIYLB_crank.stl](revB/stls/DIYLB_crank.png) | ![DIYLB_crank_bearing.stl](revB/stls/DIYLB_crank_bearing.png) 
 
 
 
 ### Assembly instructions
-![DIYLB_crank_assembly](assemblies/DIYLB_crank_assembly_tn.png)
+![DIYLB_crank_assembly](revB/assemblies/DIYLB_crank_assembly_tn.png)
 
 1. Connect the two 20x40 extrusions with L-brackets.
 2. Assemble the axis as illustrated.
@@ -394,7 +394,7 @@ This is a DIY laser bed for K40 cutters and clones.
 4. Move the two printed holders as far apart as possible and tighten the screws.
 5. Slide two idlers on T-nuts onto the top slot of the horizontal 20x40 extrusion.
 
-![DIYLB_crank_assembled](assemblies/DIYLB_crank_assembled_tn.png)
+![DIYLB_crank_assembled](revB/assemblies/DIYLB_crank_assembled_tn.png)
 
 <span></span>
 [Top](#TOP)
@@ -418,17 +418,17 @@ This is a DIY laser bed for K40 cutters and clones.
 
 | 1 x DIYLB_idler.stl |
 |---|
-| ![DIYLB_idler.stl](stls/DIYLB_idler.png) 
+| ![DIYLB_idler.stl](revB/stls/DIYLB_idler.png) 
 
 
 
 ### Assembly instructions
-![DIYLB_idler_assembly](assemblies/DIYLB_idler_assembly_tn.png)
+![DIYLB_idler_assembly](revB/assemblies/DIYLB_idler_assembly_tn.png)
 
 1. Screw the idler onto the holder.
 2. Attach two T-nuts with screws and washers.
 
-![DIYLB_idler_assembled](assemblies/DIYLB_idler_assembled_tn.png)
+![DIYLB_idler_assembled](revB/assemblies/DIYLB_idler_assembled_tn.png)
 
 <span></span>
 [Top](#TOP)
@@ -453,19 +453,19 @@ This is a DIY laser bed for K40 cutters and clones.
 
 | 4 x DIYLB_lower_bearing.stl |
 |---|
-| ![DIYLB_lower_bearing.stl](stls/DIYLB_lower_bearing.png) 
+| ![DIYLB_lower_bearing.stl](revB/stls/DIYLB_lower_bearing.png) 
 
 
 
 ### Assembly instructions
-![DIYLB_lower_bearing_assembly](assemblies/DIYLB_lower_bearing_assembly_tn.png)
+![DIYLB_lower_bearing_assembly](revB/assemblies/DIYLB_lower_bearing_assembly_tn.png)
 
 1. Put a EuroCent coin in the bottom of the lower ball bearing holder.
 2. Squeze the ball bearing into the holder.
 3. Attach two T-nuts with screws and washers.
 4. Put the pulley loosely onto the threaded rod and insert them into the ball bearingpulles.  
 
-![DIYLB_lower_bearing_assembled](assemblies/DIYLB_lower_bearing_assembled_tn.png)
+![DIYLB_lower_bearing_assembled](revB/assemblies/DIYLB_lower_bearing_assembled_tn.png)
 
 <span></span>
 [Top](#TOP)
@@ -485,19 +485,19 @@ This is a DIY laser bed for K40 cutters and clones.
 
 | 1 x DIYLB_idler_assembly | 2 x DIYLB_lower_bearing_assembly |
 |---|---|
-| ![DIYLB_idler_assembled](assemblies/DIYLB_idler_assembled_tn.png) | ![DIYLB_lower_bearing_assembled](assemblies/DIYLB_lower_bearing_assembled_tn.png) 
+| ![DIYLB_idler_assembled](revB/assemblies/DIYLB_idler_assembled_tn.png) | ![DIYLB_lower_bearing_assembled](revB/assemblies/DIYLB_lower_bearing_assembled_tn.png) 
 
 
 
 ### Assembly instructions
-![DIYLB_base_right_assembly](assemblies/DIYLB_base_right_assembly_tn.png)
+![DIYLB_base_right_assembly](revB/assemblies/DIYLB_base_right_assembly_tn.png)
 
 1. Slide two L-brackets onto the top slot of the 20x20 extrusion.
 2. Slide the two holders for the ball bearings onto the lef-thand slot
    of the 20x20 extrusion.
 3. Attach the idler mount
 
-![DIYLB_base_right_assembled](assemblies/DIYLB_base_right_assembled_tn.png)
+![DIYLB_base_right_assembled](revB/assemblies/DIYLB_base_right_assembled_tn.png)
 
 <span></span>
 [Top](#TOP)
@@ -515,16 +515,16 @@ This is a DIY laser bed for K40 cutters and clones.
 
 | 4 x DIYLB_magnet_cover.stl |
 |---|
-| ![DIYLB_magnet_cover.stl](stls/DIYLB_magnet_cover.png) 
+| ![DIYLB_magnet_cover.stl](revB/stls/DIYLB_magnet_cover.png) 
 
 
 
 ### Assembly instructions
-![DIYLB_magnet_cover_assembly](assemblies/DIYLB_magnet_cover_assembly_tn.png)
+![DIYLB_magnet_cover_assembly](revB/assemblies/DIYLB_magnet_cover_assembly_tn.png)
 
 1. insert cent coin during print.
 
-![DIYLB_magnet_cover_assembled](assemblies/DIYLB_magnet_cover_assembled_tn.png)
+![DIYLB_magnet_cover_assembled](revB/assemblies/DIYLB_magnet_cover_assembled_tn.png)
 
 <span></span>
 [Top](#TOP)
@@ -545,7 +545,7 @@ This is a DIY laser bed for K40 cutters and clones.
 
 | 4 x DIYLB_magnet.stl |
 |---|
-| ![DIYLB_magnet.stl](stls/DIYLB_magnet.png) 
+| ![DIYLB_magnet.stl](revB/stls/DIYLB_magnet.png) 
 
 
 
@@ -553,18 +553,18 @@ This is a DIY laser bed for K40 cutters and clones.
 
 | 4 x DIYLB_magnet_cover_assembly |
 |---|
-| ![DIYLB_magnet_cover_assembled](assemblies/DIYLB_magnet_cover_assembled_tn.png) 
+| ![DIYLB_magnet_cover_assembled](revB/assemblies/DIYLB_magnet_cover_assembled_tn.png) 
 
 
 
 ### Assembly instructions
-![DIYLB_magnet_assembly](assemblies/DIYLB_magnet_assembly_tn.png)
+![DIYLB_magnet_assembly](revB/assemblies/DIYLB_magnet_assembly_tn.png)
 
 1. Squeze the magnet into the holder.
 2. Attach two T-nuts with screws and washers.
 3. Put the covers on top of the magnets.
 
-![DIYLB_magnet_assembled](assemblies/DIYLB_magnet_assembled_tn.png)
+![DIYLB_magnet_assembled](revB/assemblies/DIYLB_magnet_assembled_tn.png)
 
 <span></span>
 [Top](#TOP)
@@ -582,16 +582,16 @@ This is a DIY laser bed for K40 cutters and clones.
 
 | 4 x DIYLB_magnet_assembly |
 |---|
-| ![DIYLB_magnet_assembled](assemblies/DIYLB_magnet_assembled_tn.png) 
+| ![DIYLB_magnet_assembled](revB/assemblies/DIYLB_magnet_assembled_tn.png) 
 
 
 
 ### Assembly instructions
-![DIYLB_base_center_assembly](assemblies/DIYLB_base_center_assembly_tn.png)
+![DIYLB_base_center_assembly](revB/assemblies/DIYLB_base_center_assembly_tn.png)
 
 1. Attach two magnet holders to the 320mm 20x20 extrusion.
 
-![DIYLB_base_center_assembled](assemblies/DIYLB_base_center_assembled_tn.png)
+![DIYLB_base_center_assembled](revB/assemblies/DIYLB_base_center_assembled_tn.png)
 
 <span></span>
 [Top](#TOP)
@@ -611,19 +611,19 @@ This is a DIY laser bed for K40 cutters and clones.
 
 | 2 x DIYLB_lower_bearing_assembly |
 |---|
-| ![DIYLB_lower_bearing_assembled](assemblies/DIYLB_lower_bearing_assembled_tn.png) 
+| ![DIYLB_lower_bearing_assembled](revB/assemblies/DIYLB_lower_bearing_assembled_tn.png) 
 
 
 
 ### Assembly instructions
-![DIYLB_base_left_assembly](assemblies/DIYLB_base_left_assembly_tn.png)
+![DIYLB_base_left_assembly](revB/assemblies/DIYLB_base_left_assembly_tn.png)
 
 1. Slide two L-brackets onto the top slot of the 20x20 extrusion.
 2. Slide the two holders for the ball bearings onto the right-hand slot
    of the 20x20 extrusion.
 3. Slide two L-brackets onto the left-hand slot of the 20x20 extrusion.
 
-![DIYLB_base_left_assembled](assemblies/DIYLB_base_left_assembled_tn.png)
+![DIYLB_base_left_assembled](revB/assemblies/DIYLB_base_left_assembled_tn.png)
 
 <span></span>
 [Top](#TOP)
@@ -635,17 +635,17 @@ This is a DIY laser bed for K40 cutters and clones.
 
 | 2 x DIYLB_base_center_assembly | 1 x DIYLB_base_left_assembly | 1 x DIYLB_base_right_assembly |
 |---|---|---|
-| ![DIYLB_base_center_assembled](assemblies/DIYLB_base_center_assembled_tn.png) | ![DIYLB_base_left_assembled](assemblies/DIYLB_base_left_assembled_tn.png) | ![DIYLB_base_right_assembled](assemblies/DIYLB_base_right_assembled_tn.png) 
+| ![DIYLB_base_center_assembled](revB/assemblies/DIYLB_base_center_assembled_tn.png) | ![DIYLB_base_left_assembled](revB/assemblies/DIYLB_base_left_assembled_tn.png) | ![DIYLB_base_right_assembled](revB/assemblies/DIYLB_base_right_assembled_tn.png) 
 
 
 
 ### Assembly instructions
-![DIYLB_Base_assembly](assemblies/DIYLB_Base_assembly_tn.png)
+![DIYLB_Base_assembly](revB/assemblies/DIYLB_Base_assembly_tn.png)
 
 1. Attach all parts of the base frame
 2. Tighten the screws of the bearing holders, connecting 20x20 extrusions
 
-![DIYLB_Base_assembled](assemblies/DIYLB_Base_assembled_tn.png)
+![DIYLB_Base_assembled](revB/assemblies/DIYLB_Base_assembled_tn.png)
 
 <span></span>
 [Top](#TOP)
@@ -657,17 +657,17 @@ This is a DIY laser bed for K40 cutters and clones.
 
 | 1 x DIYLB_Base_assembly | 1 x DIYLB_crank_assembly |
 |---|---|
-| ![DIYLB_Base_assembled](assemblies/DIYLB_Base_assembled_tn.png) | ![DIYLB_crank_assembled](assemblies/DIYLB_crank_assembled_tn.png) 
+| ![DIYLB_Base_assembled](revB/assemblies/DIYLB_Base_assembled_tn.png) | ![DIYLB_crank_assembled](revB/assemblies/DIYLB_crank_assembled_tn.png) 
 
 
 
 ### Assembly instructions
-![DIYLB_crank_to_base_assembly](assemblies/DIYLB_crank_to_base_assembly_tn.png)
+![DIYLB_crank_to_base_assembly](revB/assemblies/DIYLB_crank_to_base_assembly_tn.png)
 
 1. Attach the crank holder to the base of the frame  
 2. Tighten the screws of the L-brackets
 
-![DIYLB_crank_to_base_assembled](assemblies/DIYLB_crank_to_base_assembled_tn.png)
+![DIYLB_crank_to_base_assembled](revB/assemblies/DIYLB_crank_to_base_assembled_tn.png)
 
 <span></span>
 [Top](#TOP)
@@ -679,17 +679,17 @@ This is a DIY laser bed for K40 cutters and clones.
 
 | 1 x DIYLB_crank_to_base_assembly | 4 x DIYLB_rail_assembly |
 |---|---|
-| ![DIYLB_crank_to_base_assembled](assemblies/DIYLB_crank_to_base_assembled_tn.png) | ![DIYLB_rail_assembled](assemblies/DIYLB_rail_assembled_tn.png) 
+| ![DIYLB_crank_to_base_assembled](revB/assemblies/DIYLB_crank_to_base_assembled_tn.png) | ![DIYLB_rail_assembled](revB/assemblies/DIYLB_rail_assembled_tn.png) 
 
 
 
 ### Assembly instructions
-![DIYLB_columns_to_base_assembly](assemblies/DIYLB_columns_to_base_assembly_tn.png)
+![DIYLB_columns_to_base_assembly](revB/assemblies/DIYLB_columns_to_base_assembly_tn.png)
 
 1. Attach the for columns to the base of the frame  
 2. Tighten the screws of the L-brackets
 
-![DIYLB_columns_to_base_assembled](assemblies/DIYLB_columns_to_base_assembled_tn.png)
+![DIYLB_columns_to_base_assembled](revB/assemblies/DIYLB_columns_to_base_assembled_tn.png)
 
 <span></span>
 [Top](#TOP)
@@ -701,16 +701,16 @@ This is a DIY laser bed for K40 cutters and clones.
 
 | 2 x DIYLB_carriage_AB_assembly | 1 x DIYLB_columns_to_base_assembly |
 |---|---|
-| ![DIYLB_carriage_AB_assembled](assemblies/DIYLB_carriage_AB_assembled_tn.png) | ![DIYLB_columns_to_base_assembled](assemblies/DIYLB_columns_to_base_assembled_tn.png) 
+| ![DIYLB_carriage_AB_assembled](revB/assemblies/DIYLB_carriage_AB_assembled_tn.png) | ![DIYLB_columns_to_base_assembled](revB/assemblies/DIYLB_columns_to_base_assembled_tn.png) 
 
 
 
 ### Assembly instructions
-![DIYLB_bed_to_columns_assembly](assemblies/DIYLB_bed_to_columns_assembly_tn.png)
+![DIYLB_bed_to_columns_assembly](revB/assemblies/DIYLB_bed_to_columns_assembly_tn.png)
 
 1. Thread the assembled carriage holders into the rails and rods of the Z-axis.
 
-![DIYLB_bed_to_columns_assembled](assemblies/DIYLB_bed_to_columns_assembled_tn.png)
+![DIYLB_bed_to_columns_assembled](revB/assemblies/DIYLB_bed_to_columns_assembled_tn.png)
 
 <span></span>
 [Top](#TOP)
@@ -729,7 +729,7 @@ This is a DIY laser bed for K40 cutters and clones.
 
 | 8 x DIYLB_beam_holder.stl |
 |---|
-| ![DIYLB_beam_holder.stl](stls/DIYLB_beam_holder.png) 
+| ![DIYLB_beam_holder.stl](revB/stls/DIYLB_beam_holder.png) 
 
 
 
@@ -737,17 +737,17 @@ This is a DIY laser bed for K40 cutters and clones.
 
 | 1 x DIYLB_bed_to_columns_assembly |
 |---|
-| ![DIYLB_bed_to_columns_assembled](assemblies/DIYLB_bed_to_columns_assembled_tn.png) 
+| ![DIYLB_bed_to_columns_assembled](revB/assemblies/DIYLB_bed_to_columns_assembled_tn.png) 
 
 
 
 ### Assembly instructions
-![DIYLB_beams_to_bed_assembly](assemblies/DIYLB_beams_to_bed_assembly_tn.png)
+![DIYLB_beams_to_bed_assembly](revB/assemblies/DIYLB_beams_to_bed_assembly_tn.png)
 
 1. Attach the beam holders to the horizontal 20x20 extrusions of the bed.
 2. Slide the beams into the beam holders
 
-![DIYLB_beams_to_bed_assembled](assemblies/DIYLB_beams_to_bed_assembled_tn.png)
+![DIYLB_beams_to_bed_assembled](revB/assemblies/DIYLB_beams_to_bed_assembled_tn.png)
 
 <span></span>
 [Top](#TOP)
@@ -759,16 +759,16 @@ This is a DIY laser bed for K40 cutters and clones.
 
 | 1 x DIYLB_beams_to_bed_assembly | 2 x DIYLB_top_assembly |
 |---|---|
-| ![DIYLB_beams_to_bed_assembled](assemblies/DIYLB_beams_to_bed_assembled_tn.png) | ![DIYLB_top_assembled](assemblies/DIYLB_top_assembled_tn.png) 
+| ![DIYLB_beams_to_bed_assembled](revB/assemblies/DIYLB_beams_to_bed_assembled_tn.png) | ![DIYLB_top_assembled](revB/assemblies/DIYLB_top_assembled_tn.png) 
 
 
 
 ### Assembly instructions
-![DIYLB_top_to_columns_assembly](assemblies/DIYLB_top_to_columns_assembly_tn.png)
+![DIYLB_top_to_columns_assembly](revB/assemblies/DIYLB_top_to_columns_assembly_tn.png)
 
 1. Attach the top extrusions to the rest of the frame.
 
-![DIYLB_top_to_columns_assembled](assemblies/DIYLB_top_to_columns_assembled_tn.png)
+![DIYLB_top_to_columns_assembled](revB/assemblies/DIYLB_top_to_columns_assembled_tn.png)
 
 <span></span>
 [Top](#TOP)
@@ -786,17 +786,17 @@ This is a DIY laser bed for K40 cutters and clones.
 
 | 1 x DIYLB_top_to_columns_assembly |
 |---|
-| ![DIYLB_top_to_columns_assembled](assemblies/DIYLB_top_to_columns_assembled_tn.png) 
+| ![DIYLB_top_to_columns_assembled](revB/assemblies/DIYLB_top_to_columns_assembled_tn.png) 
 
 
 
 ### Assembly instructions
-![DIYLB_belt_assembly](assemblies/DIYLB_belt_assembly_tn.png)
+![DIYLB_belt_assembly](revB/assemblies/DIYLB_belt_assembly_tn.png)
 
 1. Insert the timing belt
 2. Level the bed by turning the thraded rods, before tightening the pulleys 
 
-![DIYLB_belt_assembled](assemblies/DIYLB_belt_assembled_tn.png)
+![DIYLB_belt_assembled](revB/assemblies/DIYLB_belt_assembled_tn.png)
 
 <span></span>
 [Top](#TOP)
